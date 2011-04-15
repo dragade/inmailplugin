@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head>
+<script type="text/javascript" src="plugin.js"></script>
+<style>
+  * { margin: 0; padding: 0; overflow: hidden; }
+  
+  /* place your plugin width here */
+  #body { width: 400px; }
+</style>
+</head>
+<body>
+  <div id="body">
+    <div class="wrapper">
+      <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+        api_key: c33QJxxK9H4rQwpAiLs8NJ9VMwGFmzF3f9ksmT644ORS-rvMFoPDdJL5kdOuHL77
+        authorize: true
+      </script>
+      <p>
+        This is the content area of your plugin. If you'd like to take advantage
+        of the JavaScript API, it's available in this window as well. It's
+        authorize parameter has been set to "true", so we can take advantage of
+        the "sign in with linkedin" from the previous page.
+      </p>
+      <p>
+        <script type="IN/Login">You are <?js= firstName ?> <?js= lastName ?></script>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
