@@ -1,7 +1,7 @@
 
 function loadData() {
   //loadProfile();
-  loadInmails();
+  //loadInmails();
   loadShares();
 }
 
@@ -42,12 +42,23 @@ function loadShares() {
   IN.API.Raw("/people/~/network?type=SHAR&format=json") // construct REST URL
     .result( function(result) {
       //console.log(JSON.stringify(result))
-      share = result.updates.values[0]
-      //console.log(JSON.stringify(share))
-      shareHTML = "<p>" + share.updateContent.person.firstName + " " + share.updateContent.person.lastName
+      var numShares = 0;
+      var i = 0;
+      var max = 5;
+      var shareHTML = "<p>";
+      for (i=0; i < result.updates.values.length && i < max; i++) {
+        var share = result.updates.values[i];
+        //console.log(JSON.stringify(share))
+ 
+        if (share.updateContent.person.currentShare.content && share.updateContent.person.currentShare.content.submittedUrl) {
+          shareHTML += "<img src=\"" + share.updateContent.person.pictureUrl + "\" height=\"25\" width=\"25\"/>"
+          shareHTML += share.updateContent.person.firstName + " " + share.updateContent.person.lastName
               + " : <a href=\""
               + share.updateContent.person.currentShare.content.submittedUrl
-              + "\">" + share.updateContent.person.currentShare.content.title + "</a>"
+              + "\">" + share.updateContent.person.currentShare.content.title + "</a><br/>"
+         }
+      }
+      shareHTML += "</p>";
 
       $("#shares").html(shareHTML)
      });

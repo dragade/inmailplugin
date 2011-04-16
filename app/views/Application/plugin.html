@@ -3,56 +3,7 @@
 <head>
 <script type="text/javascript" src="/public/javascripts/jquery-1.5.2.min.js"></script>
 <script type="text/javascript" src="/public/jsapi-plugin/plugin/plugin.js"></script>
-<script type="text/javascript">
-
-  function loadData() {
-    //loadProfile();
-    loadInmails();
-    loadShares();
-  }
-
-  function loadProfile() {
-    IN.API.Profile("me")
-      .fields(["id", "firstName", "lastName", "pictureUrl","headline"])
-      .result(function(result) {
-        profile = result.values[0];
-        profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
-        profHTML += "<img class=img_border align=\"left\" src=\"" + profile.pictureUrl + "\"></a>";
-        profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
-        profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";
-        profHTML += "<span class=myheadline>" + profile.headline + "</span>";
-        $("#profile").html(profHTML);
-      });
-  }
-
-  function loadInmails() {
-    IN.API.Raw("/people/~/mailbox:(id,from,subject,short-body)?folder=inbox&message-type=sponsored-inmail&format=json") // construct REST URL
-      .result( function(result) {
-      console.log(JSON.stringify(result))
-
-      //Make the html snippet here for the relevant inmails which should only be from the same domain as the thirdparty
-      inmail = result.values[0]
-      inmailHTML  = "<p> From: " + inmail.from.person.firstName + " " + inmail.from.person.lastName + "<br/>";
-      //inmailHTML += inmail.shortBody;
-      shortBodyUrl = inmail.shortBody.split("url=")[1].split("\">")[0]; //get everything after url= and before >
-      inmailUrl = unescape(shortBodyUrl)
-      inmailHTML += "<a href=\"" + inmailUrl + "\" target=\"blank\">" + inmail.subject + "</a></p>";
-
-      $("#inmails").html(inmailHTML);
-     });
-
- }
-
-  function loadShares() {
-    //TODO only gather the shares from the thirdparty
-    IN.API.Raw("/people/~/network?type=SHAR&format=json") // construct REST URL
-      .result( function(result) {
-        document.getElementById("shares").innerHTML += JSON.stringify(result);
-       });
-  }
-
-
-  </script>
+<script type="text/javascript" src="/public/jsapi-plugin/plugin/inmail_plugin.js"></script>
 
 <style>
   * { margin: 0; padding: 0; overflow: hidden; }
@@ -71,7 +22,9 @@
       <p> This is the inmail plugin. (need to use js api to get more)</p>
       <p>
         <script type="IN/Login" data-onAuth="loadData">You are <?js= firstName ?> <?js= lastName ?></script>
+        <!--
         <script type="IN/MemberProfile" data-id="/in/dragade" data-format="inline" data-related="false"></script>
+        -->
 
       <br/>Your profile goes below!!!<br/>
         <div id="profile">
