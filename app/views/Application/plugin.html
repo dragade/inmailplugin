@@ -1,6 +1,58 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
+<script type="text/javascript" src="/public/javascripts/jquery-1.5.2.min.js"></script>
 <script type="text/javascript" src="/public/jsapi-plugin/plugin/plugin.js"></script>
+<script type="text/javascript">
+
+  function loadData() {
+    //loadProfile();
+    //loadInmails();
+    loadShares();
+  }
+
+  function loadProfile() {
+    IN.API.Profile("me")
+      .fields(["id", "firstName", "lastName", "pictureUrl","headline"])
+      .result(function(result) {
+        profile = result.values[0];
+        profHTML = "<p><a href=\"" + profile.publicProfileUrl + "\">";
+        profHTML += "<img class=img_border align=\"left\" src=\"" + profile.pictureUrl + "\"></a>";
+        profHTML += "<a href=\"" + profile.publicProfileUrl + "\">";
+        profHTML += "<h2 class=myname>" + profile.firstName + " " + profile.lastName + "</a> </h2>";
+        profHTML += "<span class=myheadline>" + profile.headline + "</span>";
+        $("#profile").html(profHTML);
+      });
+  }
+
+  function loadInmails() {
+    IN.API.Raw("/people/~/mailbox?folder=inbox&message-type=sponsored-inmail&format=json") // construct REST URL
+      .result( function(result) {
+        document.getElementById("inmails").innerHTML += JSON.stringify(result);
+       });
+
+//    IN.API.Raw("/people/~?format=json") // construct REST URL
+//      .result( function(result) {
+//        document.getElementById("inmails").innerHTML += JSON.stringify(result);
+//       });
+
+//  var result = $.ajax({
+//    url: "http://www.linkedin.com/v1/people/~/mailbox?folder=inbox&message-type=sponsored-inmail&format=json",
+//    async: false
+//   }).responseText;
+//  document.getElementById("inmails").innerHTML += JSON.stringify(result);
+ }
+
+  function loadShares() {
+    IN.API.Raw("/people/~/network:(submitted-url,thumbnail-url,title)?type=SHAR&format=json") // construct REST URL
+      .result( function(result) {
+        document.getElementById("shares").innerHTML += JSON.stringify(result);
+       });
+  }
+
+
+  </script>
+
 <style>
   * { margin: 0; padding: 0; overflow: hidden; }
   
@@ -15,14 +67,24 @@
         api_key: 9fxvQ9r44K4fB__u3x4Ft7ocHI-71xepDsS-pm85laVBKIDI-ktH1V4GZFxqgNld
         authorize: true
       </script>
+      <p> This is the inmail plugin. (need to use js api to get more)</p>
       <p>
-        This is the content area of your plugin. If you'd like to take advantage
-        of the JavaScript API, it's available in this window as well. It's
-        authorize parameter has been set to "true", so we can take advantage of
-        the "sign in with linkedin" from the previous page.
-      </p>
-      <p>
-        <script type="IN/Login">You are <?js= firstName ?> <?js= lastName ?></script>
+        <script type="IN/Login" data-onAuth="loadData">You are <?js= firstName ?> <?js= lastName ?></script>
+        <script type="IN/MemberProfile" data-id="/in/dragade" data-format="inline" data-related="false"></script>
+
+      <br/>Your profile goes below!!!<br/>
+        <div id="profile">
+          some profile data here
+        </div>
+
+      <br/>Your inmails are here!!!!</br>
+      <div id="inmails">
+      </div>
+
+      <br/>Your network shares are here!!!!</br>
+      <div id="shares">
+      </div>
+
       </p>
     </div>
   </div>
