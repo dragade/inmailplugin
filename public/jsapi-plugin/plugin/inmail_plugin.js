@@ -1,7 +1,7 @@
 
 function loadData() {
   //loadProfile();
-  //loadInmails();
+  loadInmails();
   loadShares();
 }
 
