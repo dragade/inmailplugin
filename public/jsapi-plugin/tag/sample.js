@@ -13,7 +13,6 @@ IN.$extensions("HelloWorld", function HelloWorld() {
     
     var win = new IN.Objects.SmartWindow({
       mode: "embedded",
-      //url: "http://dragade-2-md.linkedin.biz:9000/public/jsapi-plugin/plugin/plugin.html"
         url: "http://dragade-2-md.linkedin.biz:9000/application/plugin"
     });
     win.place(this.el());

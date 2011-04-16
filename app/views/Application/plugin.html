@@ -7,7 +7,7 @@
 
   function loadData() {
     //loadProfile();
-    //loadInmails();
+    loadInmails();
     loadShares();
   }
 
@@ -26,7 +26,8 @@
   }
 
   function loadInmails() {
-    IN.API.Raw("/people/~/mailbox?folder=inbox&message-type=sponsored-inmail&format=json") // construct REST URL
+    alert("inmails...");
+    IN.API.Raw("/people/~/mailbox:(id,subject,short-body)?folder=inbox&message-type=sponsored-inmail&format=json") // construct REST URL
       .result( function(result) {
         document.getElementById("inmails").innerHTML += JSON.stringify(result);
        });
@@ -44,7 +45,8 @@
  }
 
   function loadShares() {
-    IN.API.Raw("/people/~/network:(submitted-url,thumbnail-url,title)?type=SHAR&format=json") // construct REST URL
+    alert("loading shares");
+    IN.API.Raw("/people/~/network?type=SHAR&format=json") // construct REST URL
       .result( function(result) {
         document.getElementById("shares").innerHTML += JSON.stringify(result);
        });
