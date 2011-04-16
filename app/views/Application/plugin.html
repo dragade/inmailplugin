@@ -26,26 +26,25 @@
   }
 
   function loadInmails() {
-    alert("inmails...");
-    IN.API.Raw("/people/~/mailbox:(id,subject,short-body)?folder=inbox&message-type=sponsored-inmail&format=json") // construct REST URL
+    IN.API.Raw("/people/~/mailbox:(id,from,subject,short-body)?folder=inbox&message-type=sponsored-inmail&format=json") // construct REST URL
       .result( function(result) {
-        document.getElementById("inmails").innerHTML += JSON.stringify(result);
-       });
+      console.log(JSON.stringify(result))
 
-//    IN.API.Raw("/people/~?format=json") // construct REST URL
-//      .result( function(result) {
-//        document.getElementById("inmails").innerHTML += JSON.stringify(result);
-//       });
+      //Make the html snippet here for the relevant inmails which should only be from the same domain as the thirdparty
+      inmail = result.values[0]
+      inmailHTML  = "<p> From: " + inmail.from.person.firstName + " " + inmail.from.person.lastName + "<br/>";
+      //inmailHTML += inmail.shortBody;
+      shortBodyUrl = inmail.shortBody.split("url=")[1].split("\">")[0]; //get everything after url= and before >
+      inmailUrl = unescape(shortBodyUrl)
+      inmailHTML += "<a href=\"" + inmailUrl + "\" target=\"blank\">" + inmail.subject + "</a></p>";
 
-//  var result = $.ajax({
-//    url: "http://www.linkedin.com/v1/people/~/mailbox?folder=inbox&message-type=sponsored-inmail&format=json",
-//    async: false
-//   }).responseText;
-//  document.getElementById("inmails").innerHTML += JSON.stringify(result);
+      $("#inmails").html(inmailHTML);
+     });
+
  }
 
   function loadShares() {
-    alert("loading shares");
+    //TODO only gather the shares from the thirdparty
     IN.API.Raw("/people/~/network?type=SHAR&format=json") // construct REST URL
       .result( function(result) {
         document.getElementById("shares").innerHTML += JSON.stringify(result);
