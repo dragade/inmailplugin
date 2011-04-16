@@ -1,4 +1,74 @@
-#{extends 'main.html' /}
-#{set title:'Home' /}
+<!DOCTYPE html>
+<html><head><title>Sponsored Inmail Plugin</title></head>
+<body>
+  <h1>Sponsored Inmail Plugin</h1>
+  <p>
+    Sign in to see your sponsored inmails.
+  </p>
+  <div>
+    <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+      api_key: 9fxvQ9r44K4fB__u3x4Ft7ocHI-71xepDsS-pm85laVBKIDI-ktH1V4GZFxqgNld
+      authorize: false
+    </script>
+    <script type="IN/Login"></script>
+    <script type="text/javascript">
+      function onAuth() {
+        // set me to go to your 3rd party page
+        // the trick here is to add uc-irvine.edu to /etc/hosts to point back to dragade-2-md.linkedin.biz
+        //location.href = "http://uc-irvine.edu:9000/public/jsapi-plugin/thirdparty/uci.html";
+        location.href = "http://dragade-2-md.linkedin.biz:9000/public/jsapi-plugin/thirdparty/uci.html";
+      }
+      IN.Event.on(IN, "auth", onAuth);
+    </script>
+  </div>
+<pre>
+2001 Apr 8
+11-6 Production 4
 
-#{welcome /}
+HOW TO USE THIS PACKAGE
+=======================
+
+Universal Steps
+---------------
+Decide Where it Will be Hosted:
+* Pick a domain (or use *.linkedin.biz)
+* Avoid using "localhost" or "127.0.0.1" (just use the internal DNS)
+
+Get an API Key:
+* Register at developer.linkedin.com
+* Place your domain from above into the JavaScript URL field
+
+Find and replace the API Key:
+Search for the string "c33QJxx" in these files, and replace these lines with
+your API Key. There should be about 3-4 places where you'll want to make
+this change.
+
+Style thirdpary/index.html:
+Treat thirdparty/index.html as the person who would be using your plugin,
+such as CNN, Reuters, or some hypothetical company you've made up. You can
+copy/paste source from some other website or invent your own. Use the script
+tag in the index.html file to place your plugin(s).
+
+Hosting On Any *.linkedin.biz Machine
+-------------------------------------
+Copy the entire structure into a publicly accessible web directory.
+
+Convert tag/sample.js to be tag and content you wish to render in the
+thirdparty page. Be sure to save the lines that update or change
+IN.ENV.url.xd_us_html, as they're required to make the plugin function.
+
+Update any tag name changes & extension name changes.
+
+Hosting On Your Own Domain
+--------------------------
+Complete all of the above steps for *.linkedin.biz.
+
+In sample.js, change Line 10 to:
+IN.ENV.url.xd_us_html = "http://example.com/path/to/owndomain/xdrpc.html"
+
+The XD RPC file you need is located in the owndomain directory. It must be
+reachable on the same TLD as your plugin. Subdomains are acceptable.
+
+</pre>
+</body>
+</html>
