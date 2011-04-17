@@ -1,0 +1,41 @@
+#shares {
+  display: block;
+  font-size: 10px;
+  text-align:left;
+}
+
+#shares .shareheader {
+  font-size: 12px;
+  font-family: Arial;
+}
+
+#shares .share {
+  font-size: 10px;
+  clear: both;
+  overflow: hidden;
+  margin-botton: 8px;
+}
+
+#shares .user-pic {
+  width : 25;
+  height : 25;
+  float: left;
+  margin-right: 5px;
+}
+
+#shares .person {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+}
+
+#shares .sharelink {
+  font-family: Arial;
+  font-size: 10px;
+  text-align: left;
+}
+#shares a {
+  text-decoration: none;
+  color: #069;
+}

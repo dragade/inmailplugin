@@ -1,0 +1,35 @@
+#inmails {
+  display: block;
+  font-size: 10px;
+  text-align:left;
+}
+
+#inmails .inmail {
+  font-size: 10px;
+  clear: both;
+  overflow: hidden;
+  margin-botton: 8px;
+}
+
+#inmails .graphic {
+  float: left;
+  margin-right: 5px;
+}
+
+#inmails .from {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: left;
+}
+
+#inmails .subject {
+  font-family: Arial;
+  font-size: 10px;
+  text-align: left;
+}
+
+#inmails a {
+  text-decoration: none;
+  color: #069;
+}
