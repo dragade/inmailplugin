@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+#Podcasts ul.podcast { 
+    list-style-type: none;
+}
+
+#Podcasts ul.podcast li { 
+    list-style-type: none;
+} 
+
+#Podcasts ul.podcast { 
+    list-style-type: none;
+}
+
+#Podcasts ul.podcast li { 
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 5px;
+} 
+
+#Podcasts div.page_control { 
+    display: none;
+}
+
+#Podcasts a.mediaThumb { 
+    margin: 0 10px 0 0;
+}
+
+#Podcasts p.pubDate { 
+	text-align: right;
+	font-size: 90%;
+}
+
+#Podcasts h1 { 
+	display: none;
+}

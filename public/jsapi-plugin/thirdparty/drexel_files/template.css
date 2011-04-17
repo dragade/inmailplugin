@@ -1,0 +1,777 @@
+@import url(/shared/css/reset.css);
+
+/*****   
+   Colors: 
+   LeBow Orange: #336;
+   Header Brown: #94732e;
+*****/
+
+body { 
+	font-size: 9pt; 
+	font-family: Verdana, Arial, sans-serif;
+	/*background: url('/images/template/pageBG.jpg') #CCC top left repeat-x; */
+	background: #DDD;
+	padding: 0px 0 0 0;
+	height: 100%;
+	text-align: center;
+} 
+/**/
+a { 
+	color: #132f58; 
+	text-decoration: none;
+} 
+
+
+img{ 
+	border: none;
+}
+a:hover { 
+   text-decoration: underline;
+} 
+
+
+h1 { 
+	font-size: 12pt; 
+	color: #333333; 
+	padding-bottom: 12px;
+} 
+
+h1 a:hover { 
+   color: #80370c;
+   text-decoration: underline;
+}
+
+
+h2 { 
+	font-size: 12pt; 
+	color: #333366;
+	padding-bottom: 2px;
+} 
+
+h2 a {
+   color: #336;
+}
+
+h2 a:hover { 
+   color: #336;
+   text-decoration: underline;
+}
+
+h3 { 
+   font-size: 10pt; 
+   color: #333366;
+   padding: 7px 0 0px 0;
+   margin: 0;
+}
+
+h3 a { 
+   color: #132F58; 
+   text-decoration: none;
+}
+
+h3 a:hover { 
+   color: #336;
+   text-decoration: underline;
+}
+
+h4 { 
+   font-size: 9pt; 
+   font-weight: bold;
+   color: #000;
+} 
+
+h4 a { 
+   color: #336; 
+}
+
+h4 a:hover { 
+   color: #336;  
+   text-decoration: underline; 
+}
+
+h5 { 
+   font-size: 8pt; 
+   font-weight: bold;
+   color: #000;
+} 
+
+h5 a { 
+   color: #336; 
+}
+
+h5 a:hover { 
+   color: #336;  
+   text-decoration: none; 
+}
+
+h6 { 
+   font-size: 7pt; 
+   font-weight: bold;
+   color: #000;
+} 
+
+h6 a { 
+   color: #336; 
+}
+
+h6 a:hover { 
+   color: #336;  
+   text-decoration: none; 
+}
+
+p.center { 
+   text-align: center;
+}
+
+
+
+/** **/ 
+div.containBorder { 
+   border: 1px solid #666;
+   
+}
+
+#contain { 
+	width: 1000px;
+	clear: both;
+	padding: 0; 
+	margin: 0 auto;
+	background-color: #FFF;
+	/*border: 1px solid #666; */
+	background: #FFF url(/images/template/leftMenuBG.png) repeat-y top left;
+	text-align: left;
+	-moz-box-shadow: 5px 5px 10px #666;
+} 
+
+/** Drexel Header **/ 
+#drexelHeader { 
+	clear: both; 
+	height: 25px; 
+	background: #436681 url('/images/template/drexel/util_wide.jpg'); 
+	border-bottom: 3px solid #FFF;
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 11px;
+	color: #FFF;
+} 	
+
+#drexelHeader input, #drexelHeader select, #drexelHeader option { 
+	background-color: #e4e4ec;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+#drexelHeader a:link, #drexelHeader a:active, #drexelHeader a:visited { 
+	text-decoration: none; 
+	color: #FFF; 
+	padding: 0 5px;
+} 
+
+#drexelHeader a:hover { 
+	text-decoration: none; 
+	color: #ffcc00; 
+	padding: 0 5px;
+} 
+
+#drexelHeader .separator {
+	border-right: solid 1px #8b8b9b;
+} 
+
+#drexelImage {
+	padding-left: 80px;
+	float: left;
+}
+
+#drexelLinks { 
+	padding-top: 5px; 
+	padding-left: 200px; 
+	float:left;
+	vertical-align: middle;
+	font-size: 10.5px;
+} 
+
+#drexelSearch { 
+	float: left;
+	padding-left: 5px; 
+	padding-top: 4px; 
+} 
+
+#drexelGoTo { 
+	float: left;
+	padding-left: 5px; 
+	padding-top: 3px; 
+} 
+
+/** Header Styles **/ 
+#header { 
+	width: 100%; 
+	float: left;
+	clear: both; 
+	background: url(/images/template/hdr_bg_dragon.png) #E1B335 645px 5px no-repeat;
+	height: 130px;
+	margin: 0;
+	
+} 
+
+#header p.logo { 
+  width: 190px;
+  float: left;
+}
+
+#header p.logo img { 
+  margin: 30px 0 0 62px;
+}
+
+#header p.title {/*
+    float: left; 
+	text-indent: -9999px;
+	background: url(/images/template/top_logo.png) no-repeat 10px 3px;
+	height: 126px;
+	
+	float: left;
+  */
+  width: 600px;
+  float: left;
+}
+
+#header p.title { 
+  padding-top: 5px;  
+}
+
+#header p.title img { 
+  margin-left: 10px;  
+}
+
+
+#header ul.menu { 
+	width: 260px;
+	float: right;
+}
+
+
+#header div.menu {  
+   clear:  both;
+	float: right;
+	color: #FFF;
+} 
+
+#header ul, #header ol { 
+	list-style: none; 
+   display: block;
+	padding: 0;
+	float: right; 
+} 
+
+#header li { 
+    margin: 0 5px 0 0;
+    padding: 0;
+    display: block;
+    float: left;
+    font-size: 7pt;
+    padding: 3px 3px;
+    color: #d2ccbd;
+    text-transform: uppercase;
+} 
+
+
+#header ul.social { 
+    margin: 92px 0 0 0;
+}
+
+#header ul.social li {
+    margin: 0px; 
+}
+
+
+
+
+
+a.applyNow { 
+} 
+
+a.requestInfo { 
+ background: transparent url(/images/template/iconInfoRequest.png) top left no-repeat;   
+} 
+
+a.openHouse { 
+   background: transparent url(/images/template/iconOpenHouse.png) top left no-repeat;
+} 
+
+/** End Header Styles **/ 
+
+
+/** Left column Menu, Open Houses **/ 
+
+#leftColumn { 
+	width: 190px; 
+	float: left; 
+	background-color: #FFF;
+	background-image:url("/images/template/leftMenuBG.png");
+	
+}
+
+#leftColumn div.menuBlock { 
+	height: 320px; 
+	background-image: url(/images/template/tan_bg.gif);
+}
+
+
+#leftMenu { 
+	clear: both;
+	background-color: #CCC;
+	color: #000;
+} 
+
+#leftMenu ul { 
+	list-style: none; 
+}
+
+#leftMenu ul.mainMenu {  
+	padding: 24px 0px 20px 0px;
+} 
+
+#leftMenu li { 
+	padding: 2px 2px 2px 10px;
+} 
+
+#leftMenu a:link, #leftMenu a:active, #leftMenu a:visited, #leftMenu a:hover { 
+	color: #000;
+	font-size: 9.5pt;
+} 
+
+#leftMenu li.actMainMenu { 
+  color: #FFF;  
+  background-color: #EEE;
+} 
+
+#leftMenu a:link.actMainMenu, #leftMenu a:active.actMainMenu, #leftMenu a:visited.actMainMenu, #leftMenu a:hover.actMainMenu { 
+	color: #000;
+}
+
+#leftMenu a:link.mainMenu, #leftMenu a:active.mainMenu, #leftMenu a:visited.mainMenu, #leftMenu a:hover.mainMenu { 
+	font-size: 9pt; 
+	color: #000; 
+} 
+
+#leftMenu ul.subMenu { 
+	/**background: url('/images/template/lebow_bg.gif');**/
+	background-color: #EEE;
+}
+
+#leftMenu li.subMenu { 
+	padding: 0 10px 5px 15px;
+	line-height: 13px;
+} 
+
+#leftMenu li.actSubMenu {
+   padding: 0 10px 5px 15px;
+   line-height: 13px;
+} 
+
+#leftMenu a:link.subMenu, #leftMenu a:active.subMenu, #leftMenu a:visited.subMenu, #leftMenu a:hover.subMenu { 
+	font-size: 8.5pt; 
+	font-weight: normal; 
+	color: #000;
+	
+} 
+
+#leftMenu li.actSubMenu a:link.subMenu,
+#leftMenu li.actSubMenu a:active.subMenu,
+#leftMenu li.actSubMenu a:visited.subMenu,
+#leftMenu li.actSubMenu a:hover.subMenu { 
+   color: #336;
+   font-weight: bold;
+} 
+
+.leftWidget ul.home { 
+	list-style-type: none; 
+}
+
+.leftWidget ul.home li { 
+    border-bottom: #999;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 0 2px 0;
+    background: url(/images/template/right_shadow.png) right repeat-y #EEE;
+    text-transform: uppercase;
+}
+
+.rightShadow { 
+	background: url(/images/template/right_shadow.png) right repeat-y #FFF;
+}
+
+
+
+#tagline { 
+	height: 20px; 
+	background-image: url(/images/template/orange_bg.gif);  
+} 
+
+#makeGift { 
+   width: 180px;
+   clear: both;
+   text-align: center;
+}
+
+#openHouse {
+	clear: both; 
+}
+
+#openHouse h4 { 
+	text-indent: -9999px;
+	background: url(/images/template/smMBAOpenHouses.png) #FFF top left no-repeat;
+	margin: 10px 5px 5px 5px; 
+}
+
+#openHouse ul { 
+   list-style-type: none;
+} 
+
+#openHouse ul li { 
+	padding: 5px 10px 5px 5px; 
+	font-size: 8pt;
+	color: #666;
+} 
+
+#openHouse p.eventName { 
+   font-weight: bold; 
+} 
+
+#openHouse a { 
+	font-size: 8pt; 
+	text-decoration: none;
+} 
+
+
+/** End Left Column **/ 
+
+
+
+/** Right Column **/ 
+#rightColumn { 
+	float: left; 
+	width: 810px; 
+	background-color: #FFF;
+} 
+
+#breadcrumb { 
+	clear: both;
+	background-color: #000033;/* #80a1bc;*/ 
+	color: #FFF; 
+	font-size: 8pt;
+	vertical-align: bottom;
+	text-align: left;
+	height: 24px;
+} 
+
+#breadcrumb h1 { 
+  font-size: 8pt;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  font-weight: normal;
+}
+
+#breadcrumb div.padding { 
+	padding: 2px 0; 
+} 
+
+/** Search **/
+#breadcrumb div.searchBlock { 
+	width: 180px; 
+	float: right;
+	background-color: inherit;
+	height: 22px;
+	vertical-align: middle; 
+	text-align: left;
+} 
+#breadcrumb input.search { 
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica;
+	font-weight: normal;
+	border: 1px solid #999;
+	padding: 1px;
+	color: #666;
+} 
+
+#breadcrumb div.searchBlock a { 
+    color: #FFF;
+    font-size: 8pt;
+   
+}
+
+#breadcrumb form.search { 
+	display: inline;
+	margin: 0; 
+	padding: 0;
+} 
+
+/** breadcrumb **/
+
+#breadcrumb div.breadBlock { 
+	float: left;
+	background-color: inherit;
+	padding: 0 10px;
+	margin: auto 0;
+} 
+
+#breadcrumb div.breadtext { 
+    padding: 7px 20px 3px 10px;
+    color: #FFF;
+} 
+
+#breadcrumb a:link.breadcrumb, #breadcrumb a:active.breadcrumb, #breadcrumb a:visited.breadcrumb { 
+	font-size: 8pt; 
+	text-decoration: none; 
+	color: #FFF;
+} 
+
+#breadcrumb a:hover.breadcrumb { 
+	font-size: 8pt; 
+	text-decoration: none; 
+	color: #FFF;
+} 
+
+
+#lbContent { 
+   clear: both;
+	float: left; 
+	background-color: #FFF;
+	line-height: 14pt;
+	font-size: 9pt;
+	font-family: Verdana, Arial, sans-serif;
+	width: 630px;
+} 
+
+#contentPadding { 
+   padding: 15px 20px;
+} 
+
+#rightMenu { 
+	width: 180px; 
+	float: right; 
+	background-color: #EEE;
+}
+
+#rightMenu div { 
+  padding: 0 3px; 	
+}
+
+#rightMenu h1 { 
+   margin: 5px 0 0 0 ; 
+   padding: 3px 0 0 0; 
+   color: #333; 
+   font-weight: bold; 
+   font-size: 9pt; 
+} 
+
+#rightMenu ul { 
+   list-style: none;
+}
+
+#rightMenu ul.rightMenuBlock li { 
+   padding: 2px;
+} 
+
+#rightMenu  a:link.active, #rightMenu a:active.active, #rightMenu a:visited.active, #rightMenu a:hover.active, #rightMenu span.active { 
+   font-weight: bold;
+}
+
+
+#rightMenu ul.rightMenuBlock li.level2 { 
+   padding: 1px 8px; 
+} 
+
+#rightMenu a:link.level2, a:active.level2, a:visited.level2 { 
+   color: #666;
+} 
+
+#rightMenu a:hover.level2 { 
+   color: #000;
+} 
+
+#rightMenu li.level2 a:link.active, #rightMenu li.level2 a:active.active, #rightMenu li.level2 a:visited.active, #rightMenu li.level2 a:hover.active, #rightMenu li.level2 span.active { 
+   color: #333;
+}
+
+
+#rightMenu h2 { 
+ margin: 0; 
+ padding: 0; 
+ color: #333; 
+ font-weight: bold; 
+ font-size: 8.5pt; 
+}
+
+#rightMenu h1 a { 
+   color: #333;
+}
+
+#rightMenu div.subMenu { 
+   font-size: 9pt; 
+} 
+
+#rightMenu div.block { 
+	margin: 10px 3px;
+	font-size: 8.5pt; 
+}
+
+#rightMenu div.contact { 
+   padding: 10px 3px;
+   font-size: 8.5pt;
+}  
+
+#rightMenu div.indContact { 
+   padding: 0 0 5px 0;
+}
+
+/** End Right Column **/ 
+
+/** Start Footer **/ 
+#footer { 
+	clear: both; 
+	border-top: 1px solid #999; 
+	padding-top: 10px; 
+	margin-top: 10px; 
+	font-size: 8pt;
+	background: #DDD;
+} 
+
+#aacsbLogo { 
+    float: left;
+    padding: 0 0 0 50px;
+} 
+
+#aacsbLogo img { 
+    border: none;
+}
+#aacsbLogo a { 
+    border: none; 
+}
+
+#lebowFooter { 
+	font-size: 7pt; 
+	color: #333;
+	font-family: verdana, arial;
+
+} 
+
+#footerMap { 
+	float: right; 
+	width: 810px; 
+} 
+
+#footerMap a { 
+   color: #333;
+} 
+
+#footerMap div.mapItem { 
+	width: 162px; 
+	float: left;
+	padding-bottom: 5px;
+} 
+
+#footerMap h5 { 
+	font-size: 7.5pt;
+	padding: 0; 
+	margin: 0;
+	color: #333;
+}
+
+#footerMap h6 { 
+	font-size: 7pt;
+	font-weight: normal; 
+	padding-left: 4px;
+	padding: 0; 
+	margin: 0;
+	color: #333;
+} 
+
+#footerMap ul { 
+	list-style: none;
+	padding-left: 2px;
+} 
+
+
+
+/*
+#footerMap li:before { 
+	content: "> ";
+} 
+*/
+
+#footerMap ul.sub { 
+	padding-left: 3px; 
+} 
+
+#lebowFooter div.menu {
+	font-size: 9pt;
+	color: #333;
+} 
+
+#lebowFooter div.copyright { 
+	clear: both; 
+} 
+#drexelFooter { 
+	clear: both;
+	margin-top: 5px;
+	background: #EEE url('/images/template/drexel/footer-background.gif');
+	border-top: 1px solid #999;
+	text-align: center; 
+	color: #333;
+	font-size: 11px;
+	padding: 3px;
+} 
+
+/**
+ * LEFT WIDGET AD STUFF
+ */
+.leftWidget .lc-deans h3 { 
+	background: url(/images/leftWidget/deans_cup.jpg) #FFF top left no-repeat;
+	height:85px;
+	width: 145px;
+	text-indent: -9999px;
+	margin: 0 8px;
+}
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}

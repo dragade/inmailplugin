@@ -25,18 +25,22 @@ function loadInmails() {
       //console.log(JSON.stringify(result))
       var i = 0;
       var inmail = null;
-      //var thirdPartyDomain = document.domain
-      var thirdPartyDomain = "drexel";
-      //console.log("expecting third party domain: " + thirdPartyDomain);
 
       //for (i=result.values.length -1; i >= 0; i--) {
       for (i=0; i < result.values.length; i++) {
           var someInmail = result.values[i];
           //console.log(JSON.stringify(someInmail))
-          //so this is a problem, the sponsored inmail doesn't actually have the sender's domain in it(!)
-          //we do have this info in campaigns-ds tied to the coml id, but not avaiable through PAL now
-          //so I'll work around this for now by assuming first name is good enough
 
+            // So this is an interesting problem because what we're trying to do is see if this third party domain
+            // matches any of the inmails a user has received and if so show it.
+            // One issue is that the campaigns DS does not really store any meaningful data (fromEmail, etc. are
+            // useless due to the way people enter data and do not actually put the partner's domain in).
+            // But since COML emails do follow a pattern of having one big action link (class="action"), we could
+            // run a query on the campaigns table for the partner URLs, then write a script to fetch each one,
+            // following the 302-moved errors, until we get to the real URL. We can store all these mappings
+            // in the server and generate this javascript dynamically (or can store in a voldemort)
+            //so I'll work around this for now by assuming partner name is good enough
+            var thirdPartyDomain = "drexel"; //use document.domain later
           if (someInmail.from) {
               var fullname = someInmail.from.person.firstName + " " + someInmail.from.person.lastName;
               if (fullname.toLowerCase().indexOf(thirdPartyDomain) > -1) {
@@ -53,7 +57,7 @@ function loadInmails() {
 
       if (inmail) {
         //Make the html snippet here for the relevant inmails which should only be from the same domain as the thirdparty
-        console.log(JSON.stringify(inmail));
+        //console.log(JSON.stringify(inmail));
         inmailHTML = "<div class=\"inmail\">";
         inmailHTML = "<img class=\"graphic\" src=\"" + "/public/images/icon_inmail_envelope_yellow_34x34.png" + "\"/>";
         inmailHTML  += "<div class=\"from\">From: " + inmail.from.person.firstName + " " + inmail.from.person.lastName + "</div>";
@@ -63,8 +67,11 @@ function loadInmails() {
         inmailHTML += "</div>";
 
         $("#inmails").html(inmailHTML);
-        dumpInmail(inmail.id);
-
+        //dumpInmail(inmail.id);
+      }
+      else {
+          console.log("there is no inmail for this site so hide the div.");
+          $("#inmails").hide();
       }
    });
    }
@@ -90,8 +97,9 @@ function loadShares() {
       //var thirdPartyDomain = document.domain
       var thirdPartyDomain = "nytimes.com";
       console.log("expecting third party domain: " + thirdPartyDomain);
+      var numShares = 0;
 
-      for (i=0; i < result.updates.values.length && i < maxSharesToShow; i++) {
+      for (i=0; i < result.updates.values.length && numShares < maxSharesToShow; i++) {
         var share = result.updates.values[i];
         //console.log(JSON.stringify(share))
 
@@ -112,11 +120,17 @@ function loadShares() {
               shareHTML += "<a class=\"sharelink\" href=\"" + sharedUrl + "\">";
               shareHTML += share.updateContent.person.currentShare.content.title + "</a><br/>"
               shareHTML += "</div>";
+              numShares++;
             }
          }
       }
       shareHTML += "</p>";
 
-      $("#shares").html(shareHTML)
+      if (numShares > 0) {
+        $("#shares").html(shareHTML)
+      }
+      else {
+          $("#shares").hide()
+      }
      });
 }

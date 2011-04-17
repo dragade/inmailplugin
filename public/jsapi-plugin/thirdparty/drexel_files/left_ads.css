@@ -1,0 +1,133 @@
+@CHARSET "UTF-8";
+
+.leftWidget ul.home { 
+    list-style-type: none; 
+}
+
+.leftWidget ul.home li { 
+    border-bottom: #999;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 0 2px 0;
+    background: url(/shared/assets/left/right_shadow.png) right repeat-y #EEE;
+    text-transform: uppercase;
+}
+
+.leftWidget ul.home li.full {
+  padding: 0px 0 ;
+  margin: 0;
+}
+
+.leftWidget ul.home .lc-rep .holder, 
+.leftWidget ul.home .lc-rep  { 
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.leftWidget ul.home li.full .holder { 
+  padding: 0;
+  margin: 0;
+}
+
+
+.leftWidget ul.home .lc-rep a, 
+.leftWidget ul.home .lc-rep_job a { 
+    color: #CF0F0F;
+    font-weight: bold;
+}
+
+
+
+.leftWidget ul.home .lc-rep p.date { 
+    font-size: 9pt;
+    margin: 10px inherit 10px inherit;
+    font-weight: bold;
+}
+
+.leftWidget ul.home .lc-rep p.desc { 
+    font-weight: normal;
+    text-transform: none;
+    font-size: 9pt;
+     
+} 
+
+.leftWidget ul.home .lc-rep p,
+.leftWidget ul.home .lc-rep h3,
+.leftWidget ul.home .lc-rep_job h3 { 
+    color: #000;
+}
+
+
+.leftWidget p.sponsor { 
+  font-size: 7pt;
+  color: #000;
+  font-family: Arial, Verdana, san-serif;
+}
+
+/*
+.leftWidget ul.home li.full p,
+.leftWidget ul.home li.full h2 { 
+  padding: 0 8px;
+}
+*/
+.leftWidget li img { 
+  margin:0;
+  padding: 0;
+  border: none;
+}
+
+.holder { 
+  padding: 0 8px;
+  display: block;
+  text-decoration: none;
+}
+
+.leftWidget h3 { 
+    color: #336; 
+}
+
+.leftWidget { 
+    color: #369;
+}
+
+.leftWidget { 
+  
+  font-size: 9pt;
+}
+
+
+.leftWidget p.desc { 
+  color: #039;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.leftWidget p.small { 
+  font-size: 7.5pt;
+  text-transform: none;
+  color: #666;
+}
+
+.leftWidget a, 
+.leftWidget a:hover { 
+    color: #990;
+    text-decoration: none;
+}
+
+.leftWidget ul.home li.featured { 
+    background-color: #FFF;
+}
+
+.leftWidget .lc-deans h3 { 
+    background: url(/shared/assets/left/deans_cup.jpg) #FFF top left no-repeat;
+    height:85px;
+    width: 145px;
+    text-indent: -9999px;
+    margin: 0 8px;
+}
+
+.leftWidget h3 { 
+  margin: 0;
+  padding: 0;
+  font-size: 9.5pt;
+}

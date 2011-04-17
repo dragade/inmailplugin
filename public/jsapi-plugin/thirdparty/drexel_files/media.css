@@ -1,0 +1,212 @@
+#lbContent ul.mediaList{ clear:both;list-style:none;margin:0;padding:0;}
+.rssLink {float:right;background: URL(/images/RSS_24.png) no-repeat ;padding:16px 12px;}
+.rssLink span{display:none;}
+li.mediaBlock{float:left;background-color:#eee;margin:5px 0;padding:10px;}
+.page_control {clear:both;padding:10px 5px 30px 10px;background-color:#eee;}
+.controlTitle {float:left;}
+.controlLinks {float:right;}
+.controlLinks span{background-color:none;border:1px none #0000FF;padding:1px 4px;}
+.controlLinks span.disabled {color:#9D9683;}
+.controlLinks a {background-color:#none;border:1px none #00FF00;padding:1px 4px;}
+.mediaCol .linkText{padding-left:285px;}
+#videoPlayer {margin-bottom:10px;}
+.addthis_toolbox {margin-bottom:40px;}
+.at15t_email {margin-right:4px;}
+
+div.podcastPageTitle {
+	float: left;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #333;
+	clear: both;
+}
+
+h1.podcastPageTitle {
+	float: left;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #333;
+	clear: none;
+	padding-bottom:0px;
+	margin-bottom:10px;
+	line-height:15px;
+}
+
+div.podcastIndexLink {
+	float: right;
+	clear: both;
+}
+
+div.podcastSubcribeRow {
+	float: right;
+}
+
+p.podcastDescription {
+	clear: both;
+	padding:5px 0;
+}
+
+.podcastListTitle {
+	clear: both; padding : 4px 10px;
+	background-color: #EEEEEE;
+	padding: 4px 10px;
+}
+
+div.mediaTitle {
+	color: #333;
+	font-weight: bold;
+	font-size: 11pt;
+	width: 370px;
+}
+
+.mediaThumb {
+	float: left;
+	width:132px;
+	height:100px;
+	border:1px solid #545140;
+}
+a:link.mediaThumb span, a:visited.mediaThumb span, a:active.mediaThumb span{
+    display:block;
+	width:30px;
+	height:30px;
+	background-image: URL(/images/playhulu.png);
+	border:none;
+    margin:35px 50px;
+    text-decoration:none;
+}
+a:hover.mediaThumb span{
+	display:block;
+	width:30px;
+	height:30px;
+	background-image: URL(/images/playover.png);
+    border:none;
+    margin:35px 50px;
+	text-decoration:none;
+	font-size:0;
+}
+
+.mediaCol {
+	clear:right;
+	padding: 0 0 0 20px;
+	float: left;
+	width: 415px;
+}
+.itemTitle {
+	color: #A0450E;
+}
+
+div.active {
+	border: 1px #900 solid;
+}
+
+div.mediaType {
+	float: right;
+	background-color: #e1f3df;
+	border: 1px solid #999;
+	padding: 1px 4px 1px 4px;
+	font-size: 8pt;
+}
+
+div.mediaDesc {
+	clear: both;
+	padding: 4px 0px;
+}
+
+div.mediaLinks {
+clear: both;
+
+	
+	margin: 5px 0px;
+}
+
+div.requirements {
+	clear: both;
+	font-size: 7pt;
+	text-align: right;
+	font-style: italic;
+	color: #333;
+}
+
+div.mediaDetails {
+	margin: 5px 8px 5px 8px;
+	padding: 2px 4px 2px 4px;
+	background-color: #FFF;
+	border: 1px solid #333;
+}
+
+div.hidePlayer {
+	display: none;
+	text-align: center;
+	margin-top: 5px;
+}
+
+div.showPlayer {
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+}
+
+span.fileSize {
+	font-size: 8pt;
+	font-style: italic;
+	color: #666;
+}
+
+/*** Podcast Index Styles ***/
+div.podcast {
+	margin: 3px 0px;
+	padding: 3px 0px;
+	float: left;
+	width: 590px;
+	background-image: URL(/images/podcastItem.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+div.podcastTitle {
+	font-size: 12pt;
+	font-weight: bold;
+	padding-left: 5px;
+	color: #A0450E;
+	clear: both;
+}
+
+div.podcastDesc {
+	padding-left: 5px;
+	clear: both;
+}
+
+div.podcastAuthor {
+	float: left;
+	clear: both;
+	font-style: italic;
+}
+
+div.podcastEditor {
+	float: left;
+	clear: both;
+	font-style: italic;
+}
+
+div.podcastLinks {
+	float: right;
+	clear: both;
+}
+
+ul.podcastList {
+	list-style: none;
+}
+a.retweet {
+	float:right;
+	margin-top:0px;
+}
+a.fbshare{
+	float:right;
+	   line-height:15px;
+	margin-top:0px;
+	margin-right:6px;
+	margin-bottom:12px;
+}
+span.subHead{
+	display:block;
+}

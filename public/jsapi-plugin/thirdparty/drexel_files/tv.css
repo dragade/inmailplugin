@@ -1,0 +1,81 @@
+.yui-skin-sam .yui-navset .yui-nav li,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav li {
+	margin:0 0.26em 0 0; /* space between tabs */
+    padding:1px 0 0; /* gecko: make room for overflow */
+    zoom:1;
+    background: url(/images/template/tabLeft_Gray.png) no-repeat top left;
+    border-bottom: 1px solid #999;
+}
+
+.yui-skin-sam .yui-navset .yui-nav, 
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav { 
+	border: none;
+	background: url(/images/template/tabLeft_Gray.png) repeat-x top left; 
+	-moz-background-clip:none;
+    -moz-background-inline-policy:none;
+    -moz-background-origin:none;
+}
+
+.yui-skin-sam .yui-navset .yui-nav li, 
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav li { 
+    border: none;
+    background: url(/images/template/tabLeft_Gray.png) no-repeat top left; 
+ 
+}
+
+.yui-skin-sam .yui-navset .yui-nav a,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav a { 
+     border: none;
+     padding: 4px;
+} 
+
+.yui-skin-sam .yui-navset .yui-nav a:hover, 
+.yui-skin-sam .yui-navset .yui-nav a:focus { 
+    background: url(/images/template/tabLeft_Gray.png) no-repeat top left;
+}
+
+
+
+.yui-skin-sam .yui-navset .yui-nav li.selected {
+ 
+    border-bottom: #FFF 1px solid;	
+}
+
+.yui-skin-sam .yui-navset .yui-nav li { 
+   background: url(/images/template/tabLeft_Gray.png) no-repeat top left;
+   border-bottom: 1px solid #999;
+   border-top: none;
+} 
+
+.yui-skin-sam .yui-navset .yui-nav .selected a,
+.yui-skin-sam .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-skin-sam .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */                              
+    background: url(/images/template/tabRight_Gray.png) no-repeat top right; /* selected tab background */
+    color: #336;
+    font-weight: bold;
+    border-bottom: none;
+    border-top: none;
+    }
+    
+    
+.yui-skin-sam .yui-navset .yui-nav a,
+.yui-skin-sam .yui-navset .yui-nav a:focus, /* no focus effect for selected */
+.yui-skin-sam .yui-navset .yui-nav a:hover { /* no hover effect for selected */                              
+    background: url(/images/template/tabRight_Gray.png) no-repeat top right; /* selected tab background */
+    color: #a0450e;
+    display:block; 
+    padding: 6px 10px 6px 10px;
+    color:#333;
+    }
+   
+.yui-skin-sam .yui-navset .yui-content { 
+	background: none; 
+    border: none;
+    margin: 15px 0 0 5px;
+}
+
+/*** Events Container **/ 
+.yui-skin-sam .yui-navset .event {
+    border-bottom:1px solid #999999;
+    border-left:1px solid #999999;
+}

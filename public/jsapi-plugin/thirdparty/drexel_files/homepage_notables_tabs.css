@@ -1,0 +1,551 @@
+/**************************************************** 
+   WE NEED TO OVERRIDE SOME TEMPLATE STYLES FOR THE 
+   HOMEPAGES CSS TO WORK PROPERLY 
+****************************************************/
+    
+
+
+#breadcrumb div.searchBlock { 
+	width: 260px; 
+	float: right;
+	background-color: inherit;
+	height: 22px;
+	vertical-align: middle; 
+	text-align: left;
+}
+
+
+/***** END TEMPLATE OVERRIDES ***/ 
+
+
+/** Hid the YUI History Browser **/ 
+#yui-history-iframe {
+  position:absolute;
+  top:0; left:0;
+  width:1px; height:1px; /* avoid scrollbars */
+  visibility:hidden;
+}
+
+#hpContent { 
+	width: 100%;
+	background-color: #FFF;
+} 
+
+#hpContent ul { 
+	padding: 0; 
+	margin:  0; 
+} 
+
+#hpContent li { 
+	padding: 0; 
+	margin: 0;
+} 
+
+#leftMenu { 
+   height: 224px;
+}
+
+#topRow { 
+	clear: both; 
+	float: left; 
+	background-color: #DDD;
+	height: 200px; 
+	border-collapse: collapse;
+} 
+
+
+#topRow div.banner { 
+	float: left; 
+	width: 550px; 
+	padding: 0; 
+	margin: 0; 
+} 
+
+#quickLinks { 
+	float: left;
+	width: 260px;
+	height: 200px; 
+	padding: 0;
+	margin: 0; 
+	background-color: #52607a;;
+	background: #52607a top left no-repeat url(/images/template/quick_links.jpg);
+}
+
+#quickLinks div.heading { 
+   color: #FFCC35;
+   background-color: #504319;
+   font-size: 7pt; 
+   font-weight: bold;
+   padding: 5x 5px; 
+   width: 75px;
+   border: 3px #504319 solid;
+} 
+
+#quickLinks ul { 
+	list-style: none;
+	width: 260px;
+	padding: 2px 0 0 0;
+	margin: 0;
+} 
+
+#quickLinks li { 
+	margin: 0;
+	border-bottom: 1px solid #EEE;;
+	padding: 2px 0;
+}
+
+#quickLinks li.alpha {
+    background-color: #000;
+    filter:alpha(opacity=35);
+	-moz-opacity:0.35;
+	-khtml-opacity: 0.35;
+	opacity: 0.35;
+    
+  
+}  
+
+#quickLinks a h2 { 
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+}
+
+#quickLinks a { 
+	display: block; 
+	font-size: 10pt;
+	font-weight: 400;
+	text-decoration: none;
+	color: #FFF;
+	vertical-align: middle;
+	font-family: Verdana, Arial, sans-serif; 
+	padding: 6px 11px   ; 
+} 
+
+
+#topRow h1 {
+	padding: 5px 10px;
+	margin: 5px 0; 
+	color: #a0450e;
+	font-size: 12pt; 
+} 
+
+#topRow h2 { 
+	color: #a0450e;
+	font-size: 9pt;
+	padding: 0 10px;
+} 
+
+#topRow div.padding { 
+	padding: 0 3px;
+} 
+
+#topRow ul.jumpTo { 
+	list-style: none;
+	margin: 0 5px; 
+	padding: 0 5px;
+} 
+
+
+#MainContent { 
+    padding-bottom: 20px;
+    background-color: #FFF;
+} 
+
+#MainContent p { 
+   line-height: 14pt;
+   padding-bottom: 10px;
+} 
+
+
+#MainContent h3{ 
+   font-size: 10pt; 
+} 
+
+#MainContent ul.moreNews { 
+   float: left;
+   clear: both;
+   list-style-type: disc;
+   list-style-image: url(/images/templates/ul-list-image.png); 
+   list-style-position: outside;
+   padding-left: 30px;
+   padding-bottom: 15px;
+} 
+
+#MainContent img { 
+   border: none;
+}
+
+#MainContent a.extLink { 
+   padding-bottom: 15px;
+} 
+
+#CollegeNews a.placement { 
+   padding-right: 18px; 
+   background-image: url(/images/templates/lnkNewWindow.png);
+   background-repeat: no-repeat; 
+   background-position: right; 
+   color: #369;
+   padding-bottom: 10px;
+} 
+
+div.yui-content h1 { 
+   color: #333;
+} 
+
+div.yui-content h2 { 
+   margin-top: 5px;
+} 
+
+div.yui-content h2 a{ 
+   color: #336;
+}
+
+
+div.yui-content h3 { 
+   font-size: 10pt; 
+} 
+
+div.yui-content h3 a { 
+   color: #336;
+} 
+
+
+div.yui-content p.subscribe { 
+   clear: both;
+   float: right;
+} 
+div.yui-content div.twoColumn { 
+   float: left; 
+   margin-bottom: 10px;
+} 
+
+div.yui-content div.twoColumn div.full { 
+   clear: both; 
+   width: 100%;
+   padding: 10px 0 0 0;
+} 
+
+div.yui-content div.oneColumn { 
+   clear: both; 
+} 
+
+
+div.yui-content div.oneColumn div.item { 
+   clear: both; 
+   padding: 0 0 20px 0;
+} 
+
+div.yui-content div.twoColumn div.full ul { 
+   clear: both;
+} 
+
+div.yui-content div.twoColumn div.full a {
+
+}
+
+div.yui-content div.twoColumn div.leftLarge { 
+   width: 310px; 
+   float: left; 
+   margin-bottom: 5px; 
+} 
+
+div.yui-content div.twoColumn div a img {
+	border: none;
+}
+
+div.yui-content div.twoColumn div.half { 
+   width: 250px;
+}
+
+div.yui-content div.twoColumn div.left { 
+   float: left; 
+} 
+
+div.yui-content div.twoColumn div.right { 
+   float: right;
+} 
+
+div.yui-content div.twoColumn div.leftLarge ul li a  { 
+   font-size: 90%; 
+} 
+
+div.yui-content div.twoColumn div.rightSmall { 
+   float: right;
+   width: 206px;
+   text-align: center;
+   padding-bottom: 5px;
+   margin: 0 0 5px 10px;
+   border: 1px solid #d6d9cc;
+} 
+
+
+div.yui-content div.twoColumn div.rightSmall img { 
+   margin: 0 auto; 
+   display: block;
+   padding-top: 3px;
+}
+
+div.yui-content div.twoColumn div.rightSmall h1 { 
+   color: #FFF;
+   font-size: 9pt; 
+   font-weight: bold;
+   background-color: #FC3;
+   padding: 2px 5px;; 
+   margin: 0;
+}
+
+div.yui-content div.twoColumn div.rightSmall h1 a { 
+   color: #FFF;
+} 
+
+div.yui-content div.twoColumn div.rightSmall h2 { 
+   font-style: italic; 
+   font-size: 9pt;
+   font-weight: normal;
+   padding: 0 5px;
+   margin: 0;
+   text-align: left;
+} 
+
+div.yui-content div.twoColumn div.rightSmall p { 
+   font-size: 11px;
+   padding: 0px 10px;
+   margin: 0;
+   clear: both;
+   text-align: left;
+}
+
+#MainContent div.rightSmall p {
+	
+	} 
+
+div.yui-content div.twoColumn div.rightSmall p.center { 
+   text-align: center;
+} 
+
+div.hp_column { 
+	width: 260px; 
+	float: left; 
+	padding: 0; 
+	margin: 0 auto;
+} 
+
+div.hp_2column {
+	padding: 0px;
+	float: left;
+	clear: none;
+	width: 540px;
+} 
+
+div.hp_2column_in { 
+   width: 550px;
+	margin: 0 auto;
+}
+
+
+#hp_c_1 { 
+   float: left;
+   width: 550px;
+} 
+ 
+
+#EventTabs h2 { 
+    color: #336;
+    font-weight: bold   ;
+    font-size: 9pt;
+    cursor: pointer;
+    padding: 10px 0 0 0; 
+    margin: 0;
+}
+
+#EventTabs h3.oh { 
+	background: url(/images/homepage/MBAOpenHouses.png) #FFF top left no-repeat;
+	text-indent: -9999px;
+}
+
+#EventTabs a.viewAll { 
+    padding: 0 5px ;
+}   
+
+
+
+/** Active Story **/
+#activeNews { 
+	font-style: normal; 
+	font-weight: normal; 
+	color: #333333; 
+	clear: both; 
+	background-color: #DDD;
+	border: 1px solid #999;
+	overflow: hidden;  
+	height: 0;
+} 
+
+#hp_c_1_2 { 
+   width: 255px;
+   float: left;
+   margin-left: 5px;
+   margin-bottom: 10px;
+   background-color: #FFF;
+} 
+
+#hp_c_1_2 ul{  
+	list-style: none;
+	color: #993300; 
+} 
+
+
+#hp_c_1_2 li:before { 
+	content: "\00BB \0020";
+} 
+
+#hp_c_1_2 li { 
+	padding: 3px 0px 3px 10px;
+	font-size: 9pt; 
+} 
+
+#hp_c_1_3 {
+	clear: both;  
+	width: 520px;
+	margin: 10px auto;
+	background-color: #FFF;
+}
+
+#hp_c_1_3 div { 
+   padding: 5px;
+} 
+
+#hp_c_1_3 img { 
+	float: left; 
+	padding-right: 5px; 
+}
+
+
+#hp_c_3 { 
+	width: 260px;
+	text-align: right;
+	background-color: #FFF;
+} 
+#hp_c_3 strong { 
+	color: #666;
+} 
+
+#hp_c_3 div.day { 
+	clear: both; 
+} 
+
+#hp_c_3 div.todayIs{
+	text-transform: uppercase; 
+	font-size: 9pt; 
+	color: #FFF;
+	font-weight: bold;
+	padding: 3px;
+}
+
+#hp_c_3 div.event {
+	clear: both; 
+	font-size: 8pt;
+	margin: 0 px;
+	padding: 0;
+	background-color: #FFF;
+	text-align: left;   
+} 
+
+#hp_c_3 div.actions { 
+	clear: both; 
+	width: 100%;
+	text-align: right;
+} 
+
+
+#hp_c_3 div.time { 
+	clear: both; 
+} 
+
+#hp_c_3 div.eventName { 
+	clear: both;
+} 
+
+#hp_c_3 div.locName {
+	clear: both;
+} 
+
+#Today p.today {
+   padding: 0;
+   margin: 0;
+   color: #666;
+   text-align: right; 
+   font-style: italic;
+}
+
+
+/** register icon **/ 
+div.event .yui-content a { 
+   display: block;  
+   padding-right: 17px;
+    
+} 
+
+a.register { 
+   display: block;
+   float: right;
+   text-align: right;
+   font-size: 9pt;
+   padding-right: 17px; 
+   background: transparent url(/images/template/iconRegister_Gold.png) top right no-repeat;
+} 
+
+a.sendToFriend { 
+   display: block; 
+   text-align: right;
+   float: right;
+   font-size: 9pt;
+   padding-right: 17px; 
+   margin-right: 10px; 
+   background: transparent url(/images/template/iconSendToFriend.png) top right no-repeat;
+} 
+
+#todayEvents { 
+	clear: both;
+	width: 255px;
+	margin: 0 auto;
+} 
+
+#todayEvents div.day { 
+	background-color: #436681;
+} 
+
+#todayEvents div.event { 
+	border-bottom: 1px solid #436681;
+} 
+
+
+#upcomingEvents { 
+	margin: 10px auto;
+	clear: both;
+	width: 255px; 
+} 
+#upcomingEvents div.day { 
+	background-color: #8aa2b5;
+	margin-bottom: 3px;
+} 
+#upcomingEvents div.event { 
+	border-bottom: 1px solid #bddaf0;
+}  
+
+#hp_c_3 div.register { 
+	clear: both; 
+	float: right;
+}
+
+/** Ad Rotation **/ 
+
+#topImage { 
+	float: left;
+	z-index: 100; 
+} 	
+#bottomImage { 
+	float: left; 
+	z-index: 99; 
+	
+}
