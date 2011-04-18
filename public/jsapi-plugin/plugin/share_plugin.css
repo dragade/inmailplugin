@@ -5,15 +5,17 @@
 }
 
 #shares .shareheader {
+  font-weight: bold;
   font-size: 12px;
   font-family: Arial;
+  padding-bottom: 5px;
 }
 
 #shares .share {
   font-size: 10px;
   clear: both;
   overflow: hidden;
-  margin-botton: 8px;
+  padding-bottom: 5px;
 }
 
 #shares .user-pic {

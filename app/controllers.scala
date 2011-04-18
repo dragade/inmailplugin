@@ -23,7 +23,14 @@ object Application extends Controller {
   /** The inmail plugin.
    * Play does not support a POST to a static route so we need to use a controller to fetch it.
    */
-    def plugin = {
+    def inmailplugin = {
+      Template
+    }
+
+  /** The shared plugin.
+   * Play does not support a POST to a static route so we need to use a controller to fetch it.
+   */
+    def sharedplugin = {
       Template
     }
 

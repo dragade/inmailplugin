@@ -3,13 +3,13 @@
 <head>
 <script type="text/javascript" src="/public/javascripts/jquery-1.5.2.min.js"></script>
 <script type="text/javascript" src="/public/jsapi-plugin/plugin/plugin.js"></script>
-<script type="text/javascript" src="/public/jsapi-plugin/plugin/inmail_plugin.js"></script>
+<script type="text/javascript" src="/public/jsapi-plugin/plugin/shared_plugin.js"></script>
 
 <link href="/public/jsapi-plugin/plugin/share_plugin.css" rel="stylesheet" type="text/css" media="all">
-<link href="/public/jsapi-plugin/plugin/inmail_plugin.css" rel="stylesheet" type="text/css" media="all">
+
 <style>
   * { margin: 0; padding: 0; overflow: hidden; }
-  
+
   /* place your plugin width here */
   #body { width: 400px; }
 </style>
@@ -22,16 +22,9 @@
         authorize: true
       </script>
       <p>
-        <script type="IN/Login" data-onAuth="loadData"></script>
-        <!--
-        <script type="IN/Login" data-onAuth="loadData">You are <?js= firstName ?> <?js= lastName ?></script>
-        <script type="IN/MemberProfile" data-id="/in/dragade" data-format="inline" data-related="false"></script>
-        -->
+        <script type="IN/Login" data-onAuth="loadShares"></script>
 
-      <div id="inmails">
-      </div>
-
-      <div id="shares">
+        <div id="shares">
       </div>
 
       </p>

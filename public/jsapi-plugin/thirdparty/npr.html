@@ -450,6 +450,18 @@ function getDateStr()
          
 <!-- END ID="MAIN_CONTENT" -->
          <div id="main_sidebar">
+
+<!-- BEGIN PLUGIN HACK -->
+<div id="linkedin-shared-plugin">
+  <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+    extensions: SharedPlugin@http://dragade-2-md.linkedin.biz:9000/public/jsapi-plugin/tag/shared_tag.js
+  </script>
+  <script type="IN/SharedPlugin"></script>
+</div>
+<!-- END PLUGIN HACK -->
+
+
+
                         <div id="globalcontent">
                            </div>
             
@@ -601,7 +613,7 @@ common-health-pantry
 <!-- BEGIN PLUGIN HACK -->
 <hr/>
 <script type="text/javascript" src="http://platform.linkedin.com/in.js">
-  extensions: HelloWorld@http://dragade-2-md.linkedin.biz:9000/public/jsapi-plugin/tag/sample.js
+  extensions: SharedPlugin@http://dragade-2-md.linkedin.biz:9000/public/jsapi-plugin/tag/shared_plugin.js
 </script>
 
 <script type="IN/HelloWorld"></script>

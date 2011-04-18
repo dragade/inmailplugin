@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/public/javascripts/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="/public/jsapi-plugin/plugin/plugin.js"></script>
+<script type="text/javascript" src="/public/jsapi-plugin/plugin/inmail_plugin.js"></script>
+<link href="/public/jsapi-plugin/plugin/inmail_plugin.css" rel="stylesheet" type="text/css" media="all">
+<style>
+  * { margin: 0; padding: 0; overflow: hidden; }
+  
+  /* place your plugin width here */
+  #body { width: 400px; }
+</style>
+</head>
+<body>
+  <div id="body">
+    <div class="wrapper">
+      <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+        api_key: 9fxvQ9r44K4fB__u3x4Ft7ocHI-71xepDsS-pm85laVBKIDI-ktH1V4GZFxqgNld
+        authorize: true
+      </script>
+      <p>
+        <script type="IN/Login" data-onAuth="loadInmails"></script>
+        <!--
+        <script type="IN/Login" data-onAuth="loadData">You are <?js= firstName ?> <?js= lastName ?></script>
+        <script type="IN/MemberProfile" data-id="/in/dragade" data-format="inline" data-related="false"></script>
+        -->
+
+      <div id="inmails">
+      </div>
+
+      </p>
+    </div>
+  </div>
+</body>
+</html>
