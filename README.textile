@@ -1,0 +1,5 @@
+h2. inmailplugin
+
+This is a sample project for creating an inmail and shared plugin using the LinkedIn Javascript APIs
+for plugin development.
+
