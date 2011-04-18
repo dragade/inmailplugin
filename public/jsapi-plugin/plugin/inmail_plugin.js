@@ -87,7 +87,7 @@ function dumpInmail(inmail_id) {
 
 function loadShares() {
   //TODO only gather the shares from the thirdparty
-  IN.API.Raw("/people/~/network?type=SHAR&format=json") // construct REST URL
+  IN.API.Raw("/people/~/network?type=SHAR&count=500&format=json") // construct REST URL
     .result( function(result) {
       //console.log(JSON.stringify(result))
       var i = 0;
@@ -99,6 +99,7 @@ function loadShares() {
       console.log("expecting third party domain: " + thirdPartyDomain);
       var numShares = 0;
 
+      console.log("there are " + result.updates.values.length + " shares");
       for (i=0; i < result.updates.values.length && numShares < maxSharesToShow; i++) {
         var share = result.updates.values[i];
         //console.log(JSON.stringify(share))
@@ -106,6 +107,7 @@ function loadShares() {
         if (share.updateContent.person.currentShare.content
             && share.updateContent.person.currentShare.content.submittedUrl) {
             var sharedUrl = share.updateContent.person.currentShare.content.submittedUrl;
+            //console.log("url=" + sharedUrl)
             var displayName = share.updateContent.person.firstName + " " + share.updateContent.person.lastName;
 
             //check that the share is for this domain
@@ -120,7 +122,7 @@ function loadShares() {
               shareHTML += "<a class=\"sharelink\" href=\"" + sharedUrl + "\">";
               shareHTML += share.updateContent.person.currentShare.content.title + "</a><br/>"
               shareHTML += "</div>";
-              numShares++;
+              numShares = numShares + 1;
             }
          }
       }
