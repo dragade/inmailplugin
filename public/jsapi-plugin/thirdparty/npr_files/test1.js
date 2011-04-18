@@ -1,0 +1,1 @@
+var vststr1 = 1;

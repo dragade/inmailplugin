@@ -1,0 +1,8 @@
+document.write("<script type='text/javascript' src='http://community.npr.org/ver1.0/content/direct/scripts/yahoo-min.js'></script>");
+document.write("<script type='text/javascript' src='http://community.npr.org/ver1.0/content/direct/scripts/json-min.js'></script>");
+
+document.write("<script type='text/javascript' src='http://community.npr.org/ver1.0/content/direct/scripts/pork.iframe.js'></script>");
+document.write("<script type='text/javascript' src='http://community.npr.org/ver1.0/content/widgets/globalOptions.js'></script>");
+
+
+document.write("<script type='text/javascript' src='http://community.npr.org/ver1.0/content/direct/scripts/requesttypes.js'></script>");

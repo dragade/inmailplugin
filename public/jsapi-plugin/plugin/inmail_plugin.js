@@ -95,7 +95,7 @@ function loadShares() {
       var shareHTML = "<span class=\"shareheader\"><img src=\"/public/images/LinkedIn_Logo16px.png\"/>&nbsp;Shares from your professional network</span>";
       shareHTML += "<p>"
       //var thirdPartyDomain = document.domain
-      var thirdPartyDomain = "nytimes.com";
+      var thirdPartyDomain = "npr.org";
       console.log("expecting third party domain: " + thirdPartyDomain);
       var numShares = 0;
 

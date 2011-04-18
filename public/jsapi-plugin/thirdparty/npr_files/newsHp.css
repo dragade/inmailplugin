@@ -1,0 +1,6691 @@
+
+
+ /* ----------------------------------------    
+  * START of 'news/import.css'        
+  * ---------------------------------------- */ 
+
+@import "/include/overridecss/branding.css";
+
+ /* ----------------------------------------    
+  * START of 'base/base.css'        
+  * ---------------------------------------- */ 
+
+body {	
+	margin:0;
+	padding:0;
+	font-family:arial, sans-serif;
+	font-size:100%;
+	color:#333;
+}
+
+/*	=general styles
+	--------------------------------------------------------------- */	
+img	{
+	border:none;
+	float:left;
+}
+
+a {
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover {
+	text-decoration:underline;
+	color:#36c;
+}
+
+form, input, select, img, ul, ol, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd {
+	padding:0;
+	margin:0;
+}
+
+ul li {list-style-type:none;}		
+
+p {margin:0 0 10px 0;}
+
+#content p {line-height:1.3em;}
+
+.spacer {
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+}		
+
+.clearfix {overflow:hidden; height:1%;}
+
+hr {
+	color: #ccc;
+	background-color: #ccc;
+	margin:0 20px 15px 20px;
+	border: 0;
+	height: 1px;
+	text-align:center;
+}
+
+.gtarrow,
+.ltarrow {
+	font-family:arial,sans-serif;
+}
+
+form .textbox {
+	color:#333;
+	border:1px solid #ccc;
+	padding:1px;
+	}
+
+
+#main_sidebar ul li {
+	background:transparent url(http://media.npr.org/chrome/news/bullet_blk.gif) no-repeat scroll left 1px;
+	display:block;
+	line-height:14px;
+	margin:0 0 7px;
+	padding:0 0 0 7px;
+}
+
+p.unavailable {font-style:italic; color:#999;}
+
+ /* ----------------------------------------    
+  * START of 'news/common.css'        
+  * ---------------------------------------- */ 
+
+/*	=structure
+	--------------------------------------------------------------- */
+#header {
+	width:978px;	
+	margin:0 auto;
+	padding:5px 0 0 0;
+	border-top:8px solid #000;	
+	border-left: 1px solid #b4b2b2;
+	border-right: 1px solid #b4b2b2;
+	background-color:#fff;
+}
+	
+#wrapper {
+	width:978px;
+	margin:0 auto;
+	padding:0;
+	border-left: 1px solid #b4b2b2;
+	border-right: 1px solid #b4b2b2;
+}
+	
+#wrapper_main {
+	width:978px;
+	background:url(http://media.npr.org/chrome/news/bg_wrapper.gif) repeat-y;
+	/*overflow:hidden;*/
+	position:relative;
+}
+	
+#main_content {
+	width:651px;
+	float:left;
+}
+	
+#content {
+	width:624px;
+	float:left;	
+	padding:0 12px 0 15px;
+}	
+	
+#main_sidebar {
+	width:326px;
+	float:left;	
+	margin:0 0 0 1px;
+	padding:0;
+	color:#000;
+}
+	
+#footer {
+	width:980px;	
+	margin:0 auto;
+	border-top:1px solid #b4b2b2;
+	clear:both;
+}
+
+#npr_thin {width:980px;}
+	
+	
+/*	=breadcrumbs
+	--------------------------------------------------------------- */
+ul.breadcrumb {
+	border-bottom:1px solid #ccc;
+	padding:15px 0 8px 0;
+	font-size:11px;
+	}
+		
+ul.breadcrumb li {display:inline;}	
+
+ul.breadcrumb li a {
+	font-size:11px;
+	font-weight:bold;
+	color:#000;
+}	
+	
+ul.breadcrumb span.arrow {
+	font-weight:normal;
+	color:#666;
+	font-size:10px;
+}	
+
+
+/*	=hdr colors */
+#news .bucketwrap h3 span,
+#news .bucketwrap h3.gahdr span,
+#news .bucketwrap h3.slug {
+	color:#ee1300;
+}
+	
+#news .artsPage .bucketwrap h3 span,
+#news .artsPage .bucketwrap h3.gahdr span,
+#news .artsPage .bucketwrap h3.slug {
+	color:#800149;
+}	
+
+#news .programPage .bucketwrap h3 span,
+#news .programPage .bucketwrap h3.gahdr span,
+#news .programPage .bucketwrap h3.slug {
+	color:#229ACD;
+}	
+
+
+/* =egg carton */
+#news .colwrap {
+	background:none;
+/*	border-bottom:1px solid #b4b2b2;*/
+	padding:10px 0;
+	border-top:1px solid #b4b2b2;
+}	
+	
+#news .colwrap:first-child {border-top:none;}
+	
+#news .colwrap .divider {
+	background:transparent url(http://media.npr.org/chrome/news/bg_3col.gif) repeat scroll 0 0;
+}	
+	
+#news .colwrap .col1 {
+	margin-right:15px;
+	width:187px;
+	float:left;
+	min-height:20px;
+	_height:20px;
+}
+	
+#news .colwrap .col2 {
+	margin:0 15px;
+	width:187px;
+	float:left;
+	min-height:20px;
+	_height:20px;
+}
+	
+#news .colwrap .col3 {
+	margin-left:15px;
+	width:187px;
+	float:left;
+	min-height:20px;
+	_height:20px;
+}
+
+#news .colwrap  h3,
+#news .colwrap  h3 a {
+	color:#ee1300;
+}
+
+#news .colwrap  h3 a:hover {color:#c71a0a;}
+
+#news .artsPage .colwrap  h3,
+#news .artsPage .colwrap  h3 a {
+	color:#800149;
+}
+
+#news .artsPage .colwrap  h3 a:hover {color:#680233;}
+
+#news .programPage .colwrap h3,
+#news .programPage .colwrap h3 a {
+	color:#229acd;;
+}
+
+#news .colwrap h4 {
+	margin:0 0 10px 0;
+	font-size:14px;
+}	
+	
+#news .colwrap h3 {
+	font-size:16px;
+	margin-bottom:8px;
+}
+	
+#news .colwrap p {
+	color:#333;
+	font-size:12px;
+	line-height:16px;
+	margin:0 0 7px;
+}
+
+#news .colwrap ul li {
+	background:transparent url(http://media.npr.org/chrome/news/bullet_blk.gif) no-repeat scroll 0 0;
+	display:block;
+	font-size:12px;
+	line-height:14px;
+	margin:0 0 7px;
+	padding:0 0 0 7px;
+}
+
+#news .colwrap input {
+	margin:7px 7px 7px 0;
+	font-size:12px;
+	width:115px;
+	height:16px;
+}
+
+#news .colwrap input.btn_signup {
+	margin:0 0 7px;
+	font-size:12px;
+	width:75px;
+	height:auto;
+}
+
+#news .colwrap .more {
+	float:right;
+}
+
+#news .colwrap a.more {
+	color:#666;
+	font-weight:bold;
+}
+
+#news .colwrap .gtarrow {
+	font-size:12px;
+	padding-left:7px;
+}
+
+/* =podcast rss feeds (egg carton) */
+#news .feed h4 {
+	background-color:#f7f7f7;
+	border-bottom:1px solid #f0f0f0;
+	color:#666;
+	height:18px;
+	padding-top:5px;
+}		
+
+#news .feed .feedhdrs {
+	float:right;
+	font-size:10px;
+}		
+
+#news .feed .feedhdrs span {
+	margin:0 5px 0 5px;
+}	
+	
+#news .feed ul li {
+	background:none;
+	border-bottom:1px solid #f0f0f0;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+ 
+#news .feed .title {
+	color:#000;
+	font-weight:normal;
+	float:left;
+	width:125px;
+	padding:8px 5px 8px 0;
+}	
+
+#news .feed a.podicon {
+	display:block;
+	width:13px;
+	height:23px;
+	float:left;
+	margin-top:3px;
+}
+
+#news .feed a.podiconnoevent {
+	display:block;
+	width:13px;
+	height:23px;
+	float:left;
+	margin-top:3px;
+}
+
+#news .feed a.rssicon {
+	width:24px;
+	height:23px;
+	float:right;
+	margin-top:4px;
+}
+
+#news .feed .podbox
+	{	
+	width:240px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:7px;
+	position:absolute;
+	top:0;
+	left:160px;
+	_left:15px; /* ie6 only */
+}
+	
+#news .feed .podbox span {
+	font-weight:bold;
+}	
+
+#news .feed .podbox a.podurllink img {
+	padding:7px 10px 0 0;
+	float:left;
+}
+
+#news .feed .podbox p.divider {
+	padding-top:10px;
+	margin-bottom:5px;
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) left top repeat-x;
+}
+	
+#news .feed .podbox img {float:none;}	
+
+#news .feed .podbox a.subitunes {padding-right:20px;}
+
+#news .feed .podbox p.closethis {line-height:13px;text-align:right;}
+	
+#news .feed .podbox p.closethis a {
+	color:#666;
+	text-transform:uppercase;
+	font-size:10px;
+	font-weight:normal;
+	background:url(http://media.npr.org/chrome/news/icon_close_13x13.gif) top right no-repeat;
+	padding-right:20px;
+	height:13px;
+}
+
+#news .feed .podbox input {
+	width:190px;
+	height:14px;
+	font-weight:normal;
+	padding:2px;
+	font-size:11px;
+}	
+
+#news .feed span.blankpod {
+	display:block;
+	height:23px;
+	width:20px;
+	padding:0;	
+	position:absolute;
+	top:3px;
+	right:30px;
+	color:#8f8f8f;
+}
+	
+#news .feed span.blankrss {
+	display:block;
+	height:23px;
+	width:20px;
+	padding:0;	
+	position:absolute;
+	top:3px;
+	right:-2px;
+	color:#8f8f8f;
+}	
+
+
+/* =newsletter signup btn (egg carton) */
+#news .newsletter h3 {
+	font-size:16px;
+	margin-bottom:8px;
+	color:#ee1300;
+}
+
+#news .artsPage .newsletter h3 {
+	font-size:16px;
+	margin-bottom:8px;
+	color:#800149;
+}
+
+#news .programPage .newsletter h3 {
+	font-size:16px;
+	margin-bottom:8px;
+	color:#229acd;
+}
+
+.newsletter .icon {display:none;}
+
+.newsletter p {
+	font-size:12px;
+	line-height:16px;
+}
+
+.newsletter input.emailfield {	
+	width:110px;
+	font-size:11px;
+	height:15px;
+	padding:2px;
+	color:#666;
+	margin-right:2px;
+}
+
+.newsletter ul {padding-top:5px;}
+
+.newsletter ul li a {
+	font-size:10px;
+	display:inline;
+	color:#666;
+}
+
+.newsletter ul#upsellSubscriptionsList li {
+	display:block;
+	font-size:12px;
+}
+
+.newsletter form.upsell .cbox {
+	margin:0 5px 0 0;
+	padding:0;
+	height:13px;
+	width:15px;
+	line-height:12px;
+}	
+
+	
+.newsletter form .nothx,
+.newsletter form .subscribe {
+	/*width:80px;*/
+}
+
+.newsletter form input.nothx {padding-right:10px;} 	
+
+.newsletter .closewrapper {
+	display: none;	
+}
+
+.newsletter p.errormsg {
+	color:#c83030;
+}
+
+
+
+
+/* old styles, need to go thru when the code is up */
+/*.newsletter form 
+	{
+	margin-bottom:10px;
+	}	
+
+.newsletter form .emailfield
+	{
+	font-size:11px;
+	width: 200px;
+	height:14px;
+	padding-bottom:2px;
+	}
+	
+.newsletter form .button
+	{
+	border:1px solid #000;
+	background-color:#65a2e8;
+	font-size:11px;
+	margin:0;
+	padding:0;
+	color:#fff;
+	}*/
+
+.newsletter form .signup {
+	vertical-align:top;
+	padding-top:1px;
+}
+	
+.newsletter span.eaddress {
+	background-color:#f4f5a8;
+	font-weight:bold;
+	font-size:12px;
+}	
+	
+div.newsletter ul li .pipe
+	{
+	display:none;
+	}	
+
+.newsletter form.upsell p.title
+	{		
+	font-weight:bold;
+	font-size:11px;
+	padding:0;
+	display:block;
+	margin:0 0 5px 0;
+	}
+		
+.newsletter form.upsell p.desc
+	{
+	margin:0;
+	padding:0 0 7px 20px;
+	line-height:12px;	
+	}
+
+/*	
+	
+.newsletter p.thx,
+.newsletter p.verify
+	{
+	font-weight:bold;
+	}*/
+	
+.newsletter p.errormsg
+	{
+	color:#c83030;
+	margin:0 0 5px 0;
+	padding:0 7px;
+	}
+	
+
+
+
+
+
+
+
+
+/* =search btn (egg carton)
+.colwrap input.btn_search {
+	background:url(http://media.npr.org/chrome/news/buttons.gif) 0 -40px;
+	border:none;
+	width:48px;
+	height:20px;
+	*margin:0px 0px 10px 0;
+}
+
+.colwrap input.btn_search:hover {
+	background:url(http://media.npr.org/chrome/news/buttons.gif) 0 -60px;
+} */
+
+
+
+/*	=community */
+.community {border-top:1px solid #b4b2b2;}
+
+#news .community .buckettop {
+	background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 0 no-repeat;
+	margin-bottom:7px;
+	line-height:23px;
+	height:23px;
+}	
+	
+#news .community .bucketbottom {
+	background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 -23px no-repeat;
+	margin:7px 0 10px 0;
+	line-height:23px;
+	height:23px;
+}		
+
+#news .artsPage .community .buckettop {
+	background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 -46px no-repeat;
+	margin-bottom:7px;
+	line-height:23px;
+	height:23px;
+}	
+	
+#news .artsPage .community .bucketbottom {
+	background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 -69px no-repeat;
+	margin:7px 0 10px 0;
+	line-height:23px;
+	height:23px;
+}
+
+.community  p.byline {
+	font-style:italic;
+	color:#666;
+	font-size:12px;
+	margin-bottom:3px;
+}
+
+.community  p.byline a {color:#666;}
+
+.community  h5 {
+	font-size:12px;
+	margin-bottom:3px;
+}
+.community  p.comments a {
+	font-size:11px;
+	color:#666;
+	text-transform:uppercase;
+}
+
+.community span.pipe {margin:0 5px;}
+
+#main_content .community .bucket p {
+	font-size:14px;
+	font-weight:bold;
+	margin:0;
+	line-height:1.3em;
+}
+
+#main_content .whatsthis {
+	font-size:11px;
+	font-style:italic;
+}
+
+#main_content #popmain {
+	border:1px solid #d0e0ed;
+	background-color:#f2f9ff;
+	width:290px;
+	padding:5px 5px 0 5px;
+	position:absolute;
+	left:10px;
+	bottom:-40px;	
+}
+
+#main_content #popmain p {font-size:11px;}
+
+
+/* =container */
+#main_content .container {position:relative;}
+
+
+
+
+
+/* =AP (egg carton) 
+#main_content .ap h3 {
+	background:url(http://media.npr.org/chrome/news/aplogo.gif) left no-repeat;
+	font-size:16px;
+	padding: 0 0 0 25px;
+	margin:0;
+}	
+
+#main_content .ap h4 {
+	font-size:12px;
+	color:#000;
+	padding:0;
+}
+
+#main_content .ap .more,
+#main_content .ap .date {
+	float:left;
+	width:100%;
+	padding:0;
+}*/
+
+
+
+/*  =community
+	--------------------------------------------------------------- */
+#main_content .community h3.slug {
+	font-family:arial,sans-serif;
+	font-size:11px;
+	padding-top:20px;
+	text-transform:uppercase;
+}
+
+#main_content .community h3.gahdr {
+	font-size:22px;
+	font-family:georgia, sans-serif;
+	margin-bottom:15px;
+}
+
+#main_content .community p,
+#main_content .community h4 {
+	font-size:12px;
+}
+
+#main_content .community .bucketblockwrap {
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) left bottom repeat-x;
+	margin:0 0 10px 0;
+	overflow:hidden;
+	height:1%;
+	padding-bottom:15px;
+}	
+
+#main_content .community .photowrap {
+	display:block;
+	float:left;
+	width:300px;
+	padding:5px 0 0;
+}
+
+#main_content .community .photowrap img {
+	float:none;
+}
+
+#main_content .community .img {
+	margin-left:324px;
+	padding:5px 0 15px 0;
+}
+
+
+/*	=breaking news
+	--------------------------------------------------------------- */
+#mainspan01 .bucketwrap {margin:0;}
+
+.breakingnews {
+	position:relative;
+	margin:12px 9px 0 12px;
+}
+
+.breakingnews .banner {
+	position:absolute;
+	top:10px;
+	left:0px;
+	_left:-5px; /* IE6 only */
+	background:transparent url(http://media.npr.org/chrome/news/bg_dogear_breakingnews_red.gif) no-repeat scroll right bottom;
+	width:100%;
+}
+
+.mute .banner {
+	background:transparent url(http://media.npr.org/chrome/news/bg_dogear_breakingnews_gry.gif) no-repeat scroll right bottom;
+}
+
+.breakingnews .banner h4 {
+	color:#fff;
+	font-size:16px;
+	text-transform:uppercase;
+	padding:5px 10px;
+	background:#ff3300;
+	margin-right:11px;
+}
+
+.mute .banner h4 {background:#959595;}
+
+.breakingnews .info {
+	border:1px solid #ccc;
+	margin:0 3px;
+	padding:45px 10px 10px;
+}
+
+.breakingnews .info h3 {
+	font-size:16px;
+	margin-bottom:2px;
+	color:#ff3300;
+}
+
+.breakingnews .info h3 a {color:#ff3300;}
+
+.mute .info h3 {color:#000;}
+
+.mute .info h3 a {color:#000;}
+
+.breakingnews .info a.view {
+	background:transparent url(http://media.npr.org/chrome/news/icon_generic_mini.gif) no-repeat scroll right 1px;
+	padding-right:10px;
+	margin-left:20px;
+	font-size:12px;
+	color:#666;
+	float:right;
+	line-height:16px;
+	font-weight:bold;
+	height:16px;
+	margin-top:4px;
+}
+
+#main_content .breakingnews .info p {
+	font-size:12px;
+	margin:0;
+	line-height:15px;
+}
+
+#main_content .breakingnews .info p.alert {
+	margin-top:10px;
+}
+
+#main_content .breakingnews .info p.alert a {
+	font-size:10px;
+	color:#333;
+	font-style:italic;
+}
+
+.breakingnews a.listen {
+	background:transparent url(http://media.npr.org/chrome/news/icon_audio_12px.gif) no-repeat scroll left center;
+	padding-left:17px;
+	font-size:11px;
+	color:#333;
+	margin-left:20px;
+}
+
+.breakingnews a.listen:hover {
+	background:transparent url(http://media.npr.org/chrome/news/icon_audio_12px_hover.gif) no-repeat scroll left center;
+}
+
+/*	=live events
+	--------------------------------------------------------------- */
+.live_event {
+	position:relative;
+	margin:12px 9px 0 12px;
+	padding-top:12px;
+}
+
+.live_event .banner {
+	position:absolute;
+	top:0px;
+	left:20px;
+	background:url(http://media.npr.org/chrome/news/bg_liveevents.gif) repeat-y bottom;
+	padding:20px 7px 20px;
+	width:38px;
+}
+
+.live_event .music {
+	position:absolute;
+	top:0px;
+	left:20px;
+	background:url(http://media.npr.org/chrome/news/bg_live_music.gif) repeat-y bottom;
+	padding:18px 7px 18px;
+	width:38px;
+}
+
+.live_event .music .dogear {
+	/*background:transparent url(http://media.npr.org/chrome/news/bg_dogear_liveevents_navy.gif) no-repeat scroll right bottom;*/
+	/*width:38px;
+	padding:10px 7px 15px;*/
+}
+
+
+.live_event .banner h4,
+.live_event .banner .subhed,
+.live_event .banner .time,
+.live_event .banner .zone {
+	color:#fff;
+}
+
+.live_event .banner h4 {
+	text-align:center;
+	text-transform:uppercase;
+	font-size:16px;
+	margin-bottom:5px;
+}
+
+.live_event .banner .subhed,
+#main_content .live_event .banner .subhed {
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:0;
+}
+
+.live_event .banner p.time,
+#main_content .live_event .banner p.time {
+	font-size:14px;
+	font-weight:bold;
+	margin:0 0 2px;
+	line-height:15px;
+	text-align:center;
+}
+
+.live_event .banner p.zone,
+#main_content .live_event .banner p.zone {
+	font-size:8px;
+	margin:0;
+	line-height:15px;
+	text-align:center;
+}
+
+.live_event .info {
+	border:1px solid #ccc;
+	margin:0 3px;
+	padding:5px 10px;
+	height:100%;
+}
+
+.live_event .info .bucketblock {
+	margin-left:75px;
+	overflow:hidden;
+}
+
+.live_event .info .bucketblock a.photowrap {
+	display:block;
+	position:relative;
+	float:left;
+	margin-right:15px;
+	*height:62px;
+	}
+
+.live_event .info .bucketblock a.photowrap img {float:none;}
+
+.live_event .info .bucketblock a.photowrap img.play {
+	position:absolute;
+	top:16px;
+	left:27px;
+	}
+
+.live_event .info h3 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	margin-bottom:2px;
+	color:#000;
+}
+
+.live_event .info h3 a {color:#000;}
+
+#main_content .live_event .info p {
+	color:#666;
+	font-size:12px;
+	margin:0;
+	line-height:15px;
+}
+
+.live_event a.listen {
+	background:transparent url(http://media.npr.org/chrome/news/icon_audio_12px.gif) no-repeat scroll left center;
+	padding-left:17px;
+	font-size:11px;
+	color:#333;
+	margin-left:20px;
+}
+
+.live_event a.listen:hover {
+	background:transparent url(http://media.npr.org/chrome/news/icon_audio_12px_hover.gif) no-repeat scroll left center;
+}
+
+.live_event p.audio {padding-top:7px;}
+.live_event p.audio a.listen {margin-left:0;}
+
+
+	
+/* CHARTS for story pages, etc (from Design) */
+#storyspan03 .chart {
+	margin: 0 0 30px 0;
+}
+
+.chart table {
+	border-collapse:collapse;
+	padding:0;
+	width: 100%;
+}
+
+.chart table caption {
+	font: bold 16px Arial, Helvetica, sans-serif;
+	text-align:left;
+	padding-bottom: 10px;
+}
+	
+.chart table caption span {
+	font-weight:bold;
+	color:#333;
+	text-transform:uppercase;
+	display: block;
+}
+
+.chart table th {
+	font: bold 14px Georgia, sans-serif;
+	color: #000;
+	border-bottom: 3px solid #000;
+	padding: 0 10px 5px 10px;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+	
+.chart table th span {
+	font-weight: normal;
+}
+	
+.chart table td {
+	vertical-align: top;
+	padding: 7px 10px;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: left;
+	color: #333;
+}
+
+.chart table .shadedrow {
+	background-color:#f1f1f1;
+}
+
+.chart table td.right,
+.chart table th.right {
+	text-align: right;
+}	
+
+
+ /* ----------------------------------------    
+  * START of 'news/globalnav.css'        
+  * ---------------------------------------- */ 
+
+/*	=global nav
+	--------------------------------------------------------------- */	
+#todaysdate {
+	float:left;
+	font-size:11px;
+	font-weight:bold;
+	padding:0 0 0 15px;
+}	
+
+#login {
+	text-align:right;
+	color:#000;
+	padding:0 15px 6px 0;
+}	
+	
+#login a, #header #login span.user {
+	color:#000;
+	margin:0 5px;
+}
+	
+#login a.comm {
+	height:18px;
+	background:url(http://media.npr.org/chrome/news/icon_community_mini.gif) no-repeat;
+	padding:1px 0 1px 22px;
+	margin:0 7px;
+}
+
+#login a.shop {
+	height:18px;
+	background:url(http://media.npr.org/chrome/news/icon_shop_mini.gif) no-repeat;
+	padding:1px 0 1px 22px;
+	margin:0 7px;
+}
+
+#login a.donate {
+	text-transform:uppercase;
+	color:#f30;
+	font-weight:bold;
+}
+
+#login span.user a {
+	margin:0;
+	font-weight:bold;
+}
+
+#login a.reg {margin:0 0 0 7px;}
+	
+#login p {
+	margin:0;
+	font-size:11px;
+}
+
+#login .hdrdonate {display:none} /*hides donate text for news*/	
+	
+#header .headercontent {
+	clear:both;
+	margin:0;
+	padding:5px 15px 8px;
+	overflow:hidden;
+	height: 1%;
+}
+	
+#header .supportwrap {
+	float:left;
+	position:relative;
+	margin-left:10px;
+	padding-left:15px;
+}
+
+#header .support {
+	position:absolute;
+	top:0;
+	left:0;
+	height:54px;
+	width:350px;
+	font-size:11px;
+	text-transform:uppercase;
+}
+
+#header .support p {margin:28px 0 4px;}	
+
+#header .support p a.find {
+	font-weight:bold;
+	color:#000;
+	font-size:14px;
+}	
+
+
+/* =localization */
+#header .support .tab {
+	height:54px;
+	padding:0 8px;
+	float:left;
+	overflow:hidden;
+	}
+
+#header .dd_active .tab {background:transparent url(http://media.npr.org/chrome/news/bg_localtab_left.gif) no-repeat left top scroll;}
+
+#header .support .tab a {
+	float:left;
+	display:block;
+	background:url(http://media.npr.org/chrome/news/bg_localtab_right.gif) no-repeat right top scroll;
+	height:54px;
+	padding:0 35px 0 0;
+	outline:none;
+	}
+
+#header .dd_active .tab a {background:url(http://media.npr.org/chrome/news/bg_localtab_right_active.gif) no-repeat right top scroll;}
+
+#header .support .tab img {
+	float:none;
+	/*margin-top:2px;*/
+	max-width:138px;
+	}	
+
+#header .support .tab a span {
+	display:block;
+	font-size:24px;
+	font-weight:bold;
+	margin-top:20px;
+	}	
+
+#header .dd_active {
+	background:transparent url(http://media.npr.org/chrome/news/bg_localtop.gif) no-repeat scroll bottom;
+}
+
+
+/* =search box */
+#header .headercontent form.search {
+	float:right;
+	margin:0;
+	padding:25px 0 0 0;
+}		
+	
+#header .headercontent form.search label {
+	font-size:11px;
+	text-transform:uppercase;
+	color:#333;
+	margin:3px 5px 0 0;
+	float:left;
+}	
+
+#header .headercontent form.search .searchbox {
+	font-size:12px;
+	width:170px;
+	height:16px;
+	margin:0 7px 0 0;
+	float:left;
+}		
+	
+#header .headercontent form.search .btn_go,
+#header .headercontent form.search .btn_go:hover {
+	background:url(http://media.npr.org/chrome/news/buttons.gif) 0 -80px;
+	border:none;
+	width:24px;
+	height:20px;
+	float:left;
+	cursor:pointer;
+}
+
+/* google suggest as you type styles */
+#news .ac-renderer {position:absolute;min-width:302px;background-color:#fff;border:1px solid #ccc;}
+#news .ac-row {margin:1px;padding:1px 4px;cursor:pointer;overflow:hidden;white-space:nowrap;min-width:292px;}
+#news .ac-highlighted {background-color:#C9D7F1;}
+#news .ac-active {background-color:#C9D7F1;}
+#news div.c2 {text-align:center;}
+#news input.inq {width:300px;}
+
+	
+/* =nav */
+#header ul#nav {
+	height:50px;
+	width:978px;
+	background-color:#000;
+	font-family:georgia,sans-serif;
+	font-size:22px;
+	list-style-type:none;
+	margin-top:7px;
+}
+
+#header ul#nav li {float:left;}
+
+#header ul#nav li a {
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	outline:none;
+	height:32px;
+	padding-top:18px;
+}
+	
+#header ul#nav li a:hover {color:#999;}	
+
+#header ul#nav li.navprograms a {
+	background:transparent url(http://media.npr.org/chrome/news/nav_arrow_down_fff.gif) no-repeat;
+}
+
+#header ul#nav li.navlisten a {
+	background:#333 url(http://media.npr.org/chrome/news/nav_arrow_down_fff.gif) no-repeat;
+} 
+
+#header ul#nav li.navprograms a:hover, 
+#header ul#nav li.navlisten a:hover {
+	color:#999;
+	background-image:url(http://media.npr.org/chrome/news/nav_arrow_down_999.gif);
+}
+
+#header ul#nav li.navprograms a.selected, 
+#header ul#nav li.navprograms a.selected:hover {
+	color:#000;
+	background:url(http://media.npr.org/chrome/news/nav_arrow_up_000.gif) no-repeat;
+}
+ 
+#header ul#nav li.navlisten a.selected, 
+#header ul#nav li.navlisten a.selected:hover  {
+	color:#fff;
+	background:url(http://media.npr.org/chrome/news/nav_arrow_up_fff.gif) no-repeat;
+}
+
+#header ul#nav li.navprograms a,
+#header ul#nav li.navprograms a:hover,
+#header ul#nav li.navprograms a.selected, 
+#header ul#nav li.navprograms a.selected:hover {
+	background-position:133px 29px;
+}
+
+#header ul#nav li.navlisten a,
+#header ul#nav li.navlisten a:hover,
+#header ul#nav li.navlisten a.selected, 
+#header ul#nav li.navlisten a.selected:hover {
+	background-position:84px 29px;
+}
+
+#news #header ul#nav li.navnews a,
+#news.tmplHomePage #header ul#nav li.navhome a,
+#news .artsPage #header ul#nav li.navarts a {
+	background:url(http://media.npr.org/chrome/news/nav_selected.gif) no-repeat top right;
+}
+
+#news.tmplHomePage #header ul#nav li.navnews a,
+#news .artsPage #header ul#nav li.navnews a {
+	background:none;
+}
+
+#header ul#nav li.navhome a,
+#header ul#nav li.navnews a,
+#header ul#nav li.navarts a,
+#header ul#nav li.navmusic a,
+#header ul#nav li.navprograms a,
+#header ul#nav li.navlisten a,
+#header ul#nav li.navhourly a {
+	border-right:1px solid #fff;
+}	
+
+#header ul#nav li.navhome a {
+	width:72px;
+	padding-left:18px;
+}	
+
+#header ul#nav li.navnews a {
+	width:80px;
+	padding-left:30px;
+}
+
+#header ul#nav li.navarts a {
+	width:124px;
+	padding-left:30px;
+}	
+	
+#header ul#nav li.navmusic a {
+	width:89px;
+	padding-left:30px;
+}
+	
+#header ul#nav li.navprograms a {
+	width:143px;
+	padding-left:31px;
+}	
+
+#header ul#nav li.navlisten a {
+	width:87px;
+	padding-left:22px;
+}
+	
+#header ul#nav li.navhourly a {
+	width:107px;
+	height:50px;
+	background:#666 url(http://media.npr.org/chrome/news/nav_hourlynews.gif) no-repeat center top;
+	padding:0;
+}	
+	
+#header ul#nav li.navhourly a:hover {background-position:center bottom;}		
+	
+#header ul#nav li.navpodcasts a {
+	width:108px;
+	height:50px;
+	background:#999 url(http://media.npr.org/chrome/news/nav_podcasts.gif) no-repeat center top;
+	padding:0;
+}
+	
+#header ul#nav li.navpodcasts a:hover {background-position:center bottom;}		
+
+
+/* =programs dropdown */
+#menuprograms {
+	background:transparent url(http://media.npr.org/chrome/news/bg_gradient_programs.jpg) no-repeat center top;
+	display:none;
+}	
+	
+#menuprograms a {color:#333;}
+	
+#menuprograms ul.left {
+	float:left;
+	margin:0 10px 0 0;
+	width:140px;
+}
+	
+#menuprograms ul.right {
+	float:left;
+	width:145px;
+}
+
+#menuprograms ul li {
+	font-size:12px;
+	line-height:13px;
+	background: url(http://media.npr.org/chrome/news/bullet_blk.gif) no-repeat;	
+	padding: 0 0 0 7px;
+	margin-bottom:5px;
+}	
+
+#menuprograms .col {
+	float:left;
+	padding:10px;
+}
+
+#menuprograms .news {width:310px;}
+#menuprograms .entertainment {width:162px;}	
+#menuprograms .music {width:298px;}
+#menuprograms .special {width:128px;}
+
+#menuprograms .news ul.col {padding:0;}
+	
+#menuprograms h3 {
+	font-family:georgia,sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	color:#333;
+	margin:5px 0 6px 0;
+	padding-bottom:5px;
+	border-bottom:4px solid #999;
+}	
+	
+#menuprograms ul li.hdr {
+	color:#a7a5a0;
+	font-size:10px;
+	font-style:italic;
+	margin:8px 0 3px 0;
+	background:none;
+	padding:0 0 0 3px;
+}
+
+#menuprograms ul li.other {
+	font-size:12px;
+	line-height:13px;
+	background: url(http://media.npr.org/chrome/news/bullet_gry.gif) no-repeat;	
+	padding: 0 0 0 7px;
+	margin-bottom:3px;
+}		
+	
+#menuprograms ul li.other a {
+	font-size:11px;
+	line-height:10px;
+	margin:0;
+	color:#888784;
+}	
+	
+#menuprograms ul li.other span {	
+	color:#cfcdc7;
+	font-size:9px;
+}
+	
+#menuprograms .footer {
+	clear:both;
+	background-color:#ccc;
+	height:18px;
+	font-size:10px;
+	text-transform:uppercase;
+	color:#fff;
+	text-align:right;
+	padding:7px 15px 0 0
+}
+
+#menuprograms .footer a.closemenu {
+	background:transparent url(http://media.npr.org/chrome/news/icon_close_13x13.gif) no-repeat scroll right -13px;
+	color:#fff;
+	padding:0 17px 0 0;
+}
+
+	
+/* =listen dropdown */
+#menulisten {
+	background:#abd0d4 url(http://media.npr.org/chrome/news/bg_gradient_listen.gif) repeat-x scroll left top;
+	display:none;
+	color:#fff;
+	font-size:12px;
+}
+	
+#menulisten .audiostreams a, #menulisten .footer a {color:#fff;}
+
+#menulisten h3 {
+	font-family:georgia,sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	color:#007987;
+	margin:5px 0 4px 0;
+}	
+
+#menulisten .hourlynews, 
+#menulisten .audiostreams, 
+#menulisten .latestshow {
+	float:left;
+	padding:10px 0 10px 15px;
+	width:306px;
+}
+
+#menulisten.external .hourlynews, 
+#menulisten.external .audiostreams, 
+#menulisten.external .latestshow {
+	width:466px;
+}
+ 
+#menulisten.external .latestshow {display:none;}
+
+#menulisten .listenblock .primary {
+	background-color:#cce4e7;
+	padding:10px 16px 10px 10px;
+	overflow:hidden;
+}
+	
+#menulisten .listenblock .primary a.listenicon {
+	float:left;
+	background:transparent url(http://media.npr.org/chrome/news/icon_av_main.gif) 0 -210px no-repeat;
+	display:block;
+	height:42px;
+	width:43px;
+	margin-top:5px;
+}
+
+#menulisten .listenblock .primary a.listenicon:hover {
+	background:transparent url(http://media.npr.org/chrome/news/icon_av_main.gif) 0 -336px no-repeat;
+}
+
+#menulisten .listenblock .primary .listencontent {
+	background:#e6f2f3;
+	color:#7fbcc3;
+	font-size:11px;
+	padding:8px 10px;
+	margin-left:53px;
+}
+
+#menulisten .listenblock .primary h4 {
+	color:#409ba5;
+	font-size:16px;
+	font-weight:bold;
+}	
+
+#menulisten .listenblock h4 a {color:#409ba5;}
+
+#menulisten .listenblock .info {margin:0;}
+
+#menulisten .listenblock .duration {float:right;}
+
+#menulisten .listenblock ul {float:left;}
+
+#menulisten .listenblock ul li {
+	font-size:11px;
+	padding:0;
+	margin:0 0 2px 0;
+	line-height:15px;
+}
+
+#menulisten .listenblock a.add {
+	color:#097e8b;
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 1px no-repeat;
+	padding:1px 0 0 18px;
+	display:block;
+	margin:0 4px;
+	font-size:11px;
+}	
+
+#menulisten .listenblock a.add:hover {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -134px no-repeat;
+}
+
+#menulisten .listenblock a.trans {
+	color:#097e8b;
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -59px no-repeat;
+	padding:1px 0 0 18px;
+	display:block;
+	margin:0 4px;
+	font-size:11px;
+}	
+
+#menulisten .listenblock a.trans:hover {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -164px no-repeat;
+}
+
+/*#menulisten .listenblock a.download {
+	color:#80bdc4;
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -30px no-repeat;
+	padding:1px 0 1px 22px;
+}	
+
+#menulisten .listenblock a.download:hover {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -150px no-repeat;
+}*/	
+
+#menulisten .listenblock .tab {
+	float:right;
+	background: url(http://media.npr.org/chrome/news/tab_listen_left.gif) left center no-repeat;
+	padding-left:12px;
+	margin-right:8px;
+	height:18px;
+	}
+
+#menulisten .listenblock .tab span {
+	float:left;
+	background: url(http://media.npr.org/chrome/news/tab_listen_right.gif) right center no-repeat;
+	padding-right:12px;
+	display:block;
+	height:18px;
+	}
+
+#menulisten .listenblock .findstreams {
+	margin:0;
+	font-weight:bold;
+	font-size:12px;
+	padding:2px 0 0 4px;
+	}
+
+#menulisten .listenblock .findstreams a {color:#fff;}
+	
+#menulisten .footer {
+	background-color:#80bdc4;
+	clear:both;
+	color:#FFFFFF;
+	font-size:10px;
+	height:18px;
+	padding:7px 15px 0 0;
+	text-align:right;
+	text-transform:uppercase;
+}
+
+#menulisten .footer a.closemenu {
+	background:transparent url(http://media.npr.org/chrome/news/icon_close_13x13.gif) no-repeat scroll right -26px;
+	color:#fff;
+	padding:0 17px 0 0;
+}
+
+
+/* =for both shows and listen dropdowns */
+.footer .pipe {padding:0 4px;}	
+
+
+/* fix closemenu icon for safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.ddstn a.closemenu,
+#menuprograms .footer a.closemenu,
+#menulisten .footer a.closemenu {padding:1px 17px 1px 0;}
+}
+
+
+
+
+/*	=global footer
+	--------------------------------------------------------------- */
+#footer .everywhere {
+	margin:0;
+	padding:0;
+	overflow:hidden;	
+	background-color:#000;
+	height:1%;
+}
+
+#footer .everywhere h3 a {color:#fff;}
+
+#footer .everywhere h3 span {color:#999;}
+
+#footer .everywhere h3 {
+	font-family:georgia,sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	padding:10px 10px 10px 15px;
+	margin:0;
+	float:left;
+	color:#fff;
+}
+
+#footer .everywhere ul  {
+	padding:12px 15px 0 0;
+	float:right;
+}
+
+#footer .everywhere ul li {
+	float:left;
+	font-size:11px;
+	padding-left:40px;
+	line-height:23px;
+}	
+	
+#footer .everywhere ul li a {float:left;color:#fff;}
+#footer .everywhere ul li a:hover {color:#999;}
+
+#footer .everywhere ul li a.radio {padding:0 0 0 30px;}
+
+#footer .everywhere ul li a.pod {padding:0 0 0 20px;}
+
+#footer .everywhere ul li a.mobile {padding:0 0 0 20px;}
+
+#footer .everywhere ul li a.rss {padding:0 0 0 22px;}
+
+#footer .everywhere ul li a.newsletter {padding:0 0 0 20px;}
+
+#footer .everywhere ul li a.widget {padding:0 0 0 26px;}
+
+#footer .everywhere ul li a.api {padding:0 0 0 27px;}
+
+#footer .footerwrap {
+	clear:both;
+	overflow:hidden;
+	width:978px;
+	border-left: 1px solid #b4b2b2;
+	border-right: 1px solid #b4b2b2;	
+	border-bottom: 1px solid #b4b2b2;	
+}
+
+#footer .listbg {
+	background:#fff url(http://media.npr.org/chrome/news/bg_footer.gif) left bottom;
+	overflow:hidden;
+	height:1%;
+	padding-bottom:20px;
+}
+
+#footer .col {
+	width:138px;
+	float:left;
+	margin-right:24px;
+}
+
+#footer .first {padding-left:15px;}
+#footer .last {margin-right:0;}
+
+#footer h4 {
+	font-family:georgia,sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color:#333;
+	border-bottom:4px solid #b2b2b2;
+	padding:20px 0 6px 0;
+	margin-bottom:6px;
+	background-color:#fff;
+}
+	
+#footer h4 a {color:#333;}
+
+#footer .col {background-color:#fff;}
+
+#footer .col ul {
+	padding-bottom:20px;
+	background-color:#fff;
+}
+
+#footer .col ul li {
+	padding:0;
+	margin-bottom:3px;
+	line-height:14px;
+	font-size:12px;
+}
+
+#footer .col ul li a {color:#333;}
+
+#footer .col ul li span {
+	margin:0 0 3px 10px;
+	line-height:14px;
+}
+
+#footer .col ul li.space {margin-top:15px;}
+
+#footer ul.bottomlist {
+	clear:left;	
+	padding:15px 0;
+	margin:0;
+	height:1%;
+	overflow:hidden;
+}
+
+#footer ul.bottomlist li {
+	float:left;
+	font-size:12px;
+	margin-right:15px;
+	color:#999;
+}
+
+#footer ul.bottomlist li a {color:#999;}
+
+#footer ul.bottomlist li.help a,
+#footer ul.bottomlist li.contact a {color:#000;font-weight:bold;}
+
+#footer ul.bottomlist li.donate a {color:#f30;font-weight:bold;}
+
+#footer ul.bottomlist li.pbs {
+	margin:0;
+	margin-top:-2px;
+	*margin-top:-4px;
+	padding:0;
+	float:right;
+}
+
+#footer ul.bottomlist li.pbs img {
+	float:none;
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+}
+
+
+
+.loginwrap {float:right;margin-bottom:5px;height:19px;}
+.loginwrap div.donate {float:left;}
+
+p#loginPElm {float:left;}
+
+.loginwrap div.donate a {
+	background:url(http://media.npr.org/images/donate/support_stroke.gif) no-repeat top;
+	height:19px;
+	width:141px;
+	display:block;
+}
+
+.loginwrap div.donate a:hover {background:url(http://media.npr.org/images/donate/support_stroke.gif) no-repeat bottom;}
+
+#header .beta {display:none;}
+
+
+
+ /* ----------------------------------------    
+  * START of 'base/localization.css'        
+  * ---------------------------------------- */ 
+
+/* =localization - tab */
+.headercontent .support .tab {
+	height:54px;
+	padding:0 8px;
+	float:left;
+	overflow:hidden;
+	}
+
+.headercontent  .dd_active .tab {background:transparent url(http://media.npr.org/chrome/news/bg_localtab_left.gif) no-repeat left top scroll;}
+
+.headercontent  .support .tab a {
+	float:left;
+	display:block;
+	background:url(http://media.npr.org/chrome/news/bg_localtab_right.gif) no-repeat right top scroll;
+	height:54px;
+	padding:0 35px 0 0;
+	outline:none;
+	}
+
+.headercontent .dd_active .tab a {background:url(http://media.npr.org/chrome/news/bg_localtab_right_active.gif) no-repeat right top scroll;}
+
+.headercontent .support .tab img {
+	float:none;
+	/*margin-top:2px;*/
+	max-width:138px;
+	}	
+
+.headercontent .support .tab a span {
+	display:block;
+	font-size:24px;
+	font-weight:bold;
+	margin-top:20px;
+	}	
+
+.headercontent .dd_active {
+	background:transparent url(http://media.npr.org/chrome/news/bg_localtop.gif) no-repeat scroll bottom;
+}
+
+
+/* =localization - dropdown */
+.ddstn {
+	display:none;
+	height:139px;
+	margin:0;
+	padding:0;
+	width:978px;
+	position:relative;
+	background:transparent url(http://media.npr.org/chrome/news/bg_localbottom.gif) no-repeat scroll top center;
+}
+
+.ddstn a.closemenu {
+	position:absolute;
+	background:transparent url(http://media.npr.org/chrome/news/icon_close_13x13.gif) no-repeat scroll right top;
+	bottom:10px;
+	_bottom:13px; /* IE6 only */
+	right:20px;
+	padding-right:17px;
+	text-transform:uppercase;
+	font-size:10px;
+	color:#999;
+}
+	
+.ddstn .station {
+	background:transparent url(http://media.npr.org/chrome/news/bg_stationdata_left.gif) no-repeat scroll 364px 4px;
+	margin:0 20px 0 175px;
+	padding:4px 0 0 0;
+	height:139px;
+	position:relative;
+	border:none;
+}
+
+.ddstn .stationinfo {
+	float:left;
+	font-size:11px;
+	margin-top:5px;
+	width:200px;
+	padding-left:3px;
+	}
+	
+.ddstn .stationinfo p {margin-bottom:5px;}
+
+.ddstn .stationinfo a:hover {color:#007987;}
+
+.ddstn .stationinfo h3 {
+	font-size:16px;
+	font-weight:bold;
+	}
+
+.ddstn .stationinfo p.desc {
+	font-size:11px;
+	font-style:italic;
+	color:#999;
+	margin-bottom:8px;
+	}
+
+.ddstn .stationinfo p.donate {
+	text-transform:uppercase;
+	font-weight:bold;
+	}
+
+.ddstn .stationinfo p.donate,
+.ddstn .stationinfo p.donate a {
+	color:#f30;
+	}
+
+
+.ddstn .station .change {
+	position:absolute;
+	bottom:15px;
+	left:0;
+	color:#999;
+	font-size:11px;
+	padding-left:3px;
+	}
+
+.ddstn .station .change a {color:#999;}
+
+.ddstn .station .change span.pipe {margin:0 5px;}
+
+.ddstn .stationnav {
+	float:left;
+	font-size:11px;
+	color:#999;
+	margin:10px 0 0 15px;
+	text-transform:uppercase;
+	width:135px;
+}
+
+.ddstn .stationnav li {
+	line-height:20px;
+}
+
+.ddstn .stationnav li a {
+	color:#999;
+}
+
+.ddstn .stationnav li a.selected {
+	color:#007987;
+}
+
+.ddstn .stationnav .gtarrow {
+	font-size:9px;
+}
+
+.ddstn .stationdata_wrap {
+	background:transparent url(http://media.npr.org/chrome/news/bg_stationdata_right.gif) no-repeat scroll right top;
+	float:left;
+	margin:0 0 0 17px;
+	height:117px;
+	width:200px;
+	padding:4px 6px;
+}
+
+.ddstn .stationdata {
+	overflow:auto;
+	height:116px;
+	font-size:11px;
+	color:#007987;
+	padding-left:2px;
+}
+	
+.ddstn .stationdata_arrow {
+	position:absolute;
+	top:13px;
+	left:531px;
+	width:10px;
+	height:20px;
+	background:transparent url(http://media.npr.org/chrome/news/arrow_stationdata.gif) no-repeat scroll right top;
+}
+
+.ddstn .stationdata .sd_audio,
+.ddstn .stationdata .sd_podcast,
+.ddstn .stationdata .sd_newsfeed,
+.ddstn .stationdata .sd_community {
+	display: none;
+}
+
+.ddstn .stationdata .selected {
+	display: block;
+	min-height:118px;
+}
+	
+.ddstn .stationdata ul {
+	list-style-type:none;
+}
+	
+.ddstn .stationdata ul li {
+	margin-bottom:3px;
+	font-weight:bold;
+}
+	
+.ddstn .stationdata ul li a {
+	color:#007987;
+}
+
+	
+/* =localization - scrollable area */	
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	display:block;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0px !important;
+	height: 100%;
+	background:transparent url(http://media.npr.org/chrome/news/bg_scrolltrack.gif) no-repeat scroll center top;
+}
+
+.jScrollPaneDrag {
+	position: absolute;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background:transparent url(http://media.npr.org/chrome/news/bg_scrollbar_top.gif) no-repeat scroll center top;
+	height:70%;
+}
+
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	background:transparent url(http://media.npr.org/chrome/news/bg_scrollbar_bottom.gif) no-repeat scroll center bottom;
+	height:70%;
+}
+
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 10px;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	background:transparent url(http://media.npr.org/chrome/news/arrow_scrollup.gif) no-repeat scroll center top;
+	height: 10px;
+}
+
+a.jScrollArrowUp:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	background:transparent url(http://media.npr.org/chrome/news/arrow_scrolldown.gif) no-repeat scroll center top;
+	height: 10px;
+}
+
+a.jScrollArrowDown:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}	
+
+ /* ----------------------------------------    
+  * START of 'base/sponsorship.css'        
+  * ---------------------------------------- */ 
+
+/*	=sponsors
+	--------------------------------------------------------------- */
+.adwrapper {
+	/*margin-bottom:5px;*/
+	padding:5px 0 10px 11px;
+	background:url(http://media.npr.org/chrome/news/hrule_double.gif) repeat-x bottom;	
+	overflow:hidden;
+}
+
+.sponsor300 {
+	overflow: hidden;
+	o\verflow: visible;
+	w\idth: auto;
+	he\ight: 1%;
+	width:300px;
+}
+
+.sponsor300 .sponsor300 {padding:7px 0;}
+	
+.sponsor300 p {
+	margin:0;	
+	font-size:10px;
+	color:#333;
+}
+
+.sponsor300 p.top {
+	margin-bottom:2px;	
+}
+
+.sponsor300 p.left {
+	float:left;
+	margin-top:4px;
+}
+
+.sponsor300 p.right {
+	margin-top:4px;
+	font-style:italic;
+	float:right;	
+}
+
+.sponsor300 p.right a {color:#333;}
+.sponsor300 p.right a:hover {color:#000;}
+
+/* old sponsor styles */
+.sponsor300 .dynamicbucket .story {padding-top:2px;}
+
+.sponsor300 .buckettop, .sponsor300 .bucketbottom {display:none;}
+
+.sponsor300 .bucketcontent .story p {
+	text-align:center;
+	padding:2px 0;
+}
+
+.mojowrapper div.sponsor {font-size:10px;margin:0;padding-left:11px;} /* static ad include */
+.mojowrapper div.sponsor p {text-align:center;margin:0;}
+
+
+/* =search sponsor */	
+.topnavSponsor {
+	float:right;
+	padding:15px 0 0 10px;
+	/*width:163px;*/
+}
+
+.searchSponsorTxt {
+	float:left;
+	width:70px;
+	text-align:right;
+	color:#666;
+	margin: 0 5px 0 0;
+	font-size:10px;
+	padding-top:5px;
+}
+	
+.searchSponsor {
+	float:left;
+	width:88px;
+}		
+		
+.sponsor88 {
+	float:right;
+	width:163px;
+}
+
+#wrapper .sponsor88 p.left {
+	float:left;
+	width:70px;
+	text-align:left;
+	color:#666;
+	margin: 0 5px 0 0;
+	font-size:10px;
+	line-height:13px;
+	padding-top:5px;
+}	
+
+.sponsor88 p.right img {
+	float:left;
+	width:88px;
+}			
+
+
+/* =donate now */	
+.topnavSponsor .donate {padding:10px 0 0 25px;}
+
+
+
+/*  =sponsorship pushdown
+    --------------------------------------------------------------- */
+#sponsor_dd .panelwrap {
+    border-bottom:1px solid #b5b2b2;
+	border-bottom:none\9;
+    overflow: hidden;
+    text-align:center;
+    padding:5px 0 4px 0;
+}
+
+#sponsor_dd .panelwrap p {
+	color:#858585;
+	font-size:11px;
+	background:url(http://media.npr.org/chrome/hrule-double-sponsor.gif) repeat-x center;
+	margin:0 4px 7px 4px;
+}
+
+#sponsor_dd .panelwrap p span {background-color:#fff;padding:0 10px;}
+
+#sponsor_dd .panel {
+	overflow:hidden;
+	height:1%;
+}
+
+
+ /* ----------------------------------------    
+  * START of 'base/icons.css'        
+  * ---------------------------------------- */ 
+
+/*	=icons
+	--------------------------------------------------------------- */		
+a.email	{
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 0 no-repeat;
+	padding:0 0 0 22px;
+	line-height:16px;	
+}	
+	
+a.email:hover {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0px -16px no-repeat;
+}	
+	
+a.share,
+a.share2 {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -32px no-repeat;
+	padding:0 0 0 20px;
+	line-height:16px;	
+}	
+	
+a.share:hover,
+a.share2:hover {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -48px no-repeat;
+}	
+	
+a.comment
+/*a.viewcomm*/ {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -64px no-repeat;
+	padding:0 0 0 21px;
+	line-height:16px;	
+}	
+	
+a.comment:hover
+/*a.viewcomm:hover*/ {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -80px no-repeat;
+}
+	
+a.recommend
+/*a.reccomm*/ {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0px -96px no-repeat;
+	padding:0 0 0 23px;
+	line-height:16px;	
+}	
+	
+a.recommend:hover
+/*a.reccomm:hover*/ {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -112px no-repeat;
+}
+	
+a.recommended,
+a.recommended:hover,
+a.reced,
+a.reced:hover {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -128px no-repeat;
+	padding:0 0 0 23px;
+	line-height:16px;
+	cursor:default;
+	color:#333;
+	text-decoration:none;
+}	
+	
+a.print {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -144px no-repeat;
+	padding:0 0 0 21px;
+	line-height:16px;	
+}	
+	
+a.print:hover {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -160px no-repeat;
+}		
+
+a.twitter {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -256px no-repeat;
+	padding:0 0 0 19px;
+	cursor:pointer;
+}
+
+a.facebook {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -272px no-repeat;
+	padding:0 0 0 20px;
+}	
+
+a.pod {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -46px no-repeat;
+}
+
+a.pod:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -69px no-repeat;
+}	
+
+a.rss {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 0 no-repeat;
+}
+
+a.rss:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -23px no-repeat;
+}
+
+a.radio {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -92px no-repeat;
+}
+
+a.radio:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -115px no-repeat;
+}
+
+a.mobile {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -138px no-repeat;
+}
+
+a.mobile:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -161px no-repeat;
+}
+
+a.newsletter {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -184px no-repeat;
+}
+
+a.newsletter:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -207px no-repeat;
+}
+
+a.widget {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -230px no-repeat;
+}
+
+a.widget:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -253px no-repeat;
+}
+
+a.api {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -276px no-repeat;
+}
+
+a.api:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -299px no-repeat;
+}
+
+a.podicon {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -345px no-repeat;
+}
+
+a.podicon:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -368px no-repeat;
+}	
+
+a.podiconnoevent {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -345px no-repeat;
+}
+
+a.rssicon {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -391px no-repeat;
+}
+
+a.rssicon:hover {
+	background:url(http://media.npr.org/chrome/news/icon_services.gif) 0 -414px no-repeat;
+}
+
+a.add {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 0 no-repeat;
+}	
+
+a.add:hover {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -15px no-repeat;
+}
+
+a.added,
+a.added:hover {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -240px no-repeat;
+}
+
+a.download {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -30px no-repeat;
+}	
+
+a.download:hover {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -45px no-repeat;
+}	
+
+a.trans {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -60px no-repeat;
+}	
+
+a.trans:hover {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -75px no-repeat;
+}
+
+a.subscribe {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -180px no-repeat;
+}	
+
+a.subscribe:hover {
+	background: url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) 0 -195px no-repeat;
+}
+
+a.purchase {
+	background:url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) no-repeat scroll 0 -210px;
+}
+
+a.purchase:hover {
+	background:url(http://media.npr.org/chrome/news/icon_avbox_mini.gif) no-repeat scroll 0 -225px;
+}
+
+a.slideshow {
+	background:url(http://media.npr.org/chrome/news/icon_slideshow_mini_ltgry.gif) no-repeat;
+	padding:1px 0 1px 20px;
+}
+
+a.slideshow:hover {
+	background:url(http://media.npr.org/chrome/news/icon_slideshow_mini_hover.gif) no-repeat;
+}
+
+a.video {
+	background:url(http://media.npr.org/chrome/news/icon_video_mini_ltgry.gif) no-repeat;
+	padding:1px 0 1px 20px;
+}
+
+a.video:hover {
+	background:url(http://media.npr.org/chrome/news/icon_video_mini_hover.gif) no-repeat;
+}
+
+a.map {
+	background:url(http://media.npr.org/chrome/news/icon_graphic_mini_ltgry.gif) no-repeat;
+	padding:1px 0 1px 20px;
+}
+
+a.map:hover {
+	background:url(http://media.npr.org/chrome/news/icon_graphic_mini_hover.gif) no-repeat;
+}
+
+a.graphic {
+	background:url(http://media.npr.org/chrome/news/icon_graphic_mini_ltgry.gif) no-repeat;
+	padding:1px 0 1px 20px;
+}
+
+a.graphic:hover {
+	background:url(http://media.npr.org/chrome/news/icon_graphic_mini_hover.gif) no-repeat;
+}
+
+a.interactive {
+	background:url(http://media.npr.org/chrome/news/icon_int_mini_ltgry.gif) no-repeat;
+	padding:1px 0 1px 20px;
+}
+
+a.interactive:hover {
+	background:url(http://media.npr.org/chrome/news/icon_int_mini_hover.gif) no-repeat;
+}
+
+a.genericicon {
+	background:transparent url(http://media.npr.org/chrome/news/icon_generic_mini.gif) no-repeat scroll 0 0;
+}
+
+a.genericicon:hover {
+	background:transparent url(http://media.npr.org/chrome/news/icon_generic_mini_hover.gif) no-repeat scroll 0 0;
+}
+
+/*	=spikes
+	--------------------------------------------------------------- */	
+.spike a	{
+	background: url(http://media.npr.org/chrome/news/spike_bullet.gif) no-repeat left top;
+	padding:0 0 0 17px;
+	display:block;
+	float:left;
+}	
+
+.spike a:hover {
+	background: url(http://media.npr.org/chrome/news/spike_bullet_hover.gif) no-repeat left top;
+}	
+
+.spike a.audio {background: url(http://media.npr.org/chrome/news/icon_audio_12px.gif) no-repeat;}	
+.spike a.audio:hover {background: url(http://media.npr.org/chrome/news/icon_audio_12px_hover.gif) no-repeat;}
+
+/* can remove all for add spike after bug SFW-1884 is posted live */
+.spike a.add {display:none;}
+/*.spike a.add {background: url(http://media.npr.org/chrome/news/spike_add.gif) no-repeat;}	
+.spike a.add:hover {background: url(http://media.npr.org/chrome/news/spike_add_hover.gif) no-repeat;}*/
+
+
+.spike a.infographic {background: url(http://media.npr.org/chrome/news/spike_info.gif) no-repeat;}	
+.spike a.infographic:hover {background: url(http://media.npr.org/chrome/news/spike_info_hover.gif) no-repeat;}
+
+.spike a.slideshow {background: url(http://media.npr.org/chrome/news/spike_slideshow.gif) no-repeat;}	
+.spike a.slideshow:hover {background: url(http://media.npr.org/chrome/news/spike_slideshow_hover.gif) no-repeat;}
+
+.spike a.video {background: url(http://media.npr.org/chrome/news/spike_video.gif) no-repeat;}	
+.spike a.video:hover {background: url(http://media.npr.org/chrome/news/spike_video_hover.gif) no-repeat;}
+
+.spike a.map {background: url(http://media.npr.org/chrome/news/spike_map.gif) no-repeat;}	
+.spike a.map:hover {background: url(http://media.npr.org/chrome/news/spike_map_hover.gif) no-repeat;}	
+
+.spike a.externallink {background: url(http://media.npr.org/chrome/news/spike_extlink.gif) no-repeat;}	
+.spike a.externallink:hover {background: url(http://media.npr.org/chrome/news/spike_extlink_hover.gif) no-repeat;}
+
+.spike a.interactive {background: url(http://media.npr.org/chrome/news/spike_interactive.gif) no-repeat;}	
+.spike a.interactive:hover {background: url(http://media.npr.org/chrome/news/spike_interactive_hover.gif) no-repeat;}
+
+.spike a.download {background: url(http://media.npr.org/chrome/news/spike_download.gif) no-repeat;}	
+.spike a.download:hover {background: url(http://media.npr.org/chrome/news/spike_download.gif) no-repeat;}
+
+.spike a.chat {background: url(http://media.npr.org/chrome/news/spike_chat.gif) no-repeat;}	
+.spike a.chat:hover {background: url(http://media.npr.org/chrome/news/spike_chat.gif) no-repeat;}
+
+.spike a.playlist {background: url(http://media.npr.org/chrome/news/spike_playlist.gif) no-repeat;}	
+.spike a.playlist:hover {background: url(http://media.npr.org/chrome/news/spike_playlist.gif) no-repeat;}
+
+
+ /* ----------------------------------------    
+  * START of 'news/sidebar.css'        
+  * ---------------------------------------- */ 
+
+/*	=main_sidebar
+	--------------------------------------------------------------- */
+#news #main_sidebar .container {
+	margin:0 0 5px;
+	padding:10px 14px 10px 12px;
+	background:url(http://media.npr.org/chrome/news/hrule_double.gif) repeat-x bottom;	
+	/*overflow:hidden;*/
+}	
+
+#news #main_sidebar .container .bucketwrap {
+	margin:0;
+	padding:0;
+	background:none;
+	height:1%;
+	overflow:hidden;
+}	
+
+#news #main_sidebar .container .bucketwrap .bucket {padding:5px 0 0;}	
+
+#news #main_sidebar .container h3.conheader {
+	margin:0 0 10px;
+	font-size:16px;
+}
+
+#news #main_sidebar .container h3.conheader {color:#ee1300;}
+
+#news .artsPage #main_sidebar .container h3.conheader {color:#800149;}
+
+#news #main_sidebar .container h3.slug {
+	font-family:arial,sans-serif;
+	font-size:12px;
+	margin:0 10px;
+	padding-top:10px;
+	text-transform:uppercase;
+}
+
+#news #main_sidebar .container h3.gahdr {
+	border:none;
+	margin-bottom:10px;
+	font-size:22px;
+	font-family:georgia, sans-serif;
+	padding:0 10px 5px 10px;	
+}
+
+#news #main_sidebar .container p,
+#news #main_sidebar .container h4 {
+	font-size:12px;
+}
+
+#news #main_sidebar .container p.footer {
+	font-size:11px;
+	padding:10px 0 0;
+}
+	
+#news #main_sidebar .bucketwrap {
+	margin:0 0 5px;
+	background:url(http://media.npr.org/chrome/news/hrule_double.gif) repeat-x bottom;
+	overflow:hidden;
+	height:1%;
+}
+	
+#news #main_sidebar .bucketwrap h3 {
+	font-size:22px;
+	font-family:georgia, sans-serif;
+	padding:0 0 5px;
+}
+
+#news #main_sidebar .bucket {
+	margin:0;
+	padding:5px 15px 20px 11px;
+	overflow: hidden;
+	/*o\verflow: visible;*/
+	/*w\idth: auto;*/
+	he\ight: 1%;
+	height:1%;
+	font-size:12px;
+}	
+	
+#news #main_sidebar .bucket h4 {
+	font-size:16px;
+	font-family:georgia,sans-serif;
+	margin:0 0 7px 0;
+	font-weight:bold;
+}	
+
+#news #main_sidebar .bucket .bucketblock h4 {
+	font-family:arial,sans-serif;
+	font-size:14px;
+	margin:0 0 6px 0;
+}
+		
+#news #main_sidebar .bucketblock p {
+	font-size:12px;
+	margin:0 0 6px 0;
+}		
+		
+#news #main_sidebar .img .bucketblock {
+	margin-left:100px;
+}	
+	
+#news #main_sidebar ul.line li {
+	background:none;
+	margin:0;
+	border-bottom:1px solid #b4b2b2;
+	padding:6px 0;
+}	
+	
+#news #main_sidebar ul.line li a {color:#333;}
+	
+#news #main_sidebar ul.line li a span {color:#959595;}
+
+#news #main_sidebar .listtext p a {color:#36c;}
+
+
+/*	=apiquery (simple, apisublist, newspackage)
+	--------------------------------------------------------------- */
+#news #main_sidebar .apiquery .simple,
+#news #main_sidebar .apisublist,
+#news #main_sidebar .newspackage {
+	padding:10px 14px 15px 12px;
+	font-size:12px;
+}
+
+#news #main_sidebar .container .apiquery .simple,
+#news #main_sidebar .container .apisublist,
+#news #main_sidebar .container .newspackage {
+	padding:0 0 10px 0;
+	font-size:12px;
+}
+
+/*#news #main_sidebar .apisublist h4 a,
+#news #main_sidebar .apiquery .simple h3 a {
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-lg.gif) no-repeat scroll right 6px;
+	padding:0 12px 0 0;
+}*/
+
+#news #main_sidebar .apisublist h4 span.arrow,
+#news #main_sidebar .apiquery .simple h3 span.arrow {
+	padding: 0 5px 0 2px;
+	background: url(http://media.npr.org/chrome/news/ico-more-lg.gif) no-repeat right center;
+	width:6px;
+}
+
+#news #main_sidebar .apisublist h4,
+#news #main_sidebar .apiquery .simple h3,
+#news #main_sidebar .newspackage h3 {
+	font-family:georgia, sans-serif;
+	font-size:18px;
+	text-transform:lowercase;
+	border:none;
+	padding:0;
+	margin-bottom:5px;
+}
+
+#news #main_sidebar .apisublist img {margin:0 10px 10px 0;}
+#news #main_sidebar .apisublist .bucket {padding:0;}
+
+/* to remove after we get all the arrow img's set */
+#news #main_sidebar .apisublist h4 span.gtarrow {display:none;}
+
+
+
+/*  =ecommerce
+	--------------------------------------------------------------- */
+#news #main_sidebar .ecommerceContainer {padding-top:10px;}	
+	
+#news #main_sidebar .container .ecommerce {
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) left bottom repeat-x;
+	padding:0;
+}
+
+#news #main_sidebar .container .ecommerce .bucket {
+	position:relative;
+	padding:10px 0;
+	_position:static;
+}
+
+#news #main_sidebar .ecommerce h4 {
+	width:190px;
+	font-size:14px;
+	font-family:arial,sans-serif;
+	margin:0 0 5px 0;
+	padding:0;
+}
+
+#news #main_sidebar .ecommerce p.byline {
+	width:190px;
+	margin:0;
+	padding:0;
+}
+
+#news #main_sidebar .ecommerce ul {
+	display:block;
+	margin:0;
+	padding:0;
+	position:absolute;
+	bottom:10px;
+	right:0;
+	width:100px;
+	_position:static;
+	_float:right;
+	_width:auto;
+}
+
+#news #main_sidebar .ecommerce ul li {
+	background:none;
+	font-size:11px;
+	margin:0;
+	padding:0;
+}	
+
+#news .ecommerce .gtarrow {
+	font-size:10px;
+	font-weight:normal;
+	margin-left:2px;
+}
+
+
+
+
+/*  =internal/external links
+	--------------------------------------------------------------- */
+#news #main_sidebar .internallink {padding:0;}	
+
+#news #main_sidebar .container .internallink,
+#news #main_sidebar .container .externallink {
+	margin-bottom:7px;
+}	
+
+/* gerneral padding for all style of internal links */
+#news #main_sidebar .internallink .simple,
+#news #main_sidebar .internallink .simplenodate,
+#news #main_sidebar .externallink {
+	padding:10px 14px 15px 11px;
+}
+
+#news #main_sidebar .promo_audio,
+#news #main_sidebar .community,
+#news #main_sidebar .promo_featured,
+#news #main_sidebar .promo  {
+	padding:10px 14px 15px 11px;
+}
+
+#news #main_sidebar .dontmiss,
+#news #main_sidebar .story_2col {
+	padding:5px 14px 10px 11px;
+}
+
+#news #main_sidebar .container .internallink .simple,
+#news #main_sidebar .container .internallink .simplenodate,
+#news #main_sidebar .container .externallink,
+#news #main_sidebar .container .community,
+#news #main_sidebar .container .promo_featured,
+#news #main_sidebar .container .promo,
+#news #main_sidebar .container .dontmiss,
+#news #main_sidebar .container .story_2col  {
+	padding:0;
+}
+
+/* =simple, simplenodate */
+#news #main_sidebar .internallink .simple a,
+#news #main_sidebar .internallink .simplenodate a,
+#news #main_sidebar .externallink a {
+	display: block;
+	padding: 0 0 0 7px;
+	background: url(http://media.npr.org/chrome/news/bullet_blk.gif) no-repeat;	
+	margin:0;
+	font-size:12px;
+}	
+
+#news #main_sidebar .internallink .simple span.date,
+#news #main_sidebar .internallink .simplenodate span.date,
+#news #main_sidebar .externallink span.date {
+	color:#999;
+	font-style:normal;	
+	font-size:12px;
+	display:block;
+	margin:0;
+	padding:0 0 0 7px;
+}	
+
+/* =internal link - story_2col */
+#news #main_sidebar .story_2col {
+	overflow:hidden;
+	height:1%;
+	}
+
+#news #main_sidebar .story_2col h3.slug {
+	padding:0;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	margin-bottom:3px;
+	text-transform:lowercase;
+	}
+
+#news #main_sidebar .story_2col h3.slug,
+#news #main_sidebar .story_2col h3.slug a {
+	color:#999;
+	}
+	
+#news #main_sidebar .story_2col .bucketblock {margin-left:148px;}
+
+#news #main_sidebar .story_2col a.photowrap {
+	float:left;
+	margin:0 0 10px 0;
+	}
+
+#news #main_sidebar .story_2col h4.title {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	line-height:16px;
+	text-transform:none;
+	margin:0 0 10px;
+	}
+
+#news #main_sidebar .story_2col h4.title,
+#news #main_sidebar .story_2col h4.title a {
+	color:#000;
+	}
+
+#news #main_sidebar .story_2col p {
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin-bottom:10px;
+	}
+
+/*	=audio promo */
+#news #main_sidebar .promo_audio {
+	background:#fff url(http://media.npr.org/chrome/news/bg_gradient_hpaudio.gif) repeat-x center bottom;
+	_background:none;  /* IE6 only */
+	margin-bottom:4px;
+	overflow:hidden;
+	height:1%;
+	}
+
+#news #main_sidebar .promo_audio h4 {
+	margin:10px 0 15px 5px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	}
+
+#news #main_sidebar .promo_audio .flash h4 {
+	font-size:22px;
+	margin:0 0 10px 5px;
+	}
+	
+#news #main_sidebar .promo_audio h4 a,
+#news #main_sidebar .promo_audio h4 span {
+	color:#007987;
+	}
+
+#news #main_sidebar .promo_audio h3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:0;
+	margin:0 0 5px 5px;
+	color:#333;
+	}
+	
+#news #main_sidebar .promo_audio h3 a:hover {color:#007987;}	
+
+#news #main_sidebar .promo_audio h3 .date,
+#news #main_sidebar .promo_audio h3 a.program {
+	margin:0;
+	padding:0;
+	font-size:11px;
+	font-style:italic;
+	font-weight:normal;
+	color:#666;
+	}
+
+#audioflash {margin:0 0 10px;}
+
+#audioflash p {
+	font-size:12px;
+	color:#666;
+	background:url(http://media.npr.org/chrome/news/icon_alert.gif) no-repeat 10px 15px;
+	border:1px solid #ccc;
+	margin:10px 0 0 0;
+	padding:10px 10px 10px 55px;	
+}
+
+#audioflash p a {
+	font-weight:bold;
+	color:#666;
+}
+
+#news #main_sidebar .promo_audio .quote {
+	margin:0 0 5px 5px;
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+}
+
+#news #main_sidebar .promo_audio .quote span {
+	padding:0 5px;
+	background-image:url(http://media.npr.org/chrome/news/quote_sm.gif);
+	background-repeat:no-repeat;
+}
+
+#news #main_sidebar .promo_audio .quote .lquote {background-position:left top;}
+#news #main_sidebar .promo_audio .quote .rquote {background-position:right bottom;}
+
+#news #main_sidebar .promo_audio .quote_byline {
+	margin:0 0 10px 5px;
+	font-size:14px;
+	color:#333;
+	text-align:right;
+	font-size:11px;
+	font-style:italic;
+}
+
+#news #main_sidebar .promo_audio .read {
+	margin:0 0 2px 5px;
+	font-size:10px;
+	color:#999;
+}
+
+/*  =embedded audio (HTML5) */
+#news #main_sidebar .embed_audio h4 {
+	font-size:22px;
+	margin:0 0 10px 5px;
+}
+
+.embed_audio #audioContent {
+	overflow:hidden; 
+	margin-bottom:5px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:5px;
+	visibility:hidden;
+}
+
+.embed_audio #audioContent .flashError,
+.embed_audio .variables {display:none;}
+
+.embed_audio .controls a.play {
+	display:block;
+	width:32px; 
+	height:32px; 
+	float:left;
+	background:transparent url(http://media.npr.org/chrome/ipad/player/embed/btn_playpause.gif) no-repeat left top;
+	outline:none;
+}
+
+.embed_audio .controls a.play:hover {background-position:0 0px;}
+.embed_audio .controls a.pause {background-position:0 -32px;}
+.embed_audio .controls a.pause:hover {background-position:0 -32px;}
+
+.embed_audio .controls .scrubber {
+	float:left;
+	border:1px solid #ccc;
+	margin:6px 5px;
+	background-color:#fff;
+}
+
+.embed_audio .controls .progressbar {
+	padding:7px 0;
+	margin:0 10px;
+	width:150px;
+	position:relative;
+}
+
+.embed_audio .controls .bufferbar {
+	background-color:#555;
+	width:100%;
+	height:3px;
+}
+
+.embed_audio .controls .playedbar {display:none;}
+
+.embed_audio .controls .scrubhandle {
+	display:block;
+	background:transparent url(http://media.npr.org/chrome/ipad/player/embed/ico_scrub_handle.gif) no-repeat left top;
+	width:15px;
+	height:13px;
+	margin-left:-7px;
+	position:absolute;
+	left:0;
+	top:2px;
+}
+
+.embed_audio .controls .timer {
+	float:left;
+	font-size:10px;
+	line-height:31px;
+}
+
+.embed_audio .controls .volume {
+	float:left;
+	width:35px;
+	background:transparent url(http://media.npr.org/chrome/ipad/player/embed/ico_speaker.gif) no-repeat left center;
+	padding:7px 0 7px 15px;
+	margin:7px 0 0 10px;
+}
+
+.embed_audio .controls .volume .volumebar {
+	background-color:#ccc;
+	height:3px;
+	position:relative;
+}
+
+.embed_audio .controls .volume .volumehandle {
+	display:block;
+	background:transparent url(http://media.npr.org/chrome/ipad/player/embed/ico_volume_handle.gif) no-repeat left top;
+	width:6px;
+	height:11px;
+	position:absolute;
+	left:0;
+	top:-4px;
+	margin-left:-3px;
+}
+
+
+
+/*  =don't miss bucket */
+#news #main_sidebar .dontmiss h3 {
+	padding:0;
+	border:none;
+}
+
+#news #main_sidebar .dontmiss .bucket {padding:5px 0;}
+
+#news #main_sidebar .dontmiss .bucket a.photowrap {
+	display:block;
+	float:left;
+}
+
+#news #main_sidebar .dontmiss span.pipe {
+	color:#ccc;
+	font-weight:normal;
+}	
+
+#news #main_sidebar .dontmiss span.cat {
+	font-size:10px;
+	font-family:arial,sans-serif;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+#news #main_sidebar .dontmiss h3.slug {
+	font-size:14px;
+	margin:0 0 10px 0;
+	padding:0;
+	color:#666;
+	font-family:arial,sans-serif;
+	text-transform:lowercase;
+}
+
+#news #main_sidebar .dontmiss p.audiorow {
+	float:right;
+	font-size:11px;
+	margin:0;
+	padding-top:2px;
+}
+
+#news #main_sidebar .dontmiss p.audiorow a.listen {
+	background:url(http://media.npr.org/chrome/news/icon_audio_12px.gif) no-repeat left;
+	padding-left:17px;
+	float:left;
+}
+
+#news #main_sidebar .dontmiss p.audiorow a.listen:hover {background:url(http://media.npr.org/chrome/news/icon_audio_12px_hover.gif) no-repeat left;}
+
+#news #main_sidebar .dontmiss p.audiorow a.add {
+	width:13px;
+	height:15px;
+	float:left;
+	margin-left:15px;
+	text-indent:-5000px;
+	outline:none;
+}
+
+
+/*  =community
+	--------------------------------------------------------------- */
+#news #main_sidebar .community {border:none;}
+
+#news #main_sidebar .community h3.slug {
+	font-family:arial,sans-serif;
+	font-size:11px;
+	padding:0 0 0 2px;
+	text-transform:uppercase;
+	border:none;
+}
+
+#news #main_sidebar .community h3.gahdr {
+	border:none;
+	font-family:georgia,sans-serif;
+	font-size:22px;
+	margin-bottom:10px;
+	padding:0;
+}
+
+#news #main_sidebar .community .bucketblock {
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x left bottom;
+	padding:5px 0;
+	margin:0 0 10px;
+}
+	
+#news #main_sidebar .community .bucket,
+#news #main_sidebar .community  p {
+	padding:0;
+}
+
+#news #main_sidebar .community .bucket p {
+	margin:0;
+	font-weight:bold;
+	font-size:14px;
+}
+
+#news #main_sidebar .community p.join {font-size:12px;}
+
+#news #main_sidebar .whatsthis {
+	font-size:11px;
+	font-style:italic;
+}
+
+
+	
+/*	=promo featured */
+#news #main_sidebar .promo_featured .bucket {padding:0 0 5px;}
+
+#news #main_sidebar .promo_featured a.photowrap {float:left;}
+
+#news #main_sidebar .promo_featured .bucketblock {margin-left:100px;}
+
+#news #main_sidebar .promo_featured h3.slug {
+	text-transform:uppercase;
+	font-size:11px;
+	border-bottom:6px solid #000;
+	padding:0 0 7px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#news #main_sidebar .promo_featured h3.slug,
+#news .artsPage #main_sidebar .promo_featured h3.slug {
+	color:#000;
+}
+
+#news #main_sidebar .promo_featured .bucket .bucketblock h4 {
+	font-family:georgia,sans-serif;
+	font-size:16px;
+	padding-top:7px;
+}
+
+
+/*  =most popular bucket
+	--------------------------------------------------------------- */
+#news #main_sidebar #mostpopular {width:326px;}
+
+#news #main_sidebar #mostpopular .top {
+	border-bottom:1px solid #B4B2B2;
+	padding:8px 10px 15px 5px;
+	overflow:hidden;
+	height:1%;
+}
+
+#news #main_sidebar #mostpopular .top h3 {
+	float:left;
+	padding:0;
+	border:none;
+	margin-left:6px;
+	_margin-left:0;
+}
+
+#news #main_sidebar #mostpopular span.pipe {
+	color:#ccc;
+	font-weight:normal;
+	margin:0 2px;
+}		
+	
+#news #mostpopular span.cat {
+	float:left;
+	width:135px;
+	font-size:10px;
+	font-family:arial,sans-serif;
+	font-weight:normal;
+	text-transform:uppercase;
+	margin-top:8px;
+}
+
+#news #mostpopular span.cat {color:#ee1300;}
+#news .artsPage #mostpopular span.cat {color:#800149;}
+#news .programPage #mostpopular span.cat {color:#229ACD;}
+
+#news #mostpopular .bucket {padding:0 0 20px 1px;}
+
+#news div.viewrec .viewrec {display:block;}
+#news div.viewrec .viewcomm {display:none;}
+#news div.viewrec .viewviewed {display:none;}
+
+#news div.viewcomm .viewrec {display:none;}
+#news div.viewcomm .viewcomm {display:block;}
+#news div.viewcomm .viewviewed {display:none;}
+
+#news div.viewviewed .viewrec {display:none;}
+#news div.viewviewed .viewcomm {display:none;}
+#news div.viewviewed .viewviewed {display:block;}
+
+#news #mostpopular ol.line {
+	clear:both;
+	margin:0 5px;
+	padding:6px 5px 0 5px;
+	list-style-position: inside;
+	width:300px;
+}
+	
+#news #mostpopular ol.line li {
+	vertical-align:top;
+	margin:0;
+	border-bottom:1px solid #b4b2b2;
+	margin-top:9px;
+	padding-bottom:9px;
+	color:#666;
+}	
+
+#news #mostpopular ol li a {
+	display:block;
+	margin:0 0 0 8px;
+	padding:0 0 0 8px;
+	width:280px;
+	margin-top:-15px;
+	*margin:auto;
+	color:#666;
+}
+
+/* ugly safari hack */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#news #mostpopular ol li a {margin:auto;width:290px;}
+}
+
+
+/* =unselected tabs */
+#news #mostpopular ul.nav li {
+	background:#f1f1f1;
+	float:left;
+	font-size:12px;
+	/*line-height:11px;*/
+	color:#666;
+	margin:0;
+	border-bottom:1px solid #b2b2b4;
+	/*height:31px;*/
+	padding:0;
+}
+	
+#news #mostpopular ul.nav li a {
+    display:block;
+	outline:none;
+	height:31px;
+	line-height:31px;
+	text-align:center;
+}		
+		
+/* =selected tabs */
+#news #mostpopular ul.nav li.selected {
+	border-bottom:1px solid #fff;
+	background:#fff;
+}
+
+#news #mostpopular ul.threetab li a.tabrec {	
+	/*padding:10px 0 0 10px;
+	width:97px;*/
+	width:108px;
+}			
+	
+#news #mostpopular ul.threetab li a.tabcomm {
+	border-left:1px solid #b2b2b4;
+	/*padding:10px 0 0 19px;
+	width:89px;*/
+	width:108px;
+}	
+
+#news #mostpopular ul.threetab li a.tabviewed {
+	/*padding:10px 0 0px 32px;*/
+	border-right:1px solid #b2b2b4;	
+	/*width:76px;*/
+	width:107px;
+}	
+
+#news #mostpopular ul.twotab li a.tabrec {width:162px;}
+
+#news #mostpopular ul.twotab li a.tabcomm {
+	border-left:1px solid #b2b2b4;
+	width:162px;
+}		
+
+
+
+/*  =agg promo
+	--------------------------------------------------------------- */
+
+/*delete after next release - bp*/
+#news #main_sidebar p.more .gtarrow {display:none;}
+
+#news #main_sidebar .promo {
+	margin:0;
+	background:none;
+	overflow:hidden;
+	height:1%;
+}
+
+#news #main_sidebar .promo a.photowrap {
+	margin:0 0 10px;
+	display:block;
+	overflow:hidden;
+	height:1%;
+}
+
+#news #main_sidebar .promo .titles,
+#news #main_sidebar .promo .content {
+	margin:0;
+}
+
+#news #main_sidebar .bucketwrap .promo h3.slug {
+	font-family:arial,sans-serif;
+	font-size:10px;
+	text-transform:uppercase;
+	font-weight:normal;
+	margin:0 0 3px;
+	padding:0;
+	border:none;
+}
+
+#news #main_sidebar .bucketwrap .promo h3.slug,
+#news #main_sidebar .bucketwrap .promo h3.slug a {
+	color:#666;
+}
+
+#news #main_sidebar .promo h3 {
+	padding:0;
+	border:none;
+	font-weight:normal;
+}
+
+#news #main_sidebar .promo ul li {
+	color:#666;
+	font-size:12px;
+	background: url(http://media.npr.org/chrome/news/bullet_gry.gif) left no-repeat;
+	padding-left:7px;
+	margin-bottom:5px;
+}
+
+#news #main_sidebar .promo p {
+	margin-bottom:10px;
+	color:#666;
+}		
+
+#news #main_sidebar .promo p.more {
+	font-size:14px;
+	text-align:right;
+	padding:0;
+}	
+
+#news #main_sidebar .promo p.more a {
+	color:#333;
+	font-weight:bold;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right 5px;
+	padding:0 10px 0 0;
+}	
+
+#news #main_sidebar .promo h3.brand {
+	font-size:14px;
+	font-weight:bold;
+	padding-bottom:3px;
+}
+
+#news #main_sidebar .promo ul.brand {margin-top:5px;}
+
+#news #main_sidebar .promo ul.series {margin-top:5px;}
+
+#news #main_sidebar .promo ul.series li {
+	float:left;
+	width:128px;
+	margin-right:10px;
+}
+
+
+
+/*  =branded promos (api)
+	--------------------------------------------------------------- */
+#news #main_sidebar .brand_excerpt, 
+#news #main_sidebar .brand_headlines {
+	padding:10px 15px 10px 11px;
+}
+
+#news #main_sidebar .brand_excerpt a.photowrap,
+#news #main_sidebar .brand_headlines a.photowrap {
+	float:none;
+	display:block;
+	margin-bottom:10px;
+	text-indent:-5000px;
+	outline:none;
+}
+
+#news #main_sidebar .brand_promo h3.slug {margin:0 0 5px;}
+
+#news #main_sidebar .brand_promo a.slug {display:block;}
+
+#news #main_sidebar .brand_promo a.slug span,
+#news #main_sidebar .brand_promo .content p {
+	display:none;
+}
+
+#news #main_sidebar .brand_promo .content p.more {display:block;}
+
+#news #main_sidebar .brand_promo .titles {padding:0;}
+
+#news #main_sidebar .brand_promo .titles h3 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin-bottom:10px;
+}
+
+#news #main_sidebar .brand_promo .titles h3,
+#news #main_sidebar .brand_promo .titles h3 a {
+	color:#666;
+}
+
+#news #main_sidebar .brand_excerpt a.photowrap img,
+#news #main_sidebar .brand_headlines a.photowrap img {
+	float:none;
+}
+
+#news #main_sidebar .brand_excerpt .bucketblock,
+#news #main_sidebar .brand_headlines .bucketblock {
+	margin:0;
+}
+
+#news #main_sidebar .brand_excerpt h3 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:0 0 3px;
+	border:none;
+}
+
+#news #main_sidebar .brand_headlines ul li {
+	background:transparent url(http://media.npr.org/chrome/news/bullet_gry.gif) no-repeat scroll left 1px;
+	font-size:12px;
+	margin-bottom:7px;
+	padding-left:7px;
+}
+
+#news #main_sidebar .brand_headlines ul li,
+#news #main_sidebar .brand_headlines ul li a {
+	color:#666;
+}
+
+#news #main_sidebar .brand_excerpt p,
+#news #main_sidebar .brand_headlines p {
+	color:#666;
+	font-size:13px;
+	margin:0 0 5px;
+	line-height:1.3em;
+}
+
+#news #main_sidebar .brand_excerpt p.more,
+#news #main_sidebar .brand_headlines p.more {
+	font-size:14px;
+	padding:10px 0 0;
+	text-align:right;
+	font-weight:bold;
+}
+
+#news #main_sidebar .brand_excerpt p.more a,
+#news #main_sidebar .brand_headlines p.more a {
+	color:#333;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right center;
+	padding:0 10px 0 0;
+}
+
+
+/*  =sublist with thumbs, sublist mini (api)
+	--------------------------------------------------------------- */
+#news #main_sidebar .sublist_thumbs,
+#news #main_sidebar .sublist_mini {padding:3px 15px 0 12px;}
+
+#news #main_sidebar .sublist_thumbs h4,
+#news #main_sidebar .sublist_mini h4 {
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x left bottom;
+	font-size:18px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-transform:lowercase;
+	padding-bottom:10px;
+	margin:0;
+}
+
+#news #main_sidebar .sublist_thumbs h3,
+#news #main_sidebar .sublist_mini h3 {
+	font-size:14px;
+	padding:0 0 5px 0;
+	border:none;
+}
+
+#news #main_sidebar .sublist_thumbs .bucket,
+#news #main_sidebar .sublist_mini .bucket {
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x left bottom;
+	padding:12px 0;
+	overflow:hidden;
+	height:1%;
+}
+
+#news #main_sidebar .sublist_thumbs p,
+#news #main_sidebar .sublist_mini p {
+	font-size:13px;
+	color:#555555;
+	line-height:1.3em;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+}
+
+#news #main_sidebar .sublist_mini p {margin:0 0 5px;}
+
+#news #main_sidebar .sublist_thumbs p.more,
+#news #main_sidebar .sublist_mini p.more {
+	border:none;
+	padding:5px 0 10px;
+	font-size:14px;
+	text-align:right;
+}
+
+#news #main_sidebar .sublist_thumbs p.more a,
+#news #main_sidebar .sublist_mini p.more a {
+	color:#333;
+	font-weight:bold;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right center;
+	padding:0 10px 0 0;
+}	
+
+#news #main_sidebar .sublist_thumbs p.byline,
+#news #main_sidebar .sublist_mini p.byline {font-size:11px;}
+
+#news #main_sidebar .sublist_thumbs p.byline a,
+#news #main_sidebar .sublist_thumbs p.byline span
+#news #main_sidebar .sublist_mini p.byline a,
+#news #main_sidebar .sublist_mini p.byline span {
+	text-transform:uppercase;
+}
+
+#news #main_sidebar .sublist_thumbs p.byline,
+#news #main_sidebar .sublist_thumbs p.byline a,
+#news #main_sidebar .sublist_mini p.byline,
+#news #main_sidebar .sublist_mini p.byline a {
+	color:#000;
+}
+
+/*  =pullquote
+	--------------------------------------------------------------- */
+/*#news #main_sidebar .pullquote {
+	padding:10px 10px 20px;
+}
+	
+#news #main_sidebar .pullquote .bucket {
+	margin:0;
+	padding:0;
+}
+		
+#news #main_sidebar .pullquote .bucket p {
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:0;
+}	
+	
+#news #main_sidebar .pullquote h3 {
+	border:none;
+	font-size:12px;
+	margin:0 0 10px;
+	padding:0;
+	font-family:arial,sans-serif;
+}	
+
+#news #main_sidebar .pullquote h4,
+#news #main_sidebar .pullquote p.comments {
+	font-size:12px;
+}*/
+
+
+
+/*  =images
+	--------------------------------------------------------------- */
+#news #main_sidebar .photo138,
+#news #main_sidebar .photo200 {padding:10px;}
+	
+#news #main_sidebar .photo200 .img200	{
+	width:200px;
+	padding-bottom:5px;	
+}	
+
+#news #main_sidebar .photo200 .captionwrap {
+	clear:left;
+	float:left;
+	width:200px;
+	margin:0;	
+}
+
+#news #main_sidebar .captionwrap p,
+#news #main_sidebar .creditwrap {
+	font-size:11px;
+	color:#666;
+	margin:0;
+}	
+
+#news #main_sidebar .container .photo138 {margin-bottom:7px;}
+
+#news #main_sidebar .photo138 .captionwrap {margin-left:148px;}
+
+#news #main_sidebar .photo300 {padding:0 15px 10px 11px;}
+
+
+/* hiding enlarge in sidebar */ /* jira WWW-3764 */
+#news #main_sidebar .enlarge_measure,
+#news #main_sidebar .enlarge_html {display:none;}
+
+
+
+/*  =search for agg pages
+	--------------------------------------------------------------- */
+#news #main_sidebar .search {padding:10px 10px 20px;}	
+	
+#news #main_sidebar .search h3 {
+	border:none;
+	color:#000;
+	font-size:22px;
+	font-family:georgia,sans-serif;
+	text-transform:lowercase;
+	padding:0 0 10px;
+}
+
+#news #main_sidebar .search form.search {
+	padding:0;
+}
+
+#news #main_sidebar .search form input.searchbox {
+	font-size:12px;
+	height:16px;
+	width:240px;
+	margin:0 7px 0 0;
+	float:left;
+}
+	
+	
+/*  =AP bucket
+	--------------------------------------------------------------- */
+#news #main_sidebar .ap h3 {
+	background:url(http://media.npr.org/chrome/news/aplogo.gif) left no-repeat;
+	font-size:14px;
+	padding: 0 0 0 25px;
+	border:none;
+	margin:10px 10px 3px 10px;
+	_margin-top:0; /*ie6*/
+}	
+
+#news #main_sidebar .ap h4 {
+	border-bottom:1px solid #b4b2b2;
+	font-size:12px;
+	color:#000;
+	padding:0 0 10px 10px;
+}
+
+#news .ap h3 {color:#ee1300;}
+
+#news .artsPage .ap h3 {color:#c71a0a;}
+
+#news .artsPage #main_sidebar .ap h3 span {
+	display:block;
+	color:#000;
+	font-size:12px;
+	font-family:arial,sans-serif;
+}
+	
+#news .ap .bucket p {
+	margin:0;
+	overflow:hidden;
+	}	
+	
+#news .ap .more {
+	float:right;
+	padding:10px 10px 0 0;
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right 15px;
+	text-transform:lowercase;
+}
+
+#news .ap .more:hover {color:#3366CC;}		
+
+#news #news .ap .more span.gtarrow {display:none;}	
+
+#news .ap p .date {
+	float:left;
+	color:#959595;
+	font-size:11px;
+	font-style:italic;
+	padding-top:10px;
+}
+
+#news .ap span.date {
+	display:block;
+	color:#959595;
+}
+
+/*  =calendar (on archive pages)
+	--------------------------------------------------------------- 
+#news #main_sidebar .calhdr h3 {
+	padding:10px 0 4px 11px;
+	font-size:14px;
+	text-transform:lowercase;
+}		*/
+	
+
+
+
+
+
+
+
+
+
+
+
+/*	=multimedia in the right
+	--------------------------------------------------------------- */	
+#news #main_sidebar .primary,
+#news #main_sidebar .secondary {
+	position:relative;
+	padding:10px 14px 10px 11px;
+}
+
+#news #main_sidebar .container .primary,
+#news #main_sidebar .container .secondary {
+	margin:0;
+	padding:10px 0;
+	position:relative;
+	border-bottom:1px solid #ccc;
+}
+
+#news #main_sidebar .primary .date,
+#news #main_sidebar .secondary .date {
+	font-size:10px;
+	color:#666;
+	margin:0 0 0 40px;
+}
+
+#news #main_sidebar .primary .listenicon a,
+#news #main_sidebar .secondary .listenicon a {
+	background:url(http://media.npr.org/chrome/news/icon_av_sec.gif) 0 0 no-repeat;
+	display:block;
+	height:33px;
+	width:33px;
+	float:left;
+}
+
+#news #main_sidebar .primary .listenicon a:hover,
+#news #main_sidebar .secondary .listenicon a:hover {
+	background:url(http://media.npr.org/chrome/news/icon_av_sec.gif) 0 -33px no-repeat;
+}
+
+#news #main_sidebar .primary .listen,
+#news #main_sidebar .secondary .listen {
+	margin:0 0 0 40px;
+}
+
+#news #main_sidebar .primary .listen h3,
+#news #main_sidebar .secondary .listen h3 {
+	font-size:12px;
+	margin:0 0 5px;
+	padding:0;
+	font-family:arial,sans-serif;
+	border:none;
+}
+
+#news #main_sidebar .primary p.byline,
+#news #main_sidebar .secondary p.byline {
+	font-size:10px;
+	margin:0 0 5px;
+	padding:0;
+	color:#666;
+}	
+
+#news #main_sidebar .primary p.byline a,
+#news #main_sidebar .secondary p.byline a {
+	color:#666;
+	font-weight:normal;
+}
+
+#news #main_sidebar .primary p.byline a.program,
+#news #main_sidebar .secondary p.byline a.program {
+	font-style:italic;
+}
+
+#news #main_sidebar .duration {
+	font-size:11px;
+	color:#666;
+	margin:10px 0 0 0;
+}	
+
+#news #main_sidebar .listen .duration {
+	margin:0;
+	float:left;
+}	
+
+#news #main_sidebar .video .duration {
+	clear:both;
+	margin:0 0 0 81px;
+}
+
+#news #main_sidebar .primary ul,
+#news #main_sidebar .secondary ul {
+	/*clear:both;
+	position:absolute;
+	bottom:10px;
+	right:10px;*/
+	float:right;
+	margin:0;
+	padding:0;
+}
+
+#news #main_sidebar .primary ul li,
+#news #main_sidebar .secondary ul li {
+	float:left;
+	background:none;
+	margin:0 0 0 3px;
+	padding:0;
+}
+
+#news #main_sidebar .primary ul li a.add,
+#news #main_sidebar .secondary ul li a.add {
+	padding:0;
+	width:16px;
+	display:block;
+	height:15px;
+}	
+
+#news #main_sidebar .primary ul li a.download,
+#news #main_sidebar .secondary ul li a.download {
+	padding:0;
+	width:16px;
+	display:block;
+	height:15px;
+}	
+
+#news #main_sidebar .primary ul li a.trans,
+#news #main_sidebar .secondary ul li a.trans {
+	padding:0;
+	width:16px;
+	display:block;
+	height:15px;
+}	
+
+#news #main_sidebar .primary ul li a span,
+#news #main_sidebar .secondary ul li a span {
+	display:none;
+}
+
+#news #main_sidebar .img70 {
+	width:70px;
+	margin-right:10px;
+	float:left;
+	padding:0;
+}
+
+#news #main_sidebar .primary .overlayvideo,
+#news #main_sidebar .secondary .overlayvideo {
+	background:url(http://media.npr.org/chrome/news/icon_video_mini.gif) no-repeat;
+	position:relative;
+	top:0px;
+	*left:-80px;
+	width:20px;
+	height:15px;
+	display:block;
+	cursor:pointer;
+}
+
+#news #main_sidebar .secondary .overlaygraphic {
+	background:url(http://media.npr.org/chrome/news/icon_graphic_mini.gif) no-repeat;
+	position:relative;
+	top:0px;
+	*left:-80px;
+	width:19px;
+	height:17px;
+	display:block;
+	cursor:pointer;
+}
+
+#news #main_sidebar .secondary .overlayslideshow {
+	background:url(http://media.npr.org/chrome/news/icon_slideshow_mini.gif) no-repeat;
+	position:relative;
+	top:0px;
+	*left:-80px;
+	width:20px;
+	height:17px;
+	display:block;
+	cursor:pointer;
+}
+
+#news #main_sidebar .primary .video h3,
+#news #main_sidebar .secondary .video h3,
+#news #main_sidebar .secondary .graphic h3,
+#news #main_sidebar .secondary .slideshow h3 {
+	font-size:12px;
+	margin-top:-16px;
+	padding:0;
+	/*float:left;
+	width:120px;*/
+	font-family:arial,sans-serif;
+	border:none;
+}
+
+#news #main_sidebar .primary .video h3,
+#news #main_sidebar .secondary .video h3 {
+	margin-top:0px;
+	*margin-top:-16px;
+}
+
+#news #main_sidebar .primary .videoicon,
+#news #main_sidebar .secondary .videoicon {
+	float:left;
+	*float:none;
+}
+
+
+/*	=blogs
+	--------------------------------------------------------------- */
+#news #main_sidebar .blog  {padding-bottom:15px;}
+	
+#news #main_sidebar .blog h3 {
+	border:none;
+	font-size:18px;
+	margin-bottom:10px;
+	padding:10px 10px 3px;
+	text-transform:lowercase;
+}
+
+#news #main_sidebar .blog h3 span {}
+
+#news #main_sidebar .blog p {
+	font-size:12px;
+	padding:0 10px 5px 10px;
+	line-height:130%;
+}
+
+#news #main_sidebar .blog ul li {
+	background:none;
+	font-size:12px;
+	margin:0 15px 7px 7px;
+	padding-left:7px;
+}
+
+#news #main_sidebar .blog .bucket {
+	padding-bottom:5px;
+}
+
+#news #main_sidebar .blog .bucketblock h4 {margin:0;}
+
+#news #main_sidebar .blog .bucketblock p {color:#999;padding:0;}
+
+#blog #main_sidebar .adwrapper {
+	margin-bottom:5px;	
+}
+
+
+/*  =podcast 
+	--------------------------------------------------------------- */	
+#news .podcast h4 {
+	padding-left:11px;
+}
+	
+/*  =styles for generic static html buckets (includes podcast bucket)
+	--------------------------------------------------------------- */
+#news #main_sidebar .promo_default {padding:10px 0 5px 0;}	
+	
+#news #main_sidebar .promo_default h3 {padding:0 10px 5px;}
+
+#news #main_sidebar .promo_default .bucket h3 {
+	font-size:14px;
+	font-family:arial,sans-serif;
+	border:none;
+	padding-left:1px;
+}
+
+#news #main_sidebar .promo_default .bucket p {line-height:17px;}
+
+#news #main_sidebar .promo_default .img90 .bucketblock {margin-left:100px;}
+
+#news #main_sidebar .promo_default p.more {
+	font-size:14px;
+	margin-right:15px;
+	border:none;
+	text-transform:lowercase;
+	text-align:right;
+	padding:0;
+}
+
+#news #main_sidebar .promo_default p.more a {
+	color:#333;
+	font-weight:bold;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right 6px;
+	padding:0 10px 0 0;
+}
+
+#news #main_sidebar .promo_default p.more a:hover {color:#36c;}
+
+#news #main_sidebar .promo_default .bucket p.more {margin:0;border:none;}
+
+#news #main_sidebar .promo_default .img90 img.pod {border:1px solid #e0e0e0;width:90px;}
+
+
+/*	=creatives (served sponsorship)
+	--------------------------------------------------------------- */
+#news #main_sidebar .creative {
+	overflow:hidden;
+	height:1%;
+	padding:5px 14px 12px 11px;
+	}
+	
+	
+/* =legacy photogallery
+	--------------------------------------------------------------- */
+#news #main_sidebar .photogallery {
+	font-size:12px;
+	margin-bottom:5px;
+	border:none;
+	padding-left:11px;
+	padding-bottom:5px;
+}	
+
+/* =legacy audio
+	--------------------------------------------------------------- */
+ /* WWW-3741 */	
+#news #main_sidebar .otheraudio .avcontent {padding:10px 0;}	
+#news #main_sidebar .otheraudio h3 {font-size:12px;font-weight:normal;font-family:arial,sans-serif;}
+#news #main_sidebar .otheraudio ul li {font-size:12px;background:none;}
+#news #main_sidebar .otheraudio ul li a {background: url(http://media.npr.org/chrome/news/icon_spikes.gif) 0 -40px no-repeat;padding-left:15px;}
+
+/* =wikinvest widgets
+	--------------------------------------------------------------- */	
+#news #main_sidebar #nv_bullsbears {margin:10px 0 0 11px;}
+#news #main_sidebar #nv_overview_tickerboard {margin:7px 0 15px 11px;}
+#news #main_sidebar #nv_stockchart {margin:10px 0 20px 11px;}
+
+/*	=facebook bucket
+	--------------------------------------------------------------- */
+#news #main_sidebar .facebook {padding-top:15px;}
+#news #main_sidebar .facebook h4 a {background:url(http://media.npr.org/chrome/news/icon_facebook_32x32.gif) no-repeat left;padding:10px 0 10px 40px;display:block;color:#000;font-size:14px;font-family:arial;}
+#news #main_sidebar .facebook p.more {border:none;font-size:14px;padding:0;margin:0;}	
+#news #main_sidebar .facebook p.more a {background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right 5px;padding-right:10px;}	
+
+
+
+
+/*	=sidebar feed bucket
+	--------------------------------------------------------------- */
+#news #main_sidebar .feed {margin:0 0 5px;
+	background:url(http://media.npr.org/chrome/news/hrule_double.gif) repeat-x bottom;
+	overflow:visible;
+}	
+	
+#news #main_sidebar .feed .bucket {overflow:visible;}	
+#news #main_sidebar .feed h3 {padding:10px;font-family:arial;font-size:14px;text-transform:none;}
+#news #main_sidebar .feed ul li {background:none;}
+#news #main_sidebar .feed .feedhdrs {font-weight:normal;font-family:arial;}
+#news #main_sidebar .feed .feedhdrs span {margin:0 7px;}
+#news #main_sidebar .feed .title {width:220px;}
+#news #main_sidebar .feed span.blankpod {right:45px;}
+
+#news #main_sidebar .feed .podbox {	
+	width:240px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	padding:7px;
+	position:absolute;
+	top:30px;
+	left:-20px;
+	_left:15px; /* ie6 only */
+}
+
+ /* ----------------------------------------    
+  * START of 'news/aggregation.css'        
+  * ---------------------------------------- */ 
+
+/*	=general styles
+	--------------------------------------------------------------- */
+#news .creditwrap {
+	font-size:11px;
+	color:#666;
+	margin:0;
+	text-align:right;
+	display:block;
+	padding-top:2px;
+}
+
+#news .photowrap {display:block;}
+
+#news #main_content .stationid a {
+	color:#999;
+	font-weight:normal;
+	font-family:arial,sans-serif;
+}
+
+#news #main_content p.audiorow {
+	font-size:11px;
+	margin:0;
+	clear:both;
+	float:right;
+}
+
+#news p.audiorow span {text-transform:uppercase;}
+
+#news p.audiorow span.prog {font-style:italic;text-transform:none;}
+
+#news p.audiorow a {
+	color:#666;
+	line-height:15px;
+}
+
+#news p.audiorow a.listen {
+	background:url(http://media.npr.org/chrome/news/icon_audio_12px.gif) no-repeat left;
+	padding-left:17px;
+	float:left;
+}
+
+#news p.audiorow a.listen:hover {background:url(http://media.npr.org/chrome/news/icon_audio_12px_hover.gif) no-repeat left;}
+
+#news p.audiorow a.add {
+	/*width:13px;*/
+	height:15px;
+	float:left;
+	margin-left:20px;
+	padding-left:20px;
+	color:#666;
+}
+
+#news p.audiorow a.added {
+	height:15px;
+	float:left;
+	margin-left:20px;
+	padding-left:20px;	
+	text-decoration:none;
+	color:#c1c0c0;
+	cursor:text;
+}	
+
+#news #main_content ul.spike {
+	clear:both;
+	height:1%;
+	padding-top:12px;
+}
+
+#news #main_content ul.spike li {
+	font-size:11px;
+	padding-bottom:7px;
+	line-height:16px;
+	overflow:hidden;
+	height:1%;
+}
+
+#news #main_content ul.spike li a {color:#555;}
+
+#news #main_content ul.spike li a:hover {color:#333;}
+
+#news .commlnks {
+	margin:0;
+	padding:0;
+	font-size:11px;
+}
+
+#news .commlnks a {
+	font-weight:normal;
+	font-family:arial,sans-serif;
+	color:#555;
+}
+
+#news a.viewcomm {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -176px no-repeat;
+	padding:1px 0 2px 16px;
+	margin-right:5px;
+}
+
+#news a.viewcomm:hover {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -192px no-repeat;
+}
+
+#news.tmplNewsAgg a.recommend,
+#news.tmplNewsSuperseries a.recommend {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0px -208px no-repeat;
+	padding:1px 0 2px 13px;
+}
+
+#news.tmplNewsAgg a.recommend:hover,
+#news.tmplNewsSuperseries a.recommend:hover {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0px -224px no-repeat;
+}	
+
+#news a.recommended,
+#news a.recommended:hover {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0px -240px no-repeat;
+	padding:1px 0 2px 13px;
+}
+
+#news.tmplNewsAgg ul.storytools a.recommend,
+#news.tmplNewsSuperseries ul.storytools a.recommend {
+	background:url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -96px no-repeat;
+	line-height:16px;
+	padding:0 0 0 23px;
+}
+
+#news.tmplNewsAgg ul.storytools a.recommend:hover,
+#news.tmplNewsSuperseries ul.storytools a.recommend:hover {
+	background:url(http://media.npr.org/chrome/news/icon_storytools.gif) 0 -112px no-repeat;
+}
+
+#news.tmplNewsAgg ul.storytools a.recommended,
+#news.tmplNewsAgg ul.storytools a.recommended:hover,
+#news.tmplNewsSuperseries ul.storytools a.recommended,
+#news.tmplNewsSuperseries ul.storytools a.recommended:hover {
+	background: url(http://media.npr.org/chrome/news/icon_storytools.gif) 0px -128px no-repeat;
+	line-height:16px;
+	padding:0 0 0 23px;
+}
+
+#news.tmplNewsAgg a.recommend span.txt,
+#news.tmplNewsAgg a.recommended span.txt,
+#news.tmplNewsSuperseries a.recommend span.txt,
+#news.tmplNewsSuperseries a.recommended span.txt {display:none;}
+
+#news p.more {
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 0 20px 0;
+	text-transform:lowercase;
+	overflow:hidden;
+	height:1%;
+	border-bottom:1px solid #ccc;
+}
+
+#news p.more a {
+	float:right;
+	color:#333;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-lg.gif) no-repeat scroll right 7px;
+	padding:0 12px 0 0;
+}
+
+#news p.more .gtarrow {display:none;}
+
+#news #aggbottom {margin-bottom:15px;}
+
+#news #aggbottom .apiquery .simple h3 a {
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-lg-news.gif) no-repeat scroll right 4px;
+	padding:0 12px 0 0;
+}
+
+#news .artsPage #aggbottom .apiquery .simple h3 a {
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-lg-arts.gif) no-repeat scroll right 4px;
+	padding:0 12px 0 0;
+}
+
+/*	=topic header
+	--------------------------------------------------------------- */
+#news .topicheader {
+	border-bottom:1px solid #ccc;
+	overflow:hidden;
+	position:relative;
+	height:1%;
+	/*padding-top:15px;
+	height:80px;*/	
+	margin-bottom:6px;
+	padding-top:10px;
+}	
+	
+#news .topicheader h1 {
+	font-size:40px;
+	font-family:georgia,sans-serif;
+	margin:0;
+	width:295px;
+	padding-top:30px;
+	padding-bottom:15px;
+	text-transform:lowercase;
+}
+
+#news .topicheader h1.sub {
+	font-size:29px;
+	padding-top:40px;
+	padding-bottom:15px;
+	margin-bottom:2px;
+	text-transform:lowercase;
+}	
+
+#news .topicheader,
+#news .topicheader a {
+	color:#ee1300;
+}
+	
+#news .topicheader a:hover {color:#c71a0a;}	
+	
+#news .subtopicwrap {border-left:5px solid #ee1300;}	
+	
+#news .artsPage .topicheader,
+#news .artsPage .topicheader a {
+	color:#800149;
+}
+
+#news .artsPage .topicheader a:hover {color:#680233;}	
+
+#news .artsPage .subtopicwrap {border-left:5px solid #800149;}
+
+#news .subtopicwrap {
+	position:absolute;
+	bottom:15px;
+	right:0;
+	float:right;
+	margin-bottom:2px;	
+	width:324px;
+}
+	
+#news .topicheader .threecol ul {
+	float:left;
+	width:90px;
+	margin:0 0 0 17px;
+	padding-top:5px;
+	_margin-left:10px; /* ie6 only */
+}	
+
+#news .topicheader .twocol ul {
+	float:left;
+	width:140px;
+	margin:0 0 0 17px;
+	padding-top:5px;
+	_width:120px; /* ie6 only */
+	_margin-left:10px; /* ie6 only */
+}	
+
+#news .topicheader ul li {
+	font-size:11px;
+	line-height:12px;
+	margin-bottom:5px;
+	font-weight:bold;
+}	
+
+#news .topicheader ul li {
+	background:url(http://media.npr.org/chrome/news/bullet_news.gif) no-repeat;
+	padding:0 0 0 7px;
+}	
+	
+#news .artsPage .topicheader ul li {
+	background:url(http://media.npr.org/chrome/news/bullet_arts.gif) no-repeat;
+	padding:0 0 0 7px;
+}	
+
+	
+/*	=agg header (series and news pkg)
+	--------------------------------------------------------------- */
+#news .aggheader {
+	border-bottom:1px solid #ccc;
+	overflow: hidden; 
+	height: 1%;	
+	padding-top:5px;
+}	
+
+#news .aggheader .slug {
+	background:url(http://media.npr.org/chrome/news/hdr_series.gif) top left no-repeat;
+	width:79px;
+	height:12px;
+	padding-bottom:3px;
+}
+
+#news .aggheader h1 {
+	font-size:28px;
+	font-family:georgia,sans-serif;
+	font-weight:normal;
+	margin-bottom:8px;
+}
+
+#news .aggheader img {
+	padding-bottom:10px;
+	*padding-bottom:5px;
+}
+	
+#news .aggheader p {
+	clear:left;
+	font-size:16px;
+	font-family:georgia,sans-serif;
+	font-style:italic;
+	color:#666;
+	line-height:20px;
+}
+
+
+/*	=superseries header
+	--------------------------------------------------------------- */
+#news .pagetools {
+	border-bottom:1px solid #ccc;
+	height: 50px;	
+	margin:0 15px;
+	padding:0;
+}
+
+#news .pagetools .bcrumb {
+	float:left;
+	width:375px;
+	padding-top:10px;
+}
+
+#news .pagetools ul.breadcrumb {
+	border:none;
+	padding:5px 0 8px 0;
+}
+
+#news .pagetools .tools {
+	float:right;
+	width:550px;
+	padding-top:10px;
+}	
+
+#news .pagetools .tools .storytoolswrap {float:right;}
+
+#news #ssheader {
+	clear:both;
+	border-bottom:1px solid #ccc;
+	overflow: hidden; 
+	height: 1%;	
+	margin:0 15px;
+	padding:15px 0;
+}
+
+#news #ssheader img {
+	border-right:6px solid #000;
+	padding-right:15px;	
+}
+
+#news #ssheader .main .slug {
+	background:url(http://media.npr.org/chrome/news/hdr_superseries.gif) top no-repeat;
+	width:79px;
+	height:12px;
+	margin:0 0 5px 3px;
+}
+
+#news #ssheader .slug a {
+	background:url(http://media.npr.org/chrome/news/hdr_series_home.gif) top no-repeat;
+	width:112px;
+	height:12px;
+	margin:0 0 5px 3px;
+	display:block;
+}
+
+#news .subseries {
+	float:left;
+	padding-left:20px;
+}
+
+#news .subseries ul {
+	float:left;
+	width:110px;
+	margin:0 5px;
+}	
+
+#news #ssheader ul li {
+	font-size:12px;
+	line-height:15px;
+	margin-bottom:5px;
+	font-weight:bold;
+	background: url(http://media.npr.org/chrome/news/bullet_gry.gif) top left no-repeat;
+	padding-left:7px;
+}	
+
+#news #ssheader .partner {
+	border:none;
+	float:right;
+}	
+	
+
+
+/*	=column header
+	--------------------------------------------------------------- */
+#news .colheader {
+	border-bottom:1px solid #ccc;
+	overflow: hidden; 
+	height: 1%;
+	padding:20px 0 10px 0;
+}	
+	
+#news .colheader img.photowrap {
+	float:left;
+	width:90px;
+	margin-right:20px;
+}	
+
+#news .colheader .titlewrap {
+	float:left;
+	width:500px;
+}		
+
+#news .colheader .titlewrap p.byline {font-weight:bold;}
+
+#news .colheader .titlewrap p.byline a:hover {text-decoration:none;}
+
+#news .colheader h2 {
+	font-size:40px;	
+	line-height:40px;
+	margin-top:-5px;
+	margin-bottom:7px;
+	letter-spacing: -.02em;
+}
+	
+#news .colheader h2 a {color:#ee1300;}
+
+#news .colheader h2 a:hover {
+	color:#c71a0a;
+	text-decoration:none;
+}
+	
+#news .artsPage .colheader h2	a {color:#800149;}
+
+#news .artsPage .colheader h2	a:hover {
+	color:#680233;
+	text-decoration:none;
+}
+
+#news .colheader p.desc {
+	font-size:15px;
+	font-style:italic;
+	color:#666;
+	line-height:17px;
+	font-family:georgia,sans-serif;
+}	
+
+/*	=program header
+	--------------------------------------------------------------- */
+#news .progheader h1 span.sub {display:none;}
+
+
+/*	=listen all
+	--------------------------------------------------------------- */
+#news .listenall {padding:12px 0 24px 0;}
+
+#news #main_content .listenall p.audiorow {float:left;}
+
+
+/*	=featured area
+	--------------------------------------------------------------- */		
+#news .featured {
+	border-bottom:1px solid #ccc;
+	overflow: hidden; 
+	height: 1%;
+	padding:15px 0;
+}
+
+#news .featured a.photowrap {text-decoration:none;} /*temp fix for sfw-2578*/
+
+#news .featured .left {
+	float:left;
+	width:300px;
+	margin:0 24px 0 0;
+}
+
+#news .featured .right {
+	float:left;
+	width:300px;
+	margin:0;
+}
+
+#news .featured .left .photowrap {
+	display:block;
+	overflow:hidden;
+}
+
+#news .featured .left div.photowrap {padding-bottom:10px;}
+
+#news .featured .left .photowrap .img300 {width:300px;}
+
+#news .featured .bucket {
+	margin:24px 0 0 0;
+	padding:24px 0 0 0;
+	overflow:hidden;
+	height:1%;
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) top left repeat-x;
+}
+
+#news .featured .story1 {
+	margin:0;
+	padding:0;
+	background:none;
+}
+
+/*#news .featured .bucket .bucketblock {
+	overflow:hidden;
+	height:1%;
+}*/
+
+#news .featured .right .img {
+	/*margin-bottom:20px;
+	overflow:hidden;
+	height:1%;*/
+}
+
+#news .featured .right .img .photowrap {
+	width:90px;
+	display:block;
+	float:left;
+}
+
+#news .featured .right .img138 .photowrap {
+	width:138px;
+	display:block;
+	float:left;
+}
+
+#news .featured h4 {
+	font-family:georgia,sans-serif;
+	margin:0 0 2px 0;
+	font-size:21px;
+}
+
+#news .featured .right h4 {
+	font-size:16px;
+	padding-right:5px;
+}
+
+#news .featured .commlnks {
+	display:block;
+	margin:5px 0 7px 0;
+}
+
+#news .featured .img .bucketblock {margin-left:100px;}
+#news .featured .img138 .bucketblock {margin-left:148px;}
+
+#news .featured .img90 {width:90px;}
+#news .featured .img138 {width:138px;}
+
+#news .featured p {
+	color:#555;
+	font-size:13px;
+	margin-bottom:6px;
+}
+
+/*#news .featured .right p.audiorow {padding-top:5px;}*/
+#news .featured p.audiorow {padding-top:10px;}
+
+#news .featured .right .img p.audiorow {
+	padding-top:15px;
+	_padding-top:5px;
+	*padding-top:5px;
+}
+
+/* =single story styles */
+#news .singlestory .left div.photowrap,
+#news .singlestory .left,
+#news .singlestory .right {
+	padding:0;
+}
+
+#news .singlestory p,
+#news .singlestory h4 {
+	width:486px;
+}
+
+#news .singlestory .right h4 {
+	font-size:21px;
+	width:auto;
+}
+
+#news .singlestory .right p {width:auto;}
+
+#news .singlestory .audiorow {
+	width:auto;
+	/*float:right;*/
+}
+
+
+/* =rotator styles */
+#news .rotator {
+	height:240px;
+	position:relative;
+}
+
+#news .rotatediv {
+	height:100%;
+	display: none;
+}
+
+#news .rotator .left,
+#news .rotator .right {
+	padding:0;
+}
+
+#news .rotator p,
+#news .rotator h4 {
+	width:486px;
+}
+
+#news .rotator .right h4 {
+	font-size:21px;
+	width:auto;
+}
+
+#news .rotator .right p {width:auto;}
+
+#news .rotator p.audiorow {
+	width:auto;
+	/*float:right;*/
+}
+
+#news ul.paginator {
+	clear:both;
+	position:absolute;
+	bottom:10px;
+	right:0;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#news ul.paginator li {
+	display:inline;
+	margin-right:10px;
+}
+
+#news ul.paginator li a.current {
+	text-decoration:underline;
+}
+
+#news .featured .right .stationid {
+	font-size:11px;
+	padding-left:1px;
+	}
+
+#news .featured .left .stationid,
+#news .rotator .stationid,
+#news .rotator .right .stationid,
+#news .singlestory .stationid,
+#news .singlestory .right .stationid {font-size:13px;}
+
+/* =three col styles */
+#news .threecol .left {width:462px;}
+#news .threecol .right {width:138px;}
+
+#news .threecol .right .photowrap {
+	width:138px;
+	}
+
+#news .threecol .right .bucketblock {
+	clear:both;
+	margin:0;
+	}
+
+#news .threecol .right p.audiorow {display:none;}
+
+
+/* =four col styles */
+#news .fourcol .full {
+	overflow:hidden;
+	height:1%;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x scroll left bottom;
+	}
+
+#news .fourcol .full .photowrap {
+	display:block;
+	overflow:hidden;
+	margin:0 0 10px 0;
+}
+
+#news .fourcol .full .photowrap .photowrap {margin:0;padding:0;overflow:hidden;}
+
+#news .fourcol .full p.audiorow {
+	float:left;
+	/*padding-top:2px;*/
+	}
+
+#news .fourcol .left h4,
+#news .fourcol .right h4 {
+	font-size:16px;
+	}
+
+#news .fourcol .left .bucket,
+#news .fourcol .right .bucket {
+	margin:0;
+	}
+	
+#news .fourcol .right .story2 {
+	background:none;
+	padding-top:0;
+}
+
+
+/* fixes for featured area slideshows and videos */
+#news #main_content .featured .graphic624,
+#news #main_content .featured .graphic462,
+#news #main_content .featured .graphic300 {border:none;}
+
+#news #main_content .featured .graphic624 {padding:0;margin:0;}
+
+#news #main_content .featured .graphic624 .bucket,
+#news #main_content .featured .graphic462 .bucket,
+#news #main_content .featured .graphic300 .bucket {background:none;margin:0;padding:0;}
+
+#news #main_content .featured .graphic462 p,
+#news #main_content .featured .graphic300 p {margin-top:7px;font-size:11px;}
+
+#news #main_content .featured .graphic462 .footer p,
+#news #main_content .featured .graphic300 .footer p  {
+	color:#999;
+	font-size:11px;
+	font-style:italic;
+	width:auto;
+}
+
+
+/*
+#news #main_content .featured .graphic624 .graphicwrapper {
+	margin-bottom:0;
+}
+#news #main_content .featured .full .photowrap .creditwrap {margin-bottom:10px;}
+*/
+
+
+/*	=storylist
+	--------------------------------------------------------------- */		
+#news .storylist {
+	/*border-bottom:1px solid #ccc;*/
+	overflow: hidden; 
+	height: 1%;
+	clear:both;
+	margin-bottom:10px;
+}
+
+#news .storylist .bucket {
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) bottom left repeat-x;
+	padding:15px 0;
+	overflow:hidden;
+	height:1%;
+}
+
+/*#news .storylist .bucket img {
+	width:138px;
+	padding-bottom:10px;
+	*padding-bottom:0;
+}*/
+
+#news .storylist .img138 .photowrap, 
+#news .storylist .img75 .photowrap {
+	display:block;
+	float:left;
+	margin-bottom:10px;
+	}
+
+#news .storylist .img138 .photowrap {width:138px;}
+
+#news .storylist .img75 .photowrap {width:75px;}
+
+#news .storylist h3.slug a {
+	font-size:12px;
+	text-transform:lowercase;
+	font-weight:normal;
+	color:#999;
+}
+
+#news .storylist h4 {
+	font-family:georgia,sans-serif;
+	font-size:14px;	
+	margin:0 0 7px 0;
+}
+
+#news .storylist .commlnks {padding-left:5px;}
+#news #main_content .storylist ul.spike {clear:right;}
+
+#news #main_content .storylist p.audiorow {clear:none;float:right;padding-top:5px;}
+
+#news .storylist .img138 .bucketblock {margin-left:148px;}
+#news .storylist .img90 .bucketblock {margin-left:100px;}
+#news .storylist .img75 .bucketblock {margin-left:85px;}
+
+#news .storylist .bucketblock p {
+	color:#555;
+	font-size:13px;
+	margin-bottom:6px;
+}
+
+#news .storylist .date {
+	font-size:12px;
+	color:#999;
+}
+
+#news .storylist .stationid {
+	font-size:11px;
+	padding:0 3px 0 0;
+}
+
+
+/*	=audio list
+	--------------------------------------------------------------- */		
+#news .audiolist {
+	overflow:hidden;
+	border-bottom:2px solid #229acd;
+	height:1%;
+	margin-bottom:10px;
+}
+
+#news .audiolist h3 {
+	font-family:georgia,sans-serif;
+	font-size:18px;
+	margin:15px 0 10px;
+	border-bottom:5px solid #229acd;
+	padding-bottom:10px;
+	color:#000;
+}
+
+#news .audiolist h3 span {color:#229acd;}
+
+#news .audiolist .storywrap {
+	border:none;
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) bottom left repeat-x;
+	margin:0 0 14px 0;
+	overflow:hidden;
+	padding-bottom:15px;	
+	height:1%;
+}
+
+#news .audiolist .storywrap h3.slug  {
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+#news .audiolist .last {
+	padding-bottom:0;
+	background:none;
+}
+
+#news .audiolist a.added {
+	padding-left:20px;	
+	text-decoration:none;
+	color:#c1c0c0;
+	cursor:text;
+}
+
+
+/*	=sublist
+	--------------------------------------------------------------- */	
+#news .sublist {
+	padding:15px 0 0 0;
+	*padding-bottom:15px;
+	font-family:georgia,sans-serif;
+	margin:0;
+	overflow: hidden; 
+	border-bottom:1px solid #ccc;
+	clear:both;
+}
+
+#news .sublist .row {
+	margin:0 0 20px 0;
+	*margin:0 0 5px 0;
+	padding:0;
+	overflow: hidden; 
+	height: 1%;
+}
+
+#news .sublist .row .agglocation {
+	float:left;
+	width:300px;
+}
+
+#news .sublist .row .gutter {
+	width:24px;
+	float:left;
+}	
+	
+#news .sublist .bucketwrap {
+	margin:0 0 0 0;
+	padding:0;
+}
+
+#news .sublist h4,
+#news .sublist .simple h3 {
+	font-size:18px;
+	text-transform:lowercase;
+	margin:0 0 10px 0;
+}
+
+#news .sublist h4 a,
+#news .sublist .simple h3 a {color:#000;}
+
+#news .sublist h4 span.gtarrow,
+#news .sublist .simple h3 span.gtarrow {display:none;}
+
+#news .sublist ul {
+	margin:0;
+	padding:0;
+}
+
+#news .sublist .img ul {margin-left:100px;}
+
+#news .sublist li {
+	font-size:12px;
+	margin:0 0 7px 0;
+	line-height:14px;
+}
+
+#news .sublist a {color:#666;}
+
+#news .sublist li.top {
+	font-size:14px;
+	line-height:17px;
+}
+	
+#news .sublist li.top a {
+	color:#000;
+	font-weight:bold;
+}
+
+#news .sublist .stationid {font-size:11px;}
+
+/* =apiquery - sublist with thumbs, sublist mini */
+#news .sublist_thumbs h4,
+#news .sublist_mini h4 {
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x left bottom;
+	font-size:18px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-transform:lowercase;
+	padding-bottom:10px;
+	margin:0;
+}
+
+#news .sublist_thumbs h3,
+#news .sublist_thumbs h3 a,
+#news .sublist_thumbs h4,
+#news .sublist_thumbs h4 a,
+#news .sublist_mini h4,
+#news .sublist_mini h4 a {
+	color:#000;
+}
+
+#news .sublist_thumbs h3 {
+	font-size:15px;
+	padding:0 0 5px 0;
+}
+
+#news .sublist_thumbs .bucket,
+#news .sublist_mini .bucket {
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x left bottom;
+	padding:12px 0;
+	overflow:hidden;
+	height:1%;
+}
+
+#news .sublist_thumbs .img .bucketblock,
+#news .sublist_mini .img .bucketblock {margin-left:100px;}
+
+#news .sublist_thumbs p,
+#news .sublist_mini p {
+	font-size:13px;
+	color:#555555;
+	line-height:1.1em;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+}
+
+#news .sublist_mini p {margin:0 0 5px;}
+
+#news .sublist_thumbs p.more,
+#news .sublist_mini p.more {
+	border:none;
+	padding:5px 0 10px;
+	font-size:14px;
+}
+
+#news .sublist_thumbs p.more a,
+#news .sublist_mini p.more a {
+	color:#333;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right center;
+	padding:0 10px 0 0;
+}
+
+#news .sublist_thumbs p.byline,
+#news .sublist_mini p.byline {
+	font-size:11px;
+}
+
+#news .sublist_thumbs p.byline a,
+#news .sublist_thumbs p.byline span,
+#news .sublist_mini p.byline a,
+#news .sublist_mini p.byline span {
+	text-transform:uppercase;
+}
+
+#news .sublist_thumbs p.byline,
+#news .sublist_thumbs p.byline a
+#news .sublist_mini p.byline,
+#news .sublist_mini p.byline a {
+	color:#000;
+}
+
+
+/*	=archive
+	--------------------------------------------------------------- */
+#news h1.archivehdr {
+	font-size:20px;
+	font-family:georgia,sans-serif;
+	padding:35px 0 10px 0;
+	text-transform:lowercase;
+	color:#999;
+	float:left;
+	width:350px;
+}
+
+#news h1.archivehdr a {color:#ee1300;}
+#news h1.archivehdr a:hover {color:#c71a0a;}
+#news .artsPage h1.archivehdr a {color:#800149;}
+#news .artsPage h1.archivehdr a:hover {color:#680233;}
+
+#news.tmplNewsAgg .archivenav,
+#news.tmplNewsArchive .archivenav,
+#news.tmplNewsStory .archivenav {
+	font-size:12px;
+	color:#666;
+	padding:42px 0 0 0;
+	width:200px;
+	float:right;
+}
+
+#news.tmplNewsAgg .archivenav p,
+#news.tmplNewsArchive .archivenav p,
+#news.tmplNewsStory .archivenav p {float:left;}
+
+#news.tmplNewsAgg .archivenav ul,
+#news.tmplNewsArchive .archivenav ul,
+#news.tmplNewsStory .archivenav ul {text-align:right;}
+
+#news.tmplNewsAgg .archivenav ul li,
+#news.tmplNewsArchive .archivenav ul li,
+#news.tmplNewsStory .archivenav ul li {display:inline;}
+
+#news.tmplNewsAgg .archivenav ul li a,
+#news.tmplNewsArchive .archivenav ul li a,
+#news.tmplNewsStory .archivenav ul li a {font-weight:bold;}
+
+#news.tmplNewsAgg .archivenav ul li a.next,
+#news.tmplNewsArchive .archivenav ul li a.next,
+#news.tmplNewsStory .archivenav ul li a.next {
+	background:url(http://media.npr.org/chrome/news/icon_arrow_right.gif) center right no-repeat;
+	padding-right:10px;
+}
+
+#news.tmplNewsAgg .archivenav ul li a.prev,
+#news.tmplNewsArchive .archivenav ul li a.prev,
+#news.tmplNewsStory .archivenav ul li a.prev {
+	background:url(http://media.npr.org/chrome/news/icon_arrow_left.gif) center left no-repeat;
+	padding-left:10px;
+}
+
+#news.tmplNewsAgg .archivenav .pipe,
+#news.tmplNewsStory .archivenav .pipe {padding:0 2px;color:#666;}
+
+#news.tmplNewsAgg .bottom,
+#news.tmplNewsArchive .bottom,
+#news.tmplNewsStory .bottom {padding:0 0 20px 0;}
+
+#news .archive { /* for story list */
+	border-bottom:none;
+	margin-bottom:20px;
+}
+
+#news .archive .datehdr {
+	background-color:#d5d5d5;
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+	padding:6px 5px;
+	text-align:right;
+}
+
+#news .archive .storywrap {background-color:#f9f9f9;}
+#news .archive .bucket {margin-bottom:10px;}
+
+#news .archiveinfo {clear:both;}
+#news .archiveinfo p {font-size:12px;}
+#news .archiveinfo p a {color:#36c;}
+
+
+/*  =promos (internal links, static html)
+	--------------------------------------------------------------- */
+#news .promo {
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) bottom left repeat-x;
+	height:1%;
+	overflow:hidden;
+	padding:15px 0;
+}
+
+#news .promo .bucketblock {
+	float:left;
+}
+
+#news .promo a.photowrap, 
+#news .promo .titles {
+	float:left;
+	display:block;
+	margin-right:24px;
+	width:300px;
+}
+
+#news .sublist .promo a.photowrap, 
+#news .sublist .promo .titles {margin:0 0 10px;}
+
+#news .promo .content {
+	float:left;
+	width:300px;
+	margin-top:15px;
+}
+
+#news .promo .img {width:300px;}
+
+#news .promo .img .titles,
+#news .promo .img .content {
+	margin:0;
+}
+
+#news #main_content .bucketwrap .promo h3.slug {
+	font-size:10px;
+	text-transform:uppercase;
+	font-family:arial,sans-serif;
+	margin-bottom:3px;
+}
+
+#news #main_content .bucketwrap .promo h3.slug,
+#news #main_content .bucketwrap .promo h3.slug a {
+	color:#666;
+}
+
+#news .promo h3 {
+	font-size:22px;
+	font-family:georgia,sans-serif;
+	font-weight:normal;
+	margin:0;
+}
+
+#news .promo h4 {
+	font-size:14px;
+	font-family:georgia,sans-serif;
+	font-weight:normal;
+	font-style:italic;
+	margin:0 0 10px;
+}
+
+#news .promo p {
+	font-size:13px;
+	color:#666;
+	margin:0 0 5px;
+}
+
+#news .promo ul li {
+	color:#666;
+	font-size:12px;
+	background: url(http://media.npr.org/chrome/news/bullet_gry.gif) left no-repeat;
+	padding-left:7px;
+	margin-bottom:5px;
+}
+
+#news .promo ul li,
+#news .promo ul li a {color:#666;}
+
+#news .promo p.more {
+	padding:10px 0 0 0;
+	border:none;
+	font-size:14px;
+}
+
+#news .promo p.more a {
+	color:#333;
+	font-weight:bold;
+	float:right;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right 6px;
+	padding:0 10px 0 0;
+}
+
+#news .promo h3.brand {
+	font-size:14px;
+	font-weight:bold;
+	padding-bottom:3px;
+}
+
+#news .promo ul.brand {margin-top:10px;}
+#news .promo ul.series {margin-top:15px;}
+
+#news .promo ul.series li {
+	float:left;
+	width:128px;
+	margin-right:10px;
+}
+
+/*#news .promo ul.right {
+	width:138px;
+	float:left;
+	margin:15px 0 0;
+}*/
+
+
+/*  =story_2col (internal link)
+	--------------------------------------------------------------- */
+#news .story_2col {
+	overflow:hidden;
+	height:1%;
+	}
+
+#news .story_2col h3.slug {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	margin-bottom:3px;
+	text-transform:lowercase;
+	}
+
+#news .story_2col h3.slug,
+#news .story_2col h3.slug a {
+	color:#999;
+	}
+	
+#news .story_2col .bucketblock {margin-left:148px;}
+
+#news .story_2col a.photowrap {
+	float:left;
+	margin:0 0 10px 0;
+	}
+
+#news .story_2col h4.title {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	line-height:16px;
+	text-transform:none;
+	margin:0 0 10px;
+	}
+
+#news .story_2col h4.title,
+#news .story_2col h4.title a {
+	color:#000;
+	}
+
+#news .story_2col p {
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+/*  =branded promos (api)
+	--------------------------------------------------------------- */
+#news .brand_excerpt, 
+#news .brand_headlines {
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x scroll left bottom;
+	height:1%;
+	overflow:hidden;
+	padding:15px 0 10px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#news .brand_excerpt a.photowrap,
+#news .brand_headlines a.photowrap {
+	display:block;
+	float:left;
+	width:300px;
+	text-indent:-5000px;
+	outline:none;
+}
+
+#news #main_content .brand_promo {position:relative;}
+
+#news #main_content .brand_promo h3.slug {
+	position:absolute;
+	left:324px;
+	top:15px;
+	width:300px;
+}
+
+#news .brand_promo a.slug {display:block;}
+#news .brand_promo a.slug span {display:none;}
+
+#news .brand_promo .titles h3 {
+	font-size:18px;
+	margin-bottom:5px;
+}
+
+#news .brand_excerpt a.photowrap img,
+#news .brand_headlines a.photowrap img {
+	float:none;
+}
+
+#news .sublist .brand_excerpt a.photowrap,
+#news .sublist .brand_headlines a.photowrap {
+	margin-bottom:10px;
+	float:none;
+}
+
+#news .sublist .brand_excerpt a.photowrap img,
+#news .sublist .brand_headlines a.photowrap img {
+	float:none;
+}
+
+#news .brand_excerpt .bucketblock,
+#news .brand_headlines .bucketblock {margin-left:324px;}
+
+#news .sublist .brand_excerpt .bucketblock,
+#news .sublist .brand_headlines .bucketblock {margin-left:0;}
+
+#news .brand_excerpt h3 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+	padding-bottom:3px;
+}
+
+#news .brand_headlines ul {margin-top:10px;}
+
+#news .brand_headlines ul li {
+	background:transparent url(http://media.npr.org/chrome/news/bullet_gry.gif) no-repeat scroll left 1px;
+	font-size:12px;
+	margin-bottom:5px;
+	padding-left:7px;
+}
+
+#news .brand_headlines ul li,
+#news .brand_headlines ul li a {
+	color:#666;
+}
+
+#news .brand_excerpt p,
+#news .brand_headlines p {
+	color:#666;
+	font-size:13px;
+	margin:0 0 5px;
+}
+
+#news .brand_excerpt p.more,
+#news .brand_headlines p.more {
+	font-size:14px;
+	padding:10px 0 0;
+	text-align:right;
+	border:none;
+}
+
+#news .brand_excerpt p.more a,
+#news .brand_headlines p.more a {
+	color:#333;
+	background:transparent url(http://media.npr.org/chrome/news/ico-more-sm.gif) no-repeat scroll right center;
+	padding:0 10px 0 0;
+}
+
+
+/*	=multimedia resource (4col) in mid location
+	--------------------------------------------------------------- */
+#news #main_content .graphic624 {
+	clear:left;
+	float:left;
+	border-top:8px solid #000;
+	border-bottom:1px solid #000;
+	color:#666;
+	padding:10px 0;
+	margin:0 0 5px 0;
+}
+
+#news #main_content .graphic624 h3 {
+	font-size:15px;
+	margin:10px 0 5px 0;
+}
+
+#news #main_content .graphic624 p {
+	font-size:12px;
+	line-height:1.45em;
+	margin-bottom:1.25em;
+}
+
+#news #main_content .graphic624 .graphicwrapper {
+	margin-bottom:10px;
+	overflow:hidden;
+	height:1%;
+}
+
+#news #main_content .graphic624 .notes h4 {
+	margin:0;
+	font-size:11px;
+	color:#333;
+}
+
+#news #main_content .graphic624 .notes {
+	margin:0 0 10px 0;
+	padding:0;
+	color:#666;
+	font-size:11px;
+}
+
+#news #main_content .graphic624 .footer p {
+	color:#999;
+	margin:0;
+	font-size:11px;
+	font-style:italic;
+}
+
+/*	=photo948
+	--------------------------------------------------------------- */
+#news .photo948 {padding:0 15px;}
+#news .photo948 img {float:none;}
+#news .photo948 .captionwrap {display:none;}
+	
+
+
+/* =fix for hiding summary/transcript link on all aggs EXCEPT Israeli-Palestinian Coverage */
+#news .bucket p a.transcript {display:none;}
+
+
+/*	=live events
+	--------------------------------------------------------------- */
+#news .live_event {margin:20px 0 30px 0;}
+#news .live_event .info {margin:0;}
+
+
+ /* ----------------------------------------    
+  * START of 'news/hp.css'        
+  * ---------------------------------------- */ 
+
+/*	=structure
+	--------------------------------------------------------------- */
+#news.tmplHomePage .content {padding:0 12px 0 15px;}
+
+#news.tmplHomePage .wrapper_col {
+	width:978px;
+	background:#fff url(http://media.npr.org/chrome/news/bg_wrapper_3col.gif) repeat-y;
+	border-top:1px solid #B4B2B2;
+	overflow:hidden;
+}
+
+#news.tmplHomePage .blogrow {background-image:none;}
+
+#news.tmplHomePage .wrapper_col .colcontent {
+	padding:10px 15px;
+	_background:transparent; /* ie6 only */
+}
+
+#news.tmplHomePage .col01, 
+#news.tmplHomePage .col02, 
+#news.tmplHomePage .col03 {
+	float:left;
+	width:300px;
+	margin:0 24px 0 0;
+	min-height:20px;
+}
+
+#news.tmplHomePage .col03 {margin:0;}
+
+#news.tmplHomePage .morelinks .col01, 
+#news.tmplHomePage .morelinks .col02, 
+#news.tmplHomePage .morelinks .col03 {
+	margin-top:5px;
+} 
+
+#newsheader, #artsheader, #musicheader, 
+#newscontent01, #artscontent01, #musiccontent01,
+#newscontent02, #artscontent02, #musiccontent02, 
+#newscontent03, #artscontent03, #musiccontent03, 
+#newscontent04, #artscontent04, #musiccontent04, 
+#newscontent05, #artscontent05, #musiccontent05, 
+#newscontent06, #artscontent06, #musiccontent06, 
+#newscontent07, #artscontent07, #musiccontent07, 
+#newscontent08, #artscontent08, #musiccontent08, 
+#newscontent09, #artscontent09, #musiccontent09,
+#col01promo01, #col02promo01, #col03promo01,
+#col01promo02, #col02promo02, #col03promo02,
+#col01promo03, #col02promo03, #col03promo03,
+#col01blog01, #col02blog01, #col03blog01,
+#col01blog02, #col02blog02, #col03blog02,
+#col01blog03, #col02blog03, #col03blog03
+	{
+	/*margin-bottom:10px;
+	min-height:30px;
+	_height:30px;
+	border:1px solid #333;*/
+	/*background-color: #0099FF;*/
+	} 
+
+#newscontent01, #artscontent01, #musiccontent01,
+#newscontent02, #artscontent02, #musiccontent02, 
+#newscontent04, #artscontent04, #musiccontent04, 
+#newscontent05, #artscontent05, #musiccontent05, 
+#newscontent07, #artscontent07, #musiccontent07, 
+#newscontent08, #artscontent08, #musiccontent08,
+#col01promo02, #col02promo02, #col03promo02, 
+#col01promo03, #col02promo03, #col03promo03,
+#col01blog02, #col02blog02, #col03blog02, 
+#col01blog03, #col02blog03, #col03blog03
+	{
+	width:138px;
+	}
+
+#newscontent01, #artscontent01, #musiccontent01,
+#newscontent04, #artscontent04, #musiccontent04, 
+#newscontent07, #artscontent07, #musiccontent07,
+#col01promo02, #col02promo02, #col03promo02,
+#col01blog02, #col02blog02, #col03blog02   
+	{
+	float:left;
+	}
+
+#newscontent02, #artscontent02, #musiccontent02, 
+#newscontent05, #artscontent05, #musiccontent05,  
+#newscontent08, #artscontent08, #musiccontent08,
+#col01promo03, #col02promo03, #col03promo03,
+#col01blog03, #col02blog03, #col03blog03
+	{
+	float:right;
+	}
+
+#newscontent03, #artscontent03, #musiccontent03,
+#newscontent06, #artscontent06, #musiccontent06, 
+#newscontent09, #artscontent09, #musiccontent09
+	{
+	clear:both;
+	}
+
+
+/*	=general
+	--------------------------------------------------------------- */
+#news.tmplHomePage #wrapper_main h3 span {color:#ee1300;}	
+	
+#news.tmplHomePage #main_sidebar .bucketwrap {margin:0 0 5px 0;}	
+
+#news.tmplHomePage .bucketwrap .photowrap {
+	display:block;
+	margin-bottom:5px;
+	overflow:hidden;
+	height:1%;
+	}
+
+#news.tmplHomePage .adwrapper {margin-bottom:5px;}
+
+/*	=featured
+	--------------------------------------------------------------- */
+#news.tmplHomePage #main_content ul.spike li {font-size:12px;}
+
+#news.tmplHomePage .featured p.audiorow {float:right;padding-top:0;padding-right:1px;}	
+#news.tmplHomePage .featured p.audiorow a.add {display:none;}	
+	
+#news.tmplHomePage .featuredwrap {
+	background:transparent url(http://media.npr.org/chrome/news/bg_wrapper_3col.gif) repeat-y;
+	overflow:hidden;
+	height:1%;
+	}
+
+#news.tmplHomePage .featured {padding:15px 0 10px;}
+
+#news.tmplHomePage .featured .commlnks {display:none;}
+#news.tmplHomePage .featured .right div.photowrap {padding-bottom:10px;}
+
+#news.tmplHomePage .featuredmain {
+	overflow:hidden;
+	height:1%;
+	margin:0;
+	}
+
+#news.tmplHomePage .left .featuredmain {padding:0 12px 0 15px;}
+#news.tmplHomePage .right .featuredmain {padding:0 12px;}
+
+#news.tmplHomePage .featured .left {
+	width:327px;
+	margin-right:12px;
+	}
+
+#news.tmplHomePage .featured .right .bucket {
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x left bottom;
+	padding:0 0 15px;
+	margin:0 0 15px;
+	}
+
+#news.tmplHomePage .threecol {
+	background:#FFFFFF url(http://media.npr.org/chrome/news/bg_featured_3col.gif) repeat-y;
+	padding:15px 0 0;
+	}
+
+#news.tmplHomePage .threecol .left {
+	width:462px;
+	margin-right:24px;
+	padding:0 0 10px 15px;
+	}
+	
+#news.tmplHomePage .threecol .left h4 {margin-bottom:8px;}	
+
+#news.tmplHomePage .threecol .full {
+	clear:both;
+	padding:5px 12px 10px 0;
+	border-top:1px solid #CCCCCC;
+	background:transparent url(http://media.npr.org/chrome/news/bg_wrapper_3col.gif) repeat-y;
+	overflow:hidden;
+	height:1%;
+	}
+
+#news.tmplHomePage .threecol .right .last {
+	background:none;
+	margin:0;
+	}
+
+#news.tmplHomePage .threecol .spikes .leftcontent {
+	float:left;
+	width:250px;
+	margin-right:30px;
+	padding-bottom:10px;
+}	
+	
+#news.tmplHomePage .threecol .spikes .spikewrap {
+	float:right;
+	width:182px;
+	}
+	
+#news.tmplHomePage #main_content .threecol .spikes .spikewrap ul.spike {padding-top:0;}	
+
+
+
+
+
+#news.tmplHomePage #featuredpromo01 {
+	width:300px;
+	border-top:1px solid #ccc;
+	margin-top:15px;
+	padding:10px 12px 0 15px;
+	min-height:20px;
+	}
+
+#news.tmplHomePage #featuredpromo01 .bucket {
+	margin:0;
+	padding:0;
+	background:none;
+	}
+
+#news.tmplHomePage .threecol #featuredpromo01 {
+	float:left;
+	border:none;
+	margin:0;
+	}
+
+#news.tmplHomePage .featuredmore {overflow:visible;}
+
+#news.tmplHomePage .featuredmore h3 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:20px;
+	margin:0 0 2px;
+	}
+
+#news.tmplHomePage .featuredmore h3 a {color:#000;}
+
+#news.tmplHomePage .featuredmore ul li {
+	color:#666666;
+	font-size:12px;
+	background:url("http://media.npr.org/chrome/news/spike_bullet.gif") no-repeat scroll left top transparent;
+	*background-position:left 2px;
+	padding-left:17px;
+	margin-top:4px;
+	*margin-top:2px;
+	}
+
+#news.tmplHomePage .featuredmore ul li a {
+	color:#000;
+	font-weight:bold;
+	}
+
+#news.tmplHomePage .featured .featuredmore .stationid {
+	font-size:11px;
+	padding:0;
+	margin-left:5px;
+	}
+
+#news.tmplHomePage .threecol .featuredmore {
+	width:300px;
+	float:left;
+	border:none;
+	margin:0;
+	padding-left:12px;
+	}
+
+#news.tmplHomePage .threecol .storylist {clear:none;}
+
+
+/* fourcol styles */
+#news.tmplHomePage .fourcol {background:#fff;}
+
+#news.tmplHomePage .fourcol .full {
+	background:none;
+	border-bottom:1px solid #b4b2b2;
+	padding:0 0 5px 0;
+	margin:0 0 0 15px;	
+	width:624px;
+}
+
+#news.tmplHomePage .fourcol h1 {
+	font-size:29px;
+	margin-bottom:10px;
+	font-family:georgia,serif;
+}
+
+#news.tmplHomePage .fourcol .full div.photowrap {
+	padding:0;
+	width:624px;
+}
+
+#news.tmplHomePage .fourcol .col2wrap {
+	background:url(http://media.npr.org/chrome/news/bg_featured_2col.gif) top left repeat-y;
+	overflow:hidden;
+	height:1%;
+	margin:15px 0 10px 0;
+}
+
+#news.tmplHomePage .fourcol .left {
+	width:300px;
+	margin-right:24px;
+	padding-left:15px;
+	}
+
+#news.tmplHomePage .fourcol .full .col2wrap {background:url(http://media.npr.org/chrome/news/bg_featured_2col.gif) -15px 0 repeat-y;}
+	
+#news.tmplHomePage .fourcol .full .left {padding-left:0;}
+	
+#news.tmplHomePage .fourcol .full .wide {
+	width:622px;
+	margin-right:0;
+	padding:5px 0;
+}
+	
+#news.tmplHomePage .fourcol h3.spikehdr {
+	font-size:11px;
+	text-transform:uppercase;
+	border-bottom:2px solid #000;
+	padding-bottom:3px;
+}	
+
+#news.tmplHomePage .fourcol .full .right ul.spike li {padding-bottom:5px;}
+
+#news.tmplHomePage .fourcol .left .story1 {padding:5px 0 10px 0;}
+
+#news.tmplHomePage .fourcol .left .story2 {padding:15px 0 0 0;}
+
+
+
+
+/* text lede */
+#news.tmplHomePage .textlede .left {
+	margin:0;
+	width:300px;
+	padding:0 12px 0 15px;
+	}
+
+#news.tmplHomePage .textlede .right {
+	margin:0;
+	width:324px;
+	}
+
+#news.tmplHomePage .textlede .right div.photowrap {
+	overflow:hidden;
+	height:1%;
+	}
+
+
+#news.tmplHomePage .textlede .left .bucket {
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x scroll left bottom;
+	margin:0 0 15px;
+	padding:0 0 5px;
+	}
+
+#news.tmplHomePage .textlede .right .bucket {
+	background:none;
+	margin-bottom:0;
+	padding-bottom:0;
+	}
+
+#news.tmplHomePage .textlede .left p.audiorow {margin:0 0 10px 0;}	
+	
+#news.tmplHomePage .textlede .right #featuredpromo01 {padding:10px 12px 0;}
+
+#news.tmplHomePage .textlede .left h4, 
+#news.tmplHomePage .textlede .right h4 {font-size:18px;}
+
+#news.tmplHomePage .textlede .left .top h4 {
+	font-size:28px;
+	letter-spacing:-0.01em;
+}
+
+/* =tabbed styles */
+/*.tabbed {
+	background:#fff url(http://media.npr.org/chrome/news/bg_featured_tabbed.gif) no-repeat scroll left top;
+	padding-left:0;
+	}
+
+.tabbed .left {
+	width:327px;
+	margin-right:12px
+	}
+	
+.tabbed .right {width:300px;}
+
+.tabbed .tab {
+	float:left;
+	border:1px solid #ccc;
+	border-left:none;
+	text-align:center;
+	font-size:12px;
+	padding:3px 5px;
+	height:30px;
+	background:#f1f1f1;
+	}
+
+.tabbed .tab a {
+	display:block;
+	width:98px;
+	color:#666;
+	}
+
+.tabbed .tabwrap .selected {
+	background:#fff;
+	border-bottom:none;
+	}
+
+.tabbed .tabwrap .selected a {
+	color:#000;
+	outline:none;
+	}
+
+.tabbed .tabcontentwrap {
+	clear:both;
+	padding:10px 13px 0;
+	width:300px;
+	border-right:1px solid #ccc;
+	}
+
+.tabbed .tabcontent {
+	display:none;
+	overflow:hidden;
+	height:1%;
+	}
+	
+.tabbed .tabcontentwrap .selected {display:block;}
+
+.tabbed .tabcontent h4,
+.tabbed .tabcontent span.commlnks,
+.tabbed .tabcontent p,
+.tabbed .tabcontent p.spike,
+.tabbed .tabcontent p.audiorow {
+	padding-right:5px;
+	padding-left:5px;
+	}*/
+	
+/*	=columns (news, arts & lfe, music)
+	--------------------------------------------------------------- */
+#newsheader .bucketwrap,
+#artsheader .bucketwrap,
+#musicheader .bucketwrap {
+	padding:0;
+	}
+
+#news.tmplHomePage .wrapper_col .bucketwrap {padding:0 0 10px;}
+
+#news.tmplHomePage .wrapper_col h2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:28px;
+	margin-bottom:10px;
+	}
+	
+/* news col */
+#news.tmplHomePage .col01 h2, 
+#news.tmplHomePage .col01 h2 a, 
+#news.tmplHomePage .col01 h3,
+#news.tmplHomePage .col01 h3 a,
+#news.tmplHomePage .col01 h4,
+#news.tmplHomePage .col01 h4 a 
+	{
+	color:#ee1300;
+	}
+
+#news.tmplHomePage .col01 h2 a:hover
+	{
+	color:#c71a0a;
+	text-decoration:none;
+	}
+	
+#news.tmplHomePage .col01 .simple h3 a,
+#news.tmplHomePage .col01 .apisublist h4 a {
+	background:url(http://media.npr.org/chrome/news/ico-more-sm-news.gif) no-repeat right;
+	padding:0 7px 3px 0;	
+}
+
+/* arts/life col */
+#news.tmplHomePage .col02 h2,
+#news.tmplHomePage .col02 h2 a,
+#news.tmplHomePage .col02 h3,
+#news.tmplHomePage .col02 h3 a,
+#news.tmplHomePage .col02 h4,
+#news.tmplHomePage .col02 h4 a
+	{
+	color:#800149;
+	}
+
+#news.tmplHomePage .col02 h2 a:hover
+	{
+	color:#680233;
+	text-decoration:none;
+	}
+	
+#news.tmplHomePage .col02 .simple h3 a,
+#news.tmplHomePage .col02 .apisublist h4 a {
+	background:url(http://media.npr.org/chrome/news/ico-more-sm-arts.gif) no-repeat right;
+	padding:0 7px 3px 0;	
+}	
+
+/* music col */
+#news.tmplHomePage .col03 h2, 
+#news.tmplHomePage .col03 h2 a, 
+#news.tmplHomePage .col03 h3,
+#news.tmplHomePage .col03 h3 a,
+#news.tmplHomePage .col03 h4,
+#news.tmplHomePage .col03 h4 a 
+	{
+	color:#3366cc;
+	}
+
+#news.tmplHomePage .col03 h2 a:hover
+	{
+	color:#004eb0;
+	text-decoration:none;
+	}
+	
+#news.tmplHomePage .col03 .simple h3 a,
+#news.tmplHomePage .col03 .apisublist h4 a {
+	background:url(http://media.npr.org/chrome/news/ico-more-sm-music.gif) no-repeat right;
+	padding:0 7px 3px 0;	
+}	
+
+#news.tmplHomePage .col01 h3 a.more,
+#news.tmplHomePage .col02 h3 a.more,
+#news.tmplHomePage .col03 h3 a.more {
+	background:url(http://media.npr.org/chrome/news/ico-more-lg.gif) no-repeat right;
+	padding:0 10px 3px 0;	
+}
+
+
+#news.tmplHomePage .wrapper_col h3,
+#news.tmplHomePage .wrapper_col h4 {
+	font-size:16px;
+	margin-bottom:8px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	text-transform:lowercase;
+	}
+
+#news.tmplHomePage .wrapper_col .gtarrow {font-size:12px;}
+
+#news.tmplHomePage .col01 h3 .gtarrow,
+#news.tmplHomePage .col02 h3 .gtarrow,
+#news.tmplHomePage .col03 h3 .gtarrow,
+#news.tmplHomePage .col01 h4 .gtarrow,
+#news.tmplHomePage .col02 h4 .gtarrow,
+#news.tmplHomePage .col03 h4 .gtarrow {
+	display:none;
+}
+
+#news.tmplHomePage .wrapper_col .apisublist img {display:none;}
+
+#news.tmplHomePage .hp_colheader h3 {
+	font-family:arial, helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	margin:0 0 3px;
+	color:#999;
+}
+
+#news.tmplHomePage .hp_colheader h3 a {color:#999;}
+
+#news.tmplHomePage .hp_colheader p {
+	color:#000;
+	font-weight:bold;
+	font-size:12px;
+	}
+
+#news.tmplHomePage .hp_colheader span.stationid a {
+	font-size:11px;
+	color:#999;
+	font-weight:normal;
+	margin-left:5px;
+	}
+
+#news.tmplHomePage .hp_colheader p.footer {
+	margin:0;
+	text-align:right;
+	font-size:12px;
+	font-weight:normal;
+	}
+
+#news.tmplHomePage .hp_colheader .footer a.more {
+	color:#999;
+	text-transform:uppercase;
+	font-size:10px;
+	line-height:18px;
+	}
+
+#news.tmplHomePage .hp_colheader .footer a.spike {
+	float:left;
+	}
+
+#news.tmplHomePage .wrapper_col ul li {
+	background:transparent url(http://media.npr.org/chrome/news/bullet_blk.gif) no-repeat scroll 0 0;
+	display:block;
+	font-size:12px;
+	line-height:14px;
+	margin:0 0 5px;
+	padding:0 0 0 7px;
+	color:#666666;
+	}
+
+#news.tmplHomePage .wrapper_col ul li a {color:#666666;}
+
+#news.tmplHomePage .wrapper_col ul li .stationid {
+	font-size:11px;
+	color:#999;
+}
+
+#news.tmplHomePage .wrapper_col .internallinks h3 {
+	font-family:Arial, Helvetica, sans-serif;
+	margin-bottom:3px;
+	color:#000;
+	text-transform:lowercase;
+	font-size:12px;
+	}
+
+#news.tmplHomePage .wrapper_col .morelinks {
+	text-align:right;
+	clear:both;
+	}
+
+#news.tmplHomePage .wrapper_col .morelinks h3 {margin:0;}
+
+#news.tmplHomePage .wrapper_col .morelinks .col01 a,
+#news.tmplHomePage .wrapper_col .morelinks .col02 a,
+#news.tmplHomePage .wrapper_col .morelinks .col03 a {color:#000;}
+
+#news.tmplHomePage .col01 .promotop,
+#news.tmplHomePage .col02 .promotop,
+#news.tmplHomePage .col03 .promotop {background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x left top;margin-top:6px;}
+
+#news.tmplHomePage .col01 .promobottom,
+#news.tmplHomePage .col02 .promobottom,
+#news.tmplHomePage .col03 .promobottom {background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x left bottom;}
+
+
+
+
+/*	=blogs
+	--------------------------------------------------------------- */
+#news.tmplHomePage .blogrow .col01 h3, 
+#news.tmplHomePage .blogrow .col01 h3 a,
+#news.tmplHomePage .blogrow .col02 h3, 
+#news.tmplHomePage .blogrow .col02 h3 a,
+#news.tmplHomePage .blogrow .col03 h3, 
+#news.tmplHomePage .blogrow .col03 h3 a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	}
+	
+#news.tmplHomePage .blogrow p a {color:#666;}	
+
+#news.tmplHomePage .blogrow .morelinks h3 a {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	}
+
+
+/*	=mainspan02 (4spot, spicerack, etc.)
+	--------------------------------------------------------------- */
+#news.tmplHomePage #mainspan02 {
+	height:1%;
+	overflow:hidden;
+}
+
+#news.tmplHomePage #mainspan02 h3.header {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:20px;
+	margin:0 0 2px;
+	font-weight:bold;
+	margin-bottom:20px;
+	display:none;
+	}
+
+#news.tmplHomePage #mainspan02 h4.header span {color:#FF0000;}
+
+#news.tmplHomePage #mainspan02 .bucketwrap {
+	float:left;
+	margin:0;
+	}
+
+#news.tmplHomePage #mainspan02 .hp_promo_1col,
+#news.tmplHomePage #mainspan02 .hp_promo_2col {
+	margin:24px 9px 0 15px;
+	}
+
+
+/*	=branded promo (api)
+	--------------------------------------------------------------- */
+#news.tmplHomePage .brand_excerpt_hp {
+	position:relative;
+	width:300px;
+	border-top-width:5px;
+	border-top-style:solid;
+	border-bottom-width:5px;
+	border-bottom-style:solid;
+	padding:10px 0;
+	margin:32px 9px 0 15px;
+	min-height:103px;
+	_height:103px;  /* ie6 only */
+	}
+
+#news.tmplHomePage .brand_excerpt_hp a.photowrap {
+	float:left;
+	width:138px;
+	margin:0;
+	}
+
+#news.tmplHomePage .brand_excerpt_hp .bucketblock {
+	float:none;
+	margin-left:153px;
+	}
+
+#news.tmplHomePage .brand_excerpt_hp p {
+	color:#555;
+	font-size:13px;
+	margin:0 0 5px;
+	}
+
+#news.tmplHomePage #main_content #mainspan02 .brand_excerpt_hp h3.slug,
+#news.tmplHomePage .blogrow .brand_excerpt_hp h3.slug {
+	position:absolute;
+	left:0;
+	top:-27px;
+	margin:0;
+	font-weight:bold;
+	}
+
+#news.tmplHomePage #main_content #mainspan02 .brand_excerpt_hp h3.slug a,
+#news.tmplHomePage .blogrow .brand_excerpt_hp h3.slug a {
+	color:#000;
+	}
+
+#news.tmplHomePage #mainspan02 .brand_excerpt_hp h4,
+#news.tmplHomePage .blogrow .brand_excerpt_hp h4 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	margin-bottom:5px;
+	font-weight:bold;
+	font-style:normal;
+	text-transform:none;
+	}
+
+#news.tmplHomePage #mainspan02 .blogrow .brand_excerpt_hp h4,
+#news.tmplHomePage .blogrow .brand_excerpt_hp h4 a {
+	color:#000;
+	}
+
+
+/*	=most popular
+	--------------------------------------------------------------- */
+#news.tmplHomePage #main_sidebar #mostpopular {
+	background-image:none;
+	margin:0;
+	}
+
+/*	=interallinks : promos
+	--------------------------------------------------------------- */
+#news.tmplHomePage .hp_promo_1col h3.slug,	
+#news.tmplHomePage .hp_promo_1col h3.slug a,
+#news.tmplHomePage .hp_promo_2col h3.slug a {
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin-bottom:5px;
+	font-weight:normal;
+	text-transform:lowercase;
+	}
+
+#news.tmplHomePage .hp_promo_1col h3 a,
+#news.tmplHomePage .hp_promo_2col h3 a {
+	color:#000;
+	}
+
+#news.tmplHomePage .hp_promo_1col p a,
+#news.tmplHomePage .hp_promo_2col p a {
+	font-size:12px;
+	color:#333;
+	font-weight:bold;
+	}
+
+#news.tmplHomePage .hp_promo_1col span.stationid a,
+#news.tmplHomePage .hp_promo_2col span.stationid a {
+	font-size:11px;
+	color:#999;
+	font-weight:normal;
+	margin-left:5px;
+	}
+
+#news.tmplHomePage .hp_promo_1col {width:138px;}
+#news.tmplHomePage .hp_promo_2col {width:300px;}
+
+#news.tmplHomePage .blogrow .hp_promo_1col, 
+#news.tmplHomePage .blogrow .hp_promo_2col {
+	position:relative;
+	padding-top:23px;
+	}
+
+#news.tmplHomePage .blogrow .hp_promo_1col h3.slug a,
+#news.tmplHomePage .blogrow .hp_promo_2col h3.slug a {
+	position:absolute;
+	top:0;
+	left:0;
+	color:#000;
+	font-weight:bold;
+}
+
+#news.tmplHomePage .blogrow .hp_promo_1col p,
+#news.tmplHomePage .blogrow .hp_promo_2col p {
+	margin-bottom:0;
+}
+
+
+#news.tmplHomePage .blogrow .hp_promo_1col p a,
+#news.tmplHomePage .blogrow .hp_promo_2col p a {
+	font-weight:normal;
+}
+
+#news.tmplHomePage .wrapper_col .story_2col_wrap {background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x scroll left top;}
+#news.tmplHomePage .wrapper_col .story_2col {
+	background:transparent url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) repeat-x scroll left bottom;
+	padding-top:15px;
+	}
+
+#news.tmplHomePage .wrapper_col .story_2col a.photowrap, 
+#news.tmplHomePage .wrapper_col .story_2col p {margin-bottom:15px;}
+
+
+/*	=community
+	--------------------------------------------------------------- */
+#news.tmplHomePage .community {
+	padding-bottom:12px;
+	border:none;
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) left bottom repeat-x;
+	}	
+
+#news.tmplHomePage .community .buckettop {
+	margin-bottom:7px;
+	line-height:23px;
+	}	
+
+#news.tmplHomePage .community .bucketbottom {
+	margin:7px 0 10px 0;
+	line-height:23px;	
+	}
+
+#news.tmplHomePage .col01 .community .buckettop {background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 0 no-repeat;}	
+#news.tmplHomePage .col01 .community .bucketbottom {background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 -23px no-repeat;}		
+
+#news.tmplHomePage .col02 .community .buckettop {background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 -46px no-repeat;}	
+#news.tmplHomePage .col02 .community .bucketbottom {background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 -69px no-repeat;}
+
+#news.tmplHomePage .col03 .community .buckettop {background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 -92px no-repeat;}	
+#news.tmplHomePage .col03 .community .bucketbottom {background:url(http://media.npr.org/chrome/news/icon_quotes_lg.gif) 0 -115px no-repeat;}
+
+#news.tmplHomePage .community h3.gahdr {
+	color:#000;
+	border:none;
+	font-size:22px;
+	margin-bottom:10px;
+	background:url(http://media.npr.org/chrome/news/hrule_single_dotted.gif) left top repeat-x;
+	padding-top:10px;
+	}
+
+#news.tmplHomePage .col01 .community h3.gahdr span {color:#ee1300;}
+#news.tmplHomePage .col02 .community h3.gahdr span {color:#800149;}
+#news.tmplHomePage .col03 .community h3.gahdr span {color:#3366cc;}
+
+#news.tmplHomePage .community .bucket p {
+	font-size:14px;
+	font-weight:bold;
+	margin:0;
+	}
+
+#news.tmplHomePage .community p.join,
+#news.tmplHomePage .community p.comments,
+#news.tmplHomePage .community h3.slug {
+	display:none;
+	}
+
+
+/*	=hp promo in #featuredpromo01
+	--------------------------------------------------------------- */
+#news.tmplHomePage .featured .promo_featured {padding-top:5px;}	
+	
+#news.tmplHomePage .featured .promo_featured a.photowrap {float:left;}
+
+#news.tmplHomePage .featured .promo_featured .bucketblock {margin-left:100px;}
+
+#news.tmplHomePage .featured .promo_featured h3.slug {
+	text-transform:uppercase;
+	font-size:11px;
+	border-bottom:6px solid #000;
+	padding-bottom:7px;
+	color:#000;
+}
+
+#news.tmplHomePage .featured .promo_featured h4 {
+	font-family:georgia,sans-serif;
+	font-size:16px;
+	padding-top:7px;
+}
+
+
+/*	=breaking news
+	--------------------------------------------------------------- */
+#news.tmplHomePage #mainspan01 .bucketwrap {margin:0;}
+
+
+/*	=live events / breaking news in mainspan02 and the sidebar
+	--------------------------------------------------------------- */
+#news.tmplHomePage #main_content .live_event {
+	margin:12px 0px 0 0px;
+	padding:12px 0px 22px 0px;
+	width:651px;
+	border-bottom:1px solid #ccc;
+}
+
+#news.tmplHomePage #main_content .live_event .info {
+	margin:0px 13px 0 15px;
+	/*height:1%;*/
+	overflow:hidden;
+}
+
+#news.tmplHomePage #main_content .live_event .bucketblock {
+	float:left;
+	width:520px;
+	*margin-left:0;
+	*padding-left:75px;
+}
+
+#news.tmplHomePage #main_content .live_event .banner {left:34px;}
+
+#news.tmplHomePage #main_sidebar .live_event {
+	padding:0;
+	margin:30px 9px 15px 12px;
+}
+
+#news.tmplHomePage #main_sidebar .live_event .banner {top:-10px;}
+
+#news.tmplHomePage #main_sidebar .live_event .info {
+	margin:0;
+	padding:5px 10px 10px 10px;
+	width:280px;
+}
+
+#news.tmplHomePage #main_sidebar .live_event .bucketblock {
+	float:left;
+	width:200px;
+	*margin-left:0;
+	*padding-left:75px;
+}
+
+#news.tmplHomePage #main_sidebar .live_event h3 {
+	font-family:georgia,serif;
+	font-size:14px;
+	border-bottom:none;
+	padding:0;
+}
+
+#news.tmplHomePage #mainspan02 .breakingnews {
+	margin:6px 0px 0 0px;
+	padding:12px 0px 12px 0px;
+	border-bottom:1px solid #ccc;
+}
+
+#news.tmplHomePage #mainspan02 .breakingnews .banner h4 {
+	margin-left:12px;
+	margin-bottom:0;
+}
+
+#news.tmplHomePage #mainspan02 .breakingnews .info {
+	margin:0px 13px 0 15px;
+	padding-top:45px;
+	width:600px;
+}
+
+#news.tmplHomePage #mainspan02 .breakingnews .banner {
+	width:640px;
+	top:20px;
+}
+
+#news.tmplHomePage #main_sidebar .dontmiss {
+	margin:15px 0 10px 0;
+}
+
+/* "don't miss" bucket - right col */
+#news #hpcontent03 .bucketwrap {
+	background-position:center top;
+}
+
+#main_sidebar #hpcontent03 .dontmiss {
+	margin-top:0;
+}
+
+#news.tmplHomePage #main_sidebar .dontmiss {
+	margin-top:5px;
+}
+
+#news #main_sidebar .dontmiss  .bucketblock h4  {
+	font-family:Georgia, serif;
+}
+
+#news #main_sidebar .dontmiss .img .bucketblock  {
+	margin-left:148px;  /* 138px img + 10px margin = 148px */
+}
+
+#news #main_sidebar .dontmiss  .bucketblock p {
+	color:#555;
+}
+
+
+
+/*	=product promo (goes above spice rack)
+	--------------------------------------------------------------- */
+#news.tmplHomePage .productpromo {background-color:#f4f7fc;border-bottom:1px solid #ccc;padding:25px 20px 25px 15px;height:1%;overflow:hidden;width:616px;}
+#news.tmplHomePage .productpromo img {margin-right:15px;}
+#news.tmplHomePage .productpromo h4 {font-size:14px;padding:2px 0 5px 0;}
+#news.tmplHomePage .productpromo p {color:#666;font-size:12px;}
+#news.tmplHomePage .productpromo a.more {color:#36c;padding-right:7px;font-weight:bold;background:url(http://media.npr.org/chrome/news/ico-more-sm-music.gif) no-repeat right;}
+
+
+/*	=launch msg
+	--------------------------------------------------------------- */
+#newnpr_hpbanner {float:left; width:651px; height:89px; background:#f1f1f1; border-bottom:1px solid #cccccc;}
+#newnpr_hpbanner h2 {margin:16px 0 0 15px; width:626px; height:30px; text-indent:-5000px; background:url(http://media.npr.org/chrome/news/newnpr-banner.jpg) 0 0 no-repeat;}
+#newnpr_hpbanner p {margin:8px 0 0 23px;font-size:14px;}
+#newnpr_hpbanner p a {font-weight:bold;}
+
+
+/*	=creatives
+	--------------------------------------------------------------- */
+#news.tmplHomePage .wrapper_col .creative {padding:10px 0; overflow:hidden;}
+
+
+/*	=upper right promo (replaces must hear on hp only)
+	--------------------------------------------------------------- */
+/* blog */
+#news.tmplHomePage #main_sidebar .blogpromo {position:relative;background:url(http://media.npr.org/chrome/news/bg_gradient_hpaudio.gif) bottom right repeat-x;margin:0 0 3px 0;*margin-left:1px;padding:0;overflow:hidden;}
+#news.tmplHomePage #main_sidebar .blogpromo .rotatediv,
+#news.tmplHomePage #main_sidebar .blogpromo .norotate {height:133px;padding:12px;}
+#news.tmplHomePage #main_sidebar .blogpromo h3.slug {text-transform:lowercase;font-family:arial,sans-serif;font-size:11px;font-weight:normal;margin-bottom:7px;}
+#news.tmplHomePage #main_sidebar .blogpromo img {padding:0 12px 12px 0;}
+#news.tmplHomePage #main_sidebar .blogpromo h4 {font-size:14px;margin-bottom:5px;font-family:georgia,sans-serif;}
+#news.tmplHomePage #main_sidebar .blogpromo p {font-size:12px;color:#555;line-height:16px;}
+#news.tmplHomePage #main_sidebar .blogpromo img.rightoption {float:right;padding:0;}
+#news.tmplHomePage #main_sidebar .blogpromo .logo {position:absolute;bottom:-10px;left:12px;}
+#news.tmplHomePage #main_sidebar .blogpromo .footer {border-top:1px solid #ccc;overflow:hidden;height:47px;margin:0 12px;}
+#news.tmplHomePage #main_sidebar .blogpromo ul.paginator {position:absolute;bottom:17px;right:5px;clear:both;font-size:12px;font-weight:bold;margin:0;padding:0;}
+#news.tmplHomePage #main_sidebar .blogpromo ul.paginator li {background:none;margin:0;padding:0;}
+#news.tmplHomePage #main_sidebar .blogpromo ul.paginator li a {margin:0 6px 0 0;padding:0;float:left;background:url(http://media.npr.org/chrome/news/dots.gif) no-repeat right top;display:block;height:7px;width:8px;}
+#news.tmplHomePage #main_sidebar .blogpromo ul.paginator li a.current {background:url(http://media.npr.org/chrome/news/dots.gif) no-repeat left top;display:block;height:7px;width:8px;}
+#news.tmplHomePage #main_sidebar .blogpromo a.more {font-size:14px;font-weight:bold;padding-right:10px;display:block;position:absolute;right:10px;bottom:15px;background:url(http://media.npr.org/chrome/news/ico-more-sm.png) no-repeat right center;}
+
+/* reporter's notebook */
+#news.tmplHomePage #main_sidebar .notebook h3.slug {font-size:11px;font-family:arial,sans-serif;text-transform:uppercase;border-bottom:6px solid #000000;padding:10px 0 7px 0;}
+#news.tmplHomePage #main_sidebar .notebook h4 {font-family:georgia,sans-serif;font-size:22px;margin:10px 0;text-transform:lowercase;}
+#news.tmplHomePage #main_sidebar .notebook h4 span {color:#ee1300;}
+#news.tmplHomePage #main_sidebar .notebook img {display:block;margin:0 12px 22px 0;*margin-bottom:15px;}
+#news.tmplHomePage #main_sidebar .notebook .bucketblock {display:table;*display:inline-block;}
+#news.tmplHomePage #main_sidebar .notebook p {color:#555;line-height:16px;}
+#news.tmplHomePage #main_sidebar .notebook p.more {text-transform:none;font-size:11px;border-bottom:none;border-top:1px solid #ccc;padding:15px 0 0 0;clear:left;margin:0;}
+#news.tmplHomePage #main_sidebar .notebook p.more a {font-size:11px;background:url(http://media.npr.org/chrome/news/icon_arrow_hp_promo.gif) no-repeat right;padding-right:23px;color:#555;}
+
+/* local headlines - localization test */
+#news.tmplHomePage #bucket_default h3 {padding-top:0;}
+#news.tmplHomePage .localnews #bucket_default h3.slug {float:none;}
+#news.tmplHomePage .localnews h3 {float:left;}
+#news.tmplHomePage .localnews h3 span {padding-right:7px;border-right:1px solid #ccc;}
+#news.tmplHomePage .localnews .stationwrap {margin-left:123px;line-height:12px;}
+#news.tmplHomePage .localnews .stationwrap a {font-family:arial;color:#a1a1a1;font-size:13px;font-weight:bold;}
+#news.tmplHomePage .localnews .stationwrap a span {font-size:10px;display:block;}
+#news.tmplHomePage .localnews .stationwrap a:hover,
+#news.tmplHomePage .localnews .stationwrap a:hover span {text-decoration:underline;}
+#news.tmplHomePage .localnews ul {clear:left;}
+#news.tmplHomePage .localnews ul li {text-transform:capitalize;}
+#news.tmplHomePage .threecol .localnews .featuredmore {padding:0;margin-top:-10px;}
+#news.tmplHomePage .threecol .localnews h3 {padding-top:0;}
+
+
+/*	=facebook bucket
+	--------------------------------------------------------------- */
+#news.tmplHomePage #main_sidebar .facebook {padding:10px;}	
+#news.tmplHomePage #main_sidebar .facebook h3 {
+	font-size:16px;
+	text-transform:lowercase;
+	margin:0 0 5px 0;
+	font-family:georgia;
+}	
+
+/*	=wwdtm quiz bucket
+	--------------------------------------------------------------- */
+#wwdtmQuiz h2, 
+#news.tmplHomePage .col02 #wwdtmQuiz h2 {
+font: bold 13px/1.35em Arial, Helvetica, sans-serif;
+color: #333;
+}
+#news.tmplHomePage .col02 #wwdtmQuiz h2 a:link, 
+#news.tmplHomePage .col02 #wwdtmQuiz h2 a:visited,
+#wwdtmQuiz h2 a:link, #wwdtmQuiz h2 a:visited {
+color: #333;
+}
+#news.tmplHomePage .col02 #wwdtmQuiz h2 a:hover, 
+#news.tmplHomePage .col02 #wwdtmQuiz h2 a:active,
+#wwdtmQuiz h2 a:hover, #wwdtmQuiz h2 a:active {
+color: #36C;
+}
+#news #wwdtmQuiz p.more,
+#wwdtmQuiz p.more {
+border: none;
+font-size: 13px;
+padding: 0;
+margin-bottom: 0;
+}
+#news #wwdtmQuiz p.more a,
+#wwdtmQuiz p.more a {
+background-image: url('http://media.npr.org/chrome/news/ico-more-sm.gif');
+background-position: right .4em;
+padding-right: 10px;
+}
+
+ /* ----------------------------------------    
+  * START of 'base/caption.css'        
+  * ---------------------------------------- */ 
+
+/*	=caption toggle over images
+	--------------------------------------------------------------- */
+
+.panelwrap {position:relative;}
+
+.panelwrap #panel {
+	display:none;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background: #000; 
+	opacity: .85; 
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";	
+	width:100%;
+	
+}
+
+.panelwrap #panel p {padding:10px;}	
+.panelwrap #panel p, .panelwrap #panel p a {color:#fff;}
+.panelwrap #panel p a {text-decoration:underline;}
+.panelwrap #panel p a:hover {color:#3366cc;}
+
+a.captiontext {
+	float:left;
+	font-size:11px;
+	background:url(http://media.npr.org/chrome/news/icons_caption.gif) 0 0 no-repeat;
+	height:18px;
+	padding-left:25px;
+	line-height:18px;
+}
+
+a.captiontext:hover {background:url(http://media.npr.org/chrome/news/icons_caption.gif) 0 -18px no-repeat;}
+
+a.swapicon {background:url(http://media.npr.org/chrome/news/icons_caption.gif) 0 -36px no-repeat;}
+
+a.swapicon:hover {background:url(http://media.npr.org/chrome/news/icons_caption.gif) 0 -54px no-repeat;}
+
+
+/* fixes */
+#music .panelwrap a.photowrap,
+#music .panelwrap img,
+#news .panelwrap img {float:none;}
+
+#news .singlestory .panelwrap #panel p,
+#news .rotator .panelwrap #panel p {width:auto;}
+
+#music a.captiontext {display:none;} /* WWW-9539 */

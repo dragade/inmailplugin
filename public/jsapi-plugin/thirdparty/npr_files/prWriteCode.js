@@ -1,0 +1,1 @@
+function prWriteCode(f){document.write(f)}

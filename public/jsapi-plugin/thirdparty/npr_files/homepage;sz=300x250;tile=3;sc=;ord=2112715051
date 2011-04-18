@@ -1,0 +1,14 @@
+document.write('');
+
+var pr_d=new Date();pr_d=pr_d.getDay()+"|"+pr_d.getHours()+":"+pr_d.getMinutes()+"|"+-pr_d.getTimezoneOffset()/60;
+var pr_postal="";
+var pr_data="";
+var pr_redir="http://ad.doubleclick.net/click%3Bh%3Dv8/3aec/3/0/%2a/o%3B239949495%3B0-0%3B0%3B60981975%3B4307-300/250%3B41686850/41704637/1%3B%3B%7Esscs%3D%3f$CTURL$";
+var pr_pos="";
+var prHost=(("https:"==document.location.protocol)?"https://":"http://");var pr_sec=((prHost=='https://')?'&secure=1':'');
+if(pr_postal!=""){var przipmatch=/^\d{5}$/;if(przipmatch.test(pr_postal)){pr_pos+="&postal="+pr_postal;}}
+if((pr_data!="")&&(pr_data.indexOf("&")<0)){pr_pos+="&data="+pr_data;}
+var pr_s="ads.pointroll.com/PortalServe/?pid=1249151V94120110401210016&time="+pr_d+"&redir="+pr_redir+pr_sec+"&r="+Math.random();
+document.write("<scr"+"ipt type='text/javascript' src='"+prHost+pr_s+"'></scr"+"ipt>");
+
+document.write('\n<noscript><a href=\"http://ads.pointroll.com/PortalServe/?pid=1249151V94120110401210016&pos=c&r=2334668\"><img border=\"0\" width=\"300\" height=\"250\" src=\"http://ads.pointroll.com/PortalServe/?pid=1249151V94120110401210016&pos=i&r=2334668\"></a></noscript>');
