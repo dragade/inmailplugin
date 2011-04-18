@@ -3,3 +3,8 @@ h2. inmailplugin
 This is a sample project for creating an inmail and shared plugin using the LinkedIn Javascript APIs
 for plugin development.
 
+The first plugin is used for partner sites wanting to display their sponsored inmails to a user when she lands on the site.
+
+The second plugin shows a user shares from her professional network which originate from the site itself.
+
+The backend uses the Play! Framework with Scala.
